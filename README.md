@@ -7,6 +7,11 @@ desktop control channel.
 Stage 01 (connection and lifecycle smoke test) verdict: **PASS** — see
 [runs/STAGE_01/REPORT.md](runs/STAGE_01/REPORT.md).
 
+Stage 02 (Claude Code session with the project MCP server) verdict: **FAIL at step 1** — the session
+drove GridCraft through MCP (17 + 25 = 42, save, screenshot all passed), but the full
+`list_commands` reply (~96 KB) does not fit into the session's tool output. See
+[runs/STAGE_02/REPORT.md](runs/STAGE_02/REPORT.md).
+
 ## Layout
 
 | Path | Contents |

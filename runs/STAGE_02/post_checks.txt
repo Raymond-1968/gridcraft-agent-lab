@@ -1,0 +1,12 @@
+> gridcraft-cli cat workbooks/stage02_claude_session_test_attempt02.xlsx --formulas
+17
+25
+=SUM(A1:A2)
+> cat (values)
+17
+25
+42
+> gridcraft-cli send 7991 app.quit
+null
+exit=0
+gridcraft processes: 0
