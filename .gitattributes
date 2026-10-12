@@ -1,0 +1,2 @@
+# Catalog files are hash-bound to the build manifest: keep bytes exactly as captured.
+catalog/** -text

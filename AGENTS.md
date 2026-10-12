@@ -11,8 +11,8 @@ global GridCraft settings, user environment variables or global agent/MCP config
 
 ## Operating rules
 
-1. Discover before executing: confirm command ids and parameters with `gridcraft-cli commands`,
-   `engine.commands` or MCP `list_commands` for the installed build. Never invent command ids.
+1. Discover before executing: confirm command ids and parameters from the verified local
+   catalog or a narrow MCP `list_commands` search (see "Command discovery"). Never invent command ids.
 2. Workbook creation, edits and calculation happen inside GridCraft via its own commands.
    Scripts only send requests, read replies and compare them with expectations. Do not write
    or compute workbook contents with third-party libraries.
@@ -24,6 +24,22 @@ global GridCraft settings, user environment variables or global agent/MCP config
    Preserve failed runs as diagnostic records.
 5. Do not update, reinstall or patch GridCraft.
 6. Do not expand scope autonomously; each stage is a separate assignment.
+
+## Command discovery (build-bound catalog, selective disclosure)
+
+- The local catalog `catalog/gridcraft-<version>/` is the reference for command ids and
+  parameters. It is valid only for the build recorded in its `manifest.json`
+  (version and SHA-256 of `gridcraft.exe` and `gridcraft-cli.exe`, plus hashes of the catalog files).
+- Before relying on it, run `python scripts/catalog.py verify`. On any mismatch (new build,
+  changed binary, edited catalog file) the catalog is invalid: stop, capture a new catalog in a
+  new run folder and a new `catalog/gridcraft-<version>/` with its own manifest. Never edit
+  catalog files by hand.
+- Disclose commands selectively. In an MCP session, never call `list_commands` without a
+  narrow `search` and never read the full `gridcraft://commands` resource: the full catalog
+  (~96 KB) does not fit into a Claude Code session's tool output (Stage 02). Search for the exact
+  ids you need (e.g. `cell.set`, `home.bold`, `file.save`) and use the returned params verbatim.
+  Locally, use `python scripts/catalog.py search <term>`.
+- Raising output limits (`MAX_MCP_OUTPUT_TOKENS` etc.) is not a substitute for selective discovery.
 
 ## Data policy (public repository)
 

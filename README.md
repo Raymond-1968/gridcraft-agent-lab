@@ -12,6 +12,10 @@ drove GridCraft through MCP (17 + 25 = 42, save, screenshot all passed), but the
 `list_commands` reply (~96 KB) does not fit into the session's tool output. See
 [runs/STAGE_02/REPORT.md](runs/STAGE_02/REPORT.md).
 
+Stage 02 correction 01 (selective command discovery) verdict: **PASS** — narrow
+`list_commands` searches fit in the session; `cell.set`, `home.bold`, `file.save` executed and
+verified. See [runs/STAGE_02_CORRECTION_01/REPORT.md](runs/STAGE_02_CORRECTION_01/REPORT.md).
+
 ## Layout
 
 | Path | Contents |
@@ -20,6 +24,8 @@ drove GridCraft through MCP (17 + 25 = 42, save, screenshot all passed), but the
 | [docs/ENVIRONMENT_BASELINE.md](docs/ENVIRONMENT_BASELINE.md) | Installed paths, versions, hashes, upstream docs |
 | [scripts/start_lab_window.ps1](scripts/start_lab_window.ps1) | Starts an isolated lab window with a control channel |
 | [scripts/stage01_smoke.py](scripts/stage01_smoke.py) | Stage 01 test: window + MCP bridge + checks (stdlib Python) |
+| [catalog/gridcraft-0.6.1/](catalog/gridcraft-0.6.1/manifest.json) | Build-bound command catalog with version/hash manifest |
+| [scripts/catalog.py](scripts/catalog.py) | `verify` the catalog against the installed build; `search <term>` selectively |
 | [.mcp.json](.mcp.json) | Project-scoped MCP server `gridcraft-lab` → `gridcraft-cli mcp --connect 7991` |
 | `runs/STAGE_01/` | Command catalog, transcripts, engine journal, screenshots, results, report |
 | `workbooks/`, `inbox/`, `tmp/` | Git-ignored: workbooks, incoming data, scratch |

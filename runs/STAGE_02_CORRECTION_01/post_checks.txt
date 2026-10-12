@@ -1,0 +1,7 @@
+> gridcraft-cli cat workbooks/stage02_correction01_synthetic_copy.xlsx --range A1:B2
+
+  123.45
+> gridcraft-cli send 7991 app.quit
+null
+exit=0
+gridcraft processes: 0

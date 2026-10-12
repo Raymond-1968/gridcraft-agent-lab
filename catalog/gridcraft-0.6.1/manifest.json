@@ -1,0 +1,35 @@
+{
+  "product": "GridCraft",
+  "version": "0.6.1",
+  "upstream_release": "v0.6.1",
+  "upstream_commit_checked": "fc45b7f6d8ab79ef20f74e3c8347a2fd731e6af5",
+  "captured": "2026-10-12",
+  "captured_in": "runs/STAGE_01",
+  "binaries": {
+    "C:\\Program Files\\GridCraft\\gridcraft.exe": "d9886bb105cd667ce5fa7b87b25f32bdebd753cc0128898acbac7342ec009118",
+    "C:\\Program Files\\GridCraft\\gridcraft-cli.exe": "d3010e92811b51bc6a316168103b6f9df315f0cb74d2136d03a40b4106974b37"
+  },
+  "cli_version_output": "gridcraft-cli 0.6.1",
+  "files": {
+    "commands_window.json": {
+      "source": "control channel engine.commands (live lab window)",
+      "count": 352,
+      "sha256": "88befc76564ac27b9666a3604df7c2922bf51a76724d11cbf4e09f8080e2e3de"
+    },
+    "commands_engine.json": {
+      "source": "gridcraft-cli commands --json",
+      "count": 339,
+      "sha256": "a10558b14f1d0aa40f7154d9a3985d061403e2d6430cf2221262c36337d1aa94"
+    },
+    "mcp_tools.json": {
+      "source": "MCP tools/list via gridcraft-cli mcp --connect",
+      "count": 21,
+      "sha256": "d48b0ec87d3aabf44c0c3398ad3995ba6cc836f6bb17bd091e1ee7954d93b84a"
+    },
+    "functions.json": {
+      "source": "gridcraft-cli functions --json",
+      "count": 513,
+      "sha256": "f268488190adb57ec0262a5ad555f678af96a0131861e1a232976a4c61a5f67d"
+    }
+  }
+}
