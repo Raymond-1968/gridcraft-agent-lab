@@ -1,0 +1,62 @@
+{
+ "verdict": "PASS",
+ "utc_today": "2026-10-12",
+ "local_today": "2026-10-13",
+ "checks": [
+  {
+   "check": "start state: remaining 30, overpayment 0",
+   "status": "PASS",
+   "detail": "B9:B10=[[30.0], [0.0]]"
+  },
+  {
+   "check": "Ctrl+; wrote a literal (no formula)",
+   "status": "PASS",
+   "detail": "input='10/12/2026' type=text formula=None"
+  },
+  {
+   "check": "stamp recognised as GridCraft's (UTC) date",
+   "status": "PASS",
+   "detail": "H20=46307.0 UTC today=2026-10-12 (46307.0) local today=2026-10-13"
+  },
+  {
+   "check": "note: stamp equals local date?",
+   "status": "PASS",
+   "detail": "DIFFERENT: UTC date 2026-10-12 vs local 2026-10-13"
+  },
+  {
+   "check": "stamped payment A 25 counted; «Проверка» blank",
+   "status": "PASS",
+   "detail": "E20='' B9=[[5.0]] message=None"
+  },
+  {
+   "check": "stamp unchanged after recalculation",
+   "status": "PASS",
+   "detail": "A20 '10/12/2026' -> '10/12/2026'; H20 46307.0 -> 46307.0"
+  },
+  {
+   "check": "typed 01.11.2026 accepted",
+   "status": "PASS",
+   "detail": "message=None"
+  },
+  {
+   "check": "01.11.2026 recognised as 1 November, counted; balance 0",
+   "status": "PASS",
+   "detail": "H21=46327.0 E21='' B9:B10=[[0.0], [0.0]]"
+  },
+  {
+   "check": "typed 15/10/2026 stopped by validation",
+   "status": "PASS",
+   "detail": "{\"text\": \"Дата: дд.мм.гггг (например 15.10.2026) или Ctrl+; — сегодняшняя дата.\", \"title\": \"Дата получения\"}"
+  },
+  {
+   "check": "A22 stays empty",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "cleanup: test rows cleared, remaining back to 30",
+   "status": "PASS",
+   "detail": "B9:B10=[[30.0], [0.0]]"
+  }
+ ]
+}

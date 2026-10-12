@@ -20,10 +20,15 @@ Stage 03 (income tracker prototype, **historical** — independent-sources model
 (96/96 independent checks), with recorded limitations and usability defects awaiting user review.
 See [runs/STAGE_03/REPORT.md](runs/STAGE_03/REPORT.md). The workbook itself is git-ignored.
 
-Stage 04 (current model: one monthly obligation shared by payers A and B, monthly summary,
+Stage 04 (**historical** since Stage 05: one monthly obligation shared by payers A and B, monthly summary,
 дд.мм.гггг date entry) verdict: **PASS** (161/161 independent checks, 11/11 UI typing checks),
 awaiting user usability review. See [runs/STAGE_04/REPORT.md](runs/STAGE_04/REPORT.md).
 Workbook `workbooks/shared_obligation_tracker.xlsx` is git-ignored.
+
+Stage 05 (current: simplified copy with one cumulative balance, summary and entry on one sheet,
+hidden helper columns, Ctrl+; date stamp) verdict: **PASS** (116/116 independent checks, UI typing PASS),
+with recorded limitations (Ctrl+; uses the UTC date and writes ММ/ДД/ГГГГ text). See
+[runs/STAGE_05/REPORT.md](runs/STAGE_05/REPORT.md). Workbook `workbooks/shared_obligation_balance.xlsx` is git-ignored.
 
 ## Layout
 

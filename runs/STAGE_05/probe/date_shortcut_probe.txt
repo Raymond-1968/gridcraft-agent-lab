@@ -1,0 +1,338 @@
+> ui.cell.click {"cell":"A1"}
+gridcraft-cli: no grid yet
+
+> ui.key {"key":";","ctrl":true}
+null
+
+> ui.inspect
+{
+  "activeDocument": 0,
+  "backstage": null,
+  "dialog": null,
+  "documents": [
+    {
+      "dirty": false,
+      "title": "Book1"
+    }
+  ],
+  "editor": {
+    "cell": "A1",
+    "formulaBar": false,
+    "point": false,
+    "text": "10/12/2026"
+  },
+  "grid": [
+    28.0,
+    215.0,
+    1398.0,
+    627.0
+  ],
+  "message": null,
+  "mode": "Enter",
+  "perf": {
+    "fps": 120.1301993631184,
+    "frameMs": 0.491455078125,
+    "gridMs": 0.1689453125
+  },
+  "scroll": [
+    0.0,
+    0.0
+  ],
+  "selectedChart": null,
+  "ui": {
+    "animations": true,
+    "dark": false,
+    "formulaBarExpanded": false,
+    "interfaceScale": 100,
+    "language": "en",
+    "recent": [],
+    "ribbonCollapsed": false,
+    "ribbonTab": "Home",
+    "statusBar": true,
+    "systemTheme": false
+  },
+  "window": [
+    1440.0,
+    900.0
+  ]
+}
+
+> ui.key {"key":"Enter"}
+null
+
+> ui.cell.click {"cell":"A2"}
+{
+  "x": 53.599998474121094,
+  "y": 239.0
+}
+
+> ui.key {"key":";","cmd":true}
+null
+
+> ui.inspect
+{
+  "activeDocument": 0,
+  "backstage": null,
+  "dialog": null,
+  "documents": [
+    {
+      "dirty": true,
+      "title": "Book1"
+    }
+  ],
+  "editor": {
+    "cell": "A2",
+    "formulaBar": false,
+    "point": false,
+    "text": "10/12/2026"
+  },
+  "grid": [
+    28.0,
+    215.0,
+    1398.0,
+    627.0
+  ],
+  "message": null,
+  "mode": "Enter",
+  "perf": {
+    "fps": 214.5724758936365,
+    "frameMs": 0.50537109375,
+    "gridMs": 0.17919921875
+  },
+  "scroll": [
+    0.0,
+    0.0
+  ],
+  "selectedChart": null,
+  "ui": {
+    "animations": true,
+    "dark": false,
+    "formulaBarExpanded": false,
+    "interfaceScale": 100,
+    "language": "en",
+    "recent": [],
+    "ribbonCollapsed": false,
+    "ribbonTab": "Home",
+    "statusBar": true,
+    "systemTheme": false
+  },
+  "window": [
+    1440.0,
+    900.0
+  ]
+}
+
+> ui.key {"key":"Enter"}
+null
+
+> ui.cell.click {"cell":"A3"}
+{
+  "x": 53.599998474121094,
+  "y": 255.0
+}
+
+> ui.key {"key":"Semicolon","ctrl":true}
+null
+
+> ui.inspect
+{
+  "activeDocument": 0,
+  "backstage": null,
+  "dialog": null,
+  "documents": [
+    {
+      "dirty": true,
+      "title": "Book1"
+    }
+  ],
+  "editor": {
+    "cell": "A3",
+    "formulaBar": false,
+    "point": false,
+    "text": "10/12/2026"
+  },
+  "grid": [
+    28.0,
+    215.0,
+    1398.0,
+    627.0
+  ],
+  "message": null,
+  "mode": "Enter",
+  "perf": {
+    "fps": 183.5950188315172,
+    "frameMs": 0.548828125,
+    "gridMs": 0.239990234375
+  },
+  "scroll": [
+    0.0,
+    0.0
+  ],
+  "selectedChart": null,
+  "ui": {
+    "animations": true,
+    "dark": false,
+    "formulaBarExpanded": false,
+    "interfaceScale": 100,
+    "language": "en",
+    "recent": [],
+    "ribbonCollapsed": false,
+    "ribbonTab": "Home",
+    "statusBar": true,
+    "systemTheme": false
+  },
+  "window": [
+    1440.0,
+    900.0
+  ]
+}
+
+> ui.key {"key":"Enter"}
+null
+
+> ui.cell.click {"cell":"A4"}
+{
+  "x": 53.599998474121094,
+  "y": 271.0
+}
+
+> ui.key {"key":";","ctrl":true,"shift":true}
+null
+
+> ui.inspect
+{
+  "activeDocument": 0,
+  "backstage": null,
+  "dialog": null,
+  "documents": [
+    {
+      "dirty": true,
+      "title": "Book1"
+    }
+  ],
+  "editor": {
+    "cell": "A4",
+    "formulaBar": false,
+    "point": false,
+    "text": "9:43 PM"
+  },
+  "grid": [
+    28.0,
+    215.0,
+    1398.0,
+    627.0
+  ],
+  "message": null,
+  "mode": "Enter",
+  "perf": {
+    "fps": 210.20067583111387,
+    "frameMs": 0.58056640625,
+    "gridMs": 0.273681640625
+  },
+  "scroll": [
+    0.0,
+    0.0
+  ],
+  "selectedChart": null,
+  "ui": {
+    "animations": true,
+    "dark": false,
+    "formulaBarExpanded": false,
+    "interfaceScale": 100,
+    "language": "en",
+    "recent": [],
+    "ribbonCollapsed": false,
+    "ribbonTab": "Home",
+    "statusBar": true,
+    "systemTheme": false
+  },
+  "window": [
+    1440.0,
+    900.0
+  ]
+}
+
+> ui.key {"key":"Enter"}
+null
+
+> ui.cell.click {"cell":"A5"}
+{
+  "x": 53.599998474121094,
+  "y": 287.0
+}
+
+> ui.key {"key":":","ctrl":true}
+null
+
+> ui.inspect
+{
+  "activeDocument": 0,
+  "backstage": null,
+  "dialog": null,
+  "documents": [
+    {
+      "dirty": true,
+      "title": "Book1"
+    }
+  ],
+  "editor": null,
+  "grid": [
+    28.0,
+    215.0,
+    1398.0,
+    627.0
+  ],
+  "message": null,
+  "mode": "Ready",
+  "perf": {
+    "fps": 200.65029952061187,
+    "frameMs": 0.470947265625,
+    "gridMs": 0.1650390625
+  },
+  "scroll": [
+    0.0,
+    0.0
+  ],
+  "selectedChart": null,
+  "ui": {
+    "animations": true,
+    "dark": false,
+    "formulaBarExpanded": false,
+    "interfaceScale": 100,
+    "language": "en",
+    "recent": [],
+    "ribbonCollapsed": false,
+    "ribbonTab": "Home",
+    "statusBar": true,
+    "systemTheme": false
+  },
+  "window": [
+    1440.0,
+    900.0
+  ]
+}
+
+> ui.key {"key":"Enter"}
+null
+
+> engine.execute {"command":"cell.set","params":{"cell":"B1","input":"=TODAY()"}}
+{
+  "cell": "B1",
+  "value": "46307"
+}
+> engine.execute {"command":"cell.set","params":{"cell":"B2","input":"=NOW()"}}
+{
+  "cell": "B2",
+  "value": "46307.9054507819"
+}
+> engine.execute {"command":"home.numberFormat","params":{"range":"C1","format":"Text"}}
+null
+> ui.cell.click {"cell":"C1"}
+{
+  "x": 156.0,
+  "y": 223.0
+}
+> ui.key {"key":";","ctrl":true}
+null
+> ui.key {"key":"Enter"}
+null

@@ -1,0 +1,157 @@
+[
+ {
+  "sheet": "Учёт",
+  "cell": "B4",
+  "style": {
+   "fill": 16773836,
+   "num_fmt": "@"
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "B6",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "B7",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "B9",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "#,##0.00",
+   "bold": true
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "B10",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "#,##0.00",
+   "bold": true
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "E4",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "E6",
+  "style": {
+   "fill": 15592941
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "A13",
+  "style": {
+   "fill": 14543863,
+   "bold": true
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "A14",
+  "style": {
+   "fill": 16773836,
+   "num_fmt": "@"
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "C14",
+  "style": {
+   "fill": 16773836,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "E19",
+  "style": {}
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "H4",
+  "style": {
+   "num_fmt": "dd.mm.yyyy"
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "H14",
+  "style": {
+   "num_fmt": "dd.mm.yyyy"
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "I14",
+  "style": {}
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "A513",
+  "style": {
+   "fill": 16773836,
+   "num_fmt": "@"
+  }
+ },
+ {
+  "sheet": "Учёт",
+  "cell": "I513",
+  "style": {}
+ },
+ {
+  "sheet": "Настройки",
+  "cell": "B4",
+  "style": {
+   "fill": 16773836,
+   "num_fmt": "@"
+  }
+ },
+ {
+  "sheet": "Настройки",
+  "cell": "C4",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "mm.yyyy"
+  }
+ },
+ {
+  "sheet": "Настройки",
+  "cell": "B5",
+  "style": {
+   "fill": 16773836,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Настройки",
+  "cell": "A12",
+  "style": {}
+ },
+ {
+  "sheet": "Настройки",
+  "cell": "C19",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "mm.yyyy"
+  }
+ }
+]

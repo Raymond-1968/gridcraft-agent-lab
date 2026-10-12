@@ -1,0 +1,706 @@
+{
+ "checks": [
+  {
+   "group": "build",
+   "check": "all 69 plan steps executed verbatim via execute_command",
+   "status": "PASS",
+   "detail": "missing=[] errors=[]"
+  },
+  {
+   "group": "build",
+   "check": "file.save income_tracker_prototype.xlsx",
+   "status": "PASS",
+   "detail": "{\"bytes\": 53255, \"path\": \"C:\\\\repos\\\\gridcraft-agent-lab\\\\workbooks\\\\shared_obligation_balance.xlsx\"}"
+  },
+  {
+   "group": "L0",
+   "check": "step 1: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [870.0], [30.0], [0.0]]"
+  },
+  {
+   "group": "L0",
+   "check": "step 2: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [0.0]]"
+  },
+  {
+   "group": "L0",
+   "check": "step 3: «Проверка» column E14:E21 (Учёт!E14:E21)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"], [\"\"], [\"\"]]"
+  },
+  {
+   "group": "L0",
+   "check": "step 4: as-of error message C4 is blank (Учёт!C4)",
+   "status": "PASS",
+   "detail": "[[\"\"]]"
+  },
+  {
+   "group": "L0",
+   "check": "step 5: months text C5 (Учёт!C5)",
+   "status": "PASS",
+   "detail": "[[\"с 09.2026 по 10.2026\"]]"
+  },
+  {
+   "group": "L1",
+   "check": "step 7: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1800.0], [870.0], [0.0], [470.0]]"
+  },
+  {
+   "group": "L1",
+   "check": "step 8: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[400.0], [50.0], [0.0]]"
+  },
+  {
+   "group": "L1",
+   "check": "step 9: «Проверка» column E14:E20 (Учёт!E14:E20)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"], [\"\"]]"
+  },
+  {
+   "group": "L2",
+   "check": "step 12: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [920.0], [0.0], [20.0]]"
+  },
+  {
+   "group": "L2",
+   "check": "step 13: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [0.0], [0.0]]"
+  },
+  {
+   "group": "L2",
+   "check": "step 14: «Проверка» column E14:E19 (Учёт!E14:E19)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"\"]]"
+  },
+  {
+   "group": "L2b",
+   "check": "step 16: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[3.0], [3300.0], [1300.0], [920.0], [1080.0], [0.0]]"
+  },
+  {
+   "group": "L2b",
+   "check": "step 17: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[2000.0], [0.0], [0.0]]"
+  },
+  {
+   "group": "L2b",
+   "check": "step 18: «Проверка» column E14:E19 (Учёт!E14:E19)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"\"]]"
+  },
+  {
+   "group": "L2r",
+   "check": "step 20: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [870.0], [30.0], [0.0]]"
+  },
+  {
+   "group": "L2r",
+   "check": "step 21: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [0.0]]"
+  },
+  {
+   "group": "L2r",
+   "check": "step 22: «Проверка» column E14:E19 (Учёт!E14:E19)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"]]"
+  },
+  {
+   "group": "L3",
+   "check": "step 24: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2100.0], [1300.0], [870.0], [0.0], [70.0]]"
+  },
+  {
+   "group": "L3",
+   "check": "step 25: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[800.0], [50.0], [0.0]]"
+  },
+  {
+   "group": "L3",
+   "check": "step 26: «Проверка» column E14:E19 (Учёт!E14:E19)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"]]"
+  },
+  {
+   "group": "L3r",
+   "check": "step 28: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [870.0], [30.0], [0.0]]"
+  },
+  {
+   "group": "L3r",
+   "check": "step 29: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [0.0]]"
+  },
+  {
+   "group": "L3r",
+   "check": "step 30: «Проверка» column E14:E19 (Учёт!E14:E19)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"]]"
+  },
+  {
+   "group": "L4a",
+   "check": "step 32: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [880.0], [20.0], [0.0]]"
+  },
+  {
+   "group": "L4a",
+   "check": "step 33: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [0.0]]"
+  },
+  {
+   "group": "L4a",
+   "check": "step 34: «Проверка» column E14:E20 (Учёт!E14:E20)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"], [\"\"]]"
+  },
+  {
+   "group": "L4b",
+   "check": "step 36: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [880.0], [20.0], [0.0]]"
+  },
+  {
+   "group": "L4b",
+   "check": "step 37: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [0.0]]"
+  },
+  {
+   "group": "L4b",
+   "check": "step 38: «Проверка» column E14:E20 (Учёт!E14:E20)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"], [\"\"]]"
+  },
+  {
+   "group": "L4c",
+   "check": "step 40: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [870.0], [30.0], [0.0]]"
+  },
+  {
+   "group": "L4c",
+   "check": "step 41: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [1.0]]"
+  },
+  {
+   "group": "L4c",
+   "check": "step 42: «Проверка» column E14:E20 (Учёт!E14:E20)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"], [\"Ошибка: дата не распознана — дд.мм.гггг или Ctrl+;\"]]"
+  },
+  {
+   "group": "L4d",
+   "check": "step 44: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [870.0], [30.0], [0.0]]"
+  },
+  {
+   "group": "L4d",
+   "check": "step 45: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [0.0]]"
+  },
+  {
+   "group": "L4d",
+   "check": "step 46: «Проверка» column E14:E20 (Учёт!E14:E20)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"], [\"Не учтено: дата раньше начала учёта\"]]"
+  },
+  {
+   "group": "L4e",
+   "check": "step 48: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [870.0], [30.0], [0.0]]"
+  },
+  {
+   "group": "L4e",
+   "check": "step 49: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [1.0]]"
+  },
+  {
+   "group": "L4e",
+   "check": "step 50: «Проверка» column E14:E20 (Учёт!E14:E20)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"], [\"Ошибка: выберите плательщика A или B\"]]"
+  },
+  {
+   "group": "L4f",
+   "check": "step 52: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [870.0], [30.0], [0.0]]"
+  },
+  {
+   "group": "L4f",
+   "check": "step 53: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [1.0]]"
+  },
+  {
+   "group": "L4f",
+   "check": "step 54: «Проверка» column E14:E20 (Учёт!E14:E20)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"], [\"Ошибка: сумма должна быть числом\"]]"
+  },
+  {
+   "group": "L4g",
+   "check": "step 56: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [870.0], [30.0], [0.0]]"
+  },
+  {
+   "group": "L4g",
+   "check": "step 57: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [1.0]]"
+  },
+  {
+   "group": "L4g",
+   "check": "step 58: «Проверка» column E14:E20 (Учёт!E14:E20)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"], [\"Ошибка: сумма должна быть больше 0\"]]"
+  },
+  {
+   "group": "L4r",
+   "check": "step 60: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [870.0], [30.0], [0.0]]"
+  },
+  {
+   "group": "L4r",
+   "check": "step 61: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [0.0]]"
+  },
+  {
+   "group": "L4r",
+   "check": "step 62: «Проверка» column E14:E19 (Учёт!E14:E19)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"]]"
+  },
+  {
+   "group": "L5",
+   "check": "step 63: empty rows: «Проверка» E20:E22 blank (Учёт!E20:E22)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"]]"
+  },
+  {
+   "group": "L5",
+   "check": "step 64: no error values in Учёт!A1:I513",
+   "status": "PASS",
+   "detail": "errors=[]"
+  },
+  {
+   "group": "L5",
+   "check": "step 65: no error values in Настройки!A4:D42",
+   "status": "PASS",
+   "detail": "errors=[]"
+  },
+  {
+   "group": "L6",
+   "check": "step 67: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1305.0], [870.0], [25.0], [0.0]]"
+  },
+  {
+   "group": "L6",
+   "check": "step 68: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[895.0], [50.0], [0.0]]"
+  },
+  {
+   "group": "L6",
+   "check": "step 69: «Проверка» column E14:E20 (Учёт!E14:E20)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"], [\"\"]]"
+  },
+  {
+   "group": "L6",
+   "check": "step 70: «Проверка» E513 blank (counted) (Учёт!E513)",
+   "status": "PASS",
+   "detail": "[[\"\"]]"
+  },
+  {
+   "group": "L6r",
+   "check": "step 72: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [870.0], [30.0], [0.0]]"
+  },
+  {
+   "group": "L6r",
+   "check": "step 73: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [0.0]]"
+  },
+  {
+   "group": "L6r",
+   "check": "step 74: «Проверка» column E14:E19 (Учёт!E14:E19)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"]]"
+  },
+  {
+   "group": "L7",
+   "check": "step 76: data.validate A14='15.10.2026' expected ok=True",
+   "status": "PASS",
+   "detail": "{\"ok\": true}"
+  },
+  {
+   "group": "L7",
+   "check": "step 77: data.validate A14='2026-10-15' expected ok=True",
+   "status": "PASS",
+   "detail": "{\"ok\": true}"
+  },
+  {
+   "group": "L7",
+   "check": "step 78: data.validate A14='10/12/2026' expected ok=True",
+   "status": "PASS",
+   "detail": "{\"ok\": true}"
+  },
+  {
+   "group": "L7",
+   "check": "step 79: data.validate A14='15/10/2026' expected ok=False",
+   "status": "PASS",
+   "detail": "{\"message\": \"Дата: дд.мм.гггг (например 15.10.2026) или Ctrl+; — сегодняшняя дата.\", \"ok\": false, \"style\": \"Stop\", \"title\": \"Дата получения\"}"
+  },
+  {
+   "group": "L7",
+   "check": "step 80: data.validate A513='01.11.2026' expected ok=True",
+   "status": "PASS",
+   "detail": "{\"ok\": true}"
+  },
+  {
+   "group": "L7",
+   "check": "step 81: data.validate B14='A' expected ok=True",
+   "status": "PASS",
+   "detail": "{\"ok\": true}"
+  },
+  {
+   "group": "L7",
+   "check": "step 82: data.validate B14='C' expected ok=False",
+   "status": "PASS",
+   "detail": "{\"message\": \"Выберите плательщика из списка (A или B).\", \"ok\": false, \"style\": \"Stop\", \"title\": \"Плательщик\"}"
+  },
+  {
+   "group": "L7",
+   "check": "step 83: data.validate C14='-5' expected ok=False",
+   "status": "PASS",
+   "detail": "{\"message\": \"Сумма — положительное число.\", \"ok\": false, \"style\": \"Stop\", \"title\": \"Сумма\"}"
+  },
+  {
+   "group": "L7",
+   "check": "step 84: data.validate B4='15.11.2026' expected ok=True",
+   "status": "PASS",
+   "detail": "{\"ok\": true}"
+  },
+  {
+   "group": "L7",
+   "check": "step 85: data.validate B4='15/11/2026' expected ok=False",
+   "status": "PASS",
+   "detail": "{\"message\": \"Дата в виде дд.мм.гггг, например 15.11.2026.\", \"ok\": false, \"style\": \"Stop\", \"title\": \"Расчёт на дату\"}"
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!B4 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': '15.11.2026', 'text': '15.11.2026', 'fill': 16773836, 'num_fmt': '@', 'bold': False} after={'formula': None, 'value': '15.11.2026', 'text': '15.11.2026', 'fill': 16773836, 'num_fmt': '@', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!B4 style after reopen {'fill': 16773836, 'num_fmt': '@'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!B6 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF(B5=0,0,B5*H7+SUMIFS(Настройки!$B$19:$B$42,Настройки!$C$19:$C$42,\">=\"&H6,Настройки!$C$19:$C$42,\"<=\"&H5,Настройки!$B$19:$B$42,\"<>\")-H7*COUNTIFS(Настройки!$C$19:$C$42,\">=\"&H6,Настройки!$C$19:$C$42,\"<=\"&H5,Настройки!$B$19:$B$42,\"<>\"))', 'value': 2200.0, 'text': '2,200.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': '=IF(B5=0,0,B5*H7+SUMIFS(Настройки!$B$19:$B$42,Настройки!$C$19:$C$42,\">=\"&H6,Настройки!$C$19:$C$42,\"<=\"&H5,Настройки!$B$19:$B$42,\"<>\")-H7*COUNTIFS(Настройки!$C$19:$C$42,\">=\"&H6,Настройки!$C$19:$C$42,\"<=\"&H5,Настройки!$B$19:$B$42,\"<>\"))', 'value': 2200.0, 'text': '2,200.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!B6 style after reopen {'fill': 15592941, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!B7 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=SUMIFS($C$14:$C$513,$B$14:$B$513,Настройки!$A$8,$I$14:$I$513,\"учтено\")', 'value': 1300.0, 'text': '1,300.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': '=SUMIFS($C$14:$C$513,$B$14:$B$513,Настройки!$A$8,$I$14:$I$513,\"учтено\")', 'value': 1300.0, 'text': '1,300.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!B7 style after reopen {'fill': 15592941, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!B9 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=MAX(0,B6-B7-B8)', 'value': 30.0, 'text': '30.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': True} after={'formula': '=MAX(0,B6-B7-B8)', 'value': 30.0, 'text': '30.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': True}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!B9 style after reopen {'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': True}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!B10 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=MAX(0,B7+B8-B6)', 'value': 0.0, 'text': '0.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': True} after={'formula': '=MAX(0,B7+B8-B6)', 'value': 0.0, 'text': '0.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': True}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!B10 style after reopen {'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': True}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!E4 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=MAX(0,B6-B7)', 'value': 900.0, 'text': '900.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': '=MAX(0,B6-B7)', 'value': 900.0, 'text': '900.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!E4 style after reopen {'fill': 15592941, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!E6 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=COUNTIF($I$14:$I$513,\"Ошибка*\")', 'value': 0.0, 'text': '0', 'fill': 15592941, 'num_fmt': 'General', 'bold': False} after={'formula': '=COUNTIF($I$14:$I$513,\"Ошибка*\")', 'value': 0.0, 'text': '0', 'fill': 15592941, 'num_fmt': 'General', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!E6 style after reopen {'fill': 15592941}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!A13 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': 'Дата получения', 'text': 'Дата получения', 'fill': 14543863, 'num_fmt': 'General', 'bold': True} after={'formula': None, 'value': 'Дата получения', 'text': 'Дата получения', 'fill': 14543863, 'num_fmt': 'General', 'bold': True}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!A13 style after reopen {'fill': 14543863, 'bold': True}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!A14 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': '05.10.2026', 'text': '05.10.2026', 'fill': 16773836, 'num_fmt': '@', 'bold': False} after={'formula': None, 'value': '05.10.2026', 'text': '05.10.2026', 'fill': 16773836, 'num_fmt': '@', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!A14 style after reopen {'fill': 16773836, 'num_fmt': '@'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!C14 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': 600.0, 'text': '600.00', 'fill': 16773836, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': None, 'value': 600.0, 'text': '600.00', 'fill': 16773836, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!C14 style after reopen {'fill': 16773836, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!E19 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF(OR(I19=\"\",I19=\"учтено\"),\"\",I19)', 'value': 'Не учтено: дата позже даты расчёта', 'text': 'Не учтено: дата позже даты расчёта', 'fill': 'Auto', 'num_fmt': 'General', 'bold': False} after={'formula': '=IF(OR(I19=\"\",I19=\"учтено\"),\"\",I19)', 'value': 'Не учтено: дата позже даты расчёта', 'text': 'Не учтено: дата позже даты расчёта', 'fill': 'Auto', 'num_fmt': 'General', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!E19 style after reopen {}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!H4 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF(B4=\"\",\"\",IFERROR(IF(ISNUMBER(B4),B4,LET(t,TRIM(B4),sl,ISNUMBER(FIND(\"/\",t)),iso,MID(t,5,1)=\"-\",pa,IFERROR(FIND(\"/\",t),0),pb,IFERROR(FIND(\"/\",t,pa+1),0),dd,IF(sl,IFERROR(VALUE(MID(t,pa+1,pb-pa-1)),0),IF(iso,IFERROR(VALUE(MID(t,9,2)),0),IFERROR(VALUE(LEFT(t,2)),0))),mm,IF(sl,IFERROR(VALUE(LEFT(t,pa-1)),0),IF(iso,IFERROR(VALUE(MID(t,6,2)),0),IFERROR(VALUE(MID(t,4,2)),0))),yy,IF(sl,IFERROR(VALUE(MID(t,pb+1,4)),0),IF(iso,IFERROR(VALUE(LEFT(t,4)),0),IFERROR(VALUE(MID(t,7,4)),0))),ok,IF(sl,AND(pb>0,LEN(t)-pb=4),AND(LEN(t)=10,OR(iso,AND(MID(t,3,1)=\".\",MID(t,6,1)=\".\")))),dt,IFERROR(DATE(yy,mm,dd),0),IF(AND(ok,dd>=1,mm>=1,mm<=12,DAY(dt)=dd,MONTH(dt)=mm),dt,\"ошибка\"))),\"ошибка\"))', 'value': 46341.0, 'text': '15.11.2026', 'fill': 'Auto', 'num_fmt': 'dd.mm.yyyy', 'bold': False} after={'formula': '=IF(B4=\"\",\"\",IFERROR(IF(ISNUMBER(B4),B4,LET(t,TRIM(B4),sl,ISNUMBER(FIND(\"/\",t)),iso,MID(t,5,1)=\"-\",pa,IFERROR(FIND(\"/\",t),0),pb,IFERROR(FIND(\"/\",t,pa+1),0),dd,IF(sl,IFERROR(VALUE(MID(t,pa+1,pb-pa-1)),0),IF(iso,IFERROR(VALUE(MID(t,9,2)),0),IFERROR(VALUE(LEFT(t,2)),0))),mm,IF(sl,IFERROR(VALUE(LEFT(t,pa-1)),0),IF(iso,IFERROR(VALUE(MID(t,6,2)),0),IFERROR(VALUE(MID(t,4,2)),0))),yy,IF(sl,IFERROR(VALUE(MID(t,pb+1,4)),0),IF(iso,IFERROR(VALUE(LEFT(t,4)),0),IFERROR(VALUE(MID(t,7,4)),0))),ok,IF(sl,AND(pb>0,LEN(t)-pb=4),AND(LEN(t)=10,OR(iso,AND(MID(t,3,1)=\".\",MID(t,6,1)=\".\")))),dt,IFERROR(DATE(yy,mm,dd),0),IF(AND(ok,dd>=1,mm>=1,mm<=12,DAY(dt)=dd,MONTH(dt)=mm),dt,\"ошибка\"))),\"ошибка\"))', 'value': 46341.0, 'text': '15.11.2026', 'fill': 'Auto', 'num_fmt': 'dd.mm.yyyy', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!H4 style after reopen {'num_fmt': 'dd.mm.yyyy'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!H14 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF(A14=\"\",\"\",IFERROR(IF(ISNUMBER(A14),A14,LET(t,TRIM(A14),sl,ISNUMBER(FIND(\"/\",t)),iso,MID(t,5,1)=\"-\",pa,IFERROR(FIND(\"/\",t),0),pb,IFERROR(FIND(\"/\",t,pa+1),0),dd,IF(sl,IFERROR(VALUE(MID(t,pa+1,pb-pa-1)),0),IF(iso,IFERROR(VALUE(MID(t,9,2)),0),IFERROR(VALUE(LEFT(t,2)),0))),mm,IF(sl,IFERROR(VALUE(LEFT(t,pa-1)),0),IF(iso,IFERROR(VALUE(MID(t,6,2)),0),IFERROR(VALUE(MID(t,4,2)),0))),yy,IF(sl,IFERROR(VALUE(MID(t,pb+1,4)),0),IF(iso,IFERROR(VALUE(LEFT(t,4)),0),IFERROR(VALUE(MID(t,7,4)),0))),ok,IF(sl,AND(pb>0,LEN(t)-pb=4),AND(LEN(t)=10,OR(iso,AND(MID(t,3,1)=\".\",MID(t,6,1)=\".\")))),dt,IFERROR(DATE(yy,mm,dd),0),IF(AND(ok,dd>=1,mm>=1,mm<=12,DAY(dt)=dd,MONTH(dt)=mm),dt,\"ошибка\"))),\"ошибка\"))', 'value': 46300.0, 'text': '05.10.2026', 'fill': 'Auto', 'num_fmt': 'dd.mm.yyyy', 'bold': False} after={'formula': '=IF(A14=\"\",\"\",IFERROR(IF(ISNUMBER(A14),A14,LET(t,TRIM(A14),sl,ISNUMBER(FIND(\"/\",t)),iso,MID(t,5,1)=\"-\",pa,IFERROR(FIND(\"/\",t),0),pb,IFERROR(FIND(\"/\",t,pa+1),0),dd,IF(sl,IFERROR(VALUE(MID(t,pa+1,pb-pa-1)),0),IF(iso,IFERROR(VALUE(MID(t,9,2)),0),IFERROR(VALUE(LEFT(t,2)),0))),mm,IF(sl,IFERROR(VALUE(LEFT(t,pa-1)),0),IF(iso,IFERROR(VALUE(MID(t,6,2)),0),IFERROR(VALUE(MID(t,4,2)),0))),yy,IF(sl,IFERROR(VALUE(MID(t,pb+1,4)),0),IF(iso,IFERROR(VALUE(LEFT(t,4)),0),IFERROR(VALUE(MID(t,7,4)),0))),ok,IF(sl,AND(pb>0,LEN(t)-pb=4),AND(LEN(t)=10,OR(iso,AND(MID(t,3,1)=\".\",MID(t,6,1)=\".\")))),dt,IFERROR(DATE(yy,mm,dd),0),IF(AND(ok,dd>=1,mm>=1,mm<=12,DAY(dt)=dd,MONTH(dt)=mm),dt,\"ошибка\"))),\"ошибка\"))', 'value': 46300.0, 'text': '05.10.2026', 'fill': 'Auto', 'num_fmt': 'dd.mm.yyyy', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!H14 style after reopen {'num_fmt': 'dd.mm.yyyy'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!I14 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF(AND(A14=\"\",B14=\"\",C14=\"\"),\"\",IF(NOT(ISNUMBER(H14)),\"Ошибка: дата не распознана — дд.мм.гггг или Ctrl+;\",IF(COUNTIF(Настройки!$A$8:$A$9,B14)=0,\"Ошибка: выберите плательщика A или B\",IF(NOT(ISNUMBER(C14)),\"Ошибка: сумма должна быть числом\",IF(C14<=0,\"Ошибка: сумма должна быть больше 0\",IF(H14>$H$4,\"Не учтено: дата позже даты расчёта\",IF(H14<$H$6,\"Не учтено: дата раньше начала учёта\",\"учтено\")))))))', 'value': 'учтено', 'text': 'учтено', 'fill': 'Auto', 'num_fmt': 'General', 'bold': False} after={'formula': '=IF(AND(A14=\"\",B14=\"\",C14=\"\"),\"\",IF(NOT(ISNUMBER(H14)),\"Ошибка: дата не распознана — дд.мм.гггг или Ctrl+;\",IF(COUNTIF(Настройки!$A$8:$A$9,B14)=0,\"Ошибка: выберите плательщика A или B\",IF(NOT(ISNUMBER(C14)),\"Ошибка: сумма должна быть числом\",IF(C14<=0,\"Ошибка: сумма должна быть больше 0\",IF(H14>$H$4,\"Не учтено: дата позже даты расчёта\",IF(H14<$H$6,\"Не учтено: дата раньше начала учёта\",\"учтено\")))))))', 'value': 'учтено', 'text': 'учтено', 'fill': 'Auto', 'num_fmt': 'General', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!I14 style after reopen {}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!A513 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': None, 'text': '', 'fill': 16773836, 'num_fmt': '@', 'bold': False} after={'formula': None, 'value': None, 'text': '', 'fill': 16773836, 'num_fmt': '@', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!A513 style after reopen {'fill': 16773836, 'num_fmt': '@'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Учёт!I513 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF(AND(A513=\"\",B513=\"\",C513=\"\"),\"\",IF(NOT(ISNUMBER(H513)),\"Ошибка: дата не распознана — дд.мм.гггг или Ctrl+;\",IF(COUNTIF(Настройки!$A$8:$A$9,B513)=0,\"Ошибка: выберите плательщика A или B\",IF(NOT(ISNUMBER(C513)),\"Ошибка: сумма должна быть числом\",IF(C513<=0,\"Ошибка: сумма должна быть больше 0\",IF(H513>$H$4,\"Не учтено: дата позже даты расчёта\",IF(H513<$H$6,\"Не учтено: дата раньше начала учёта\",\"учтено\")))))))', 'value': '', 'text': '', 'fill': 'Auto', 'num_fmt': 'General', 'bold': False} after={'formula': '=IF(AND(A513=\"\",B513=\"\",C513=\"\"),\"\",IF(NOT(ISNUMBER(H513)),\"Ошибка: дата не распознана — дд.мм.гггг или Ctrl+;\",IF(COUNTIF(Настройки!$A$8:$A$9,B513)=0,\"Ошибка: выберите плательщика A или B\",IF(NOT(ISNUMBER(C513)),\"Ошибка: сумма должна быть числом\",IF(C513<=0,\"Ошибка: сумма должна быть больше 0\",IF(H513>$H$4,\"Не учтено: дата позже даты расчёта\",IF(H513<$H$6,\"Не учтено: дата раньше начала учёта\",\"учтено\")))))))', 'value': '', 'text': '', 'fill': 'Auto', 'num_fmt': 'General', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Учёт!I513 style after reopen {}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Настройки!B4 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': '09.2026', 'text': '09.2026', 'fill': 16773836, 'num_fmt': '@', 'bold': False} after={'formula': None, 'value': '09.2026', 'text': '09.2026', 'fill': 16773836, 'num_fmt': '@', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Настройки!B4 style after reopen {'fill': 16773836, 'num_fmt': '@'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Настройки!C4 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF(ISNUMBER(B4),DATE(YEAR(B4),MONTH(B4),1),LET(t,TRIM(B4),mm,VALUE(LEFT(t,2)),yy,VALUE(RIGHT(t,4)),IF(AND(LEN(t)=7,MID(t,3,1)=\".\",mm>=1,mm<=12),DATE(yy,mm,1),\"ошибка\")))', 'value': 46266.0, 'text': '09.2026', 'fill': 15592941, 'num_fmt': 'mm.yyyy', 'bold': False} after={'formula': '=IF(ISNUMBER(B4),DATE(YEAR(B4),MONTH(B4),1),LET(t,TRIM(B4),mm,VALUE(LEFT(t,2)),yy,VALUE(RIGHT(t,4)),IF(AND(LEN(t)=7,MID(t,3,1)=\".\",mm>=1,mm<=12),DATE(yy,mm,1),\"ошибка\")))', 'value': 46266.0, 'text': '09.2026', 'fill': 15592941, 'num_fmt': 'mm.yyyy', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Настройки!C4 style after reopen {'fill': 15592941, 'num_fmt': 'mm.yyyy'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Настройки!B5 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': 1100.0, 'text': '1,100.00', 'fill': 16773836, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': None, 'value': 1100.0, 'text': '1,100.00', 'fill': 16773836, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Настройки!B5 style after reopen {'fill': 16773836, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Настройки!A12 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': '1. За каждый месяц с начала учёта возникает обязательство (по умолчанию из B5, исключения — ниже).', 'text': '1. За каждый месяц с начала учёта возникает обязательство (по умолчанию из B5, исключения — ниже).', 'fill': 'Auto', 'num_fmt': 'General', 'bold': False} after={'formula': None, 'value': '1. За каждый месяц с начала учёта возникает обязательство (по умолчанию из B5, исключения — ниже).', 'text': '1. За каждый месяц с начала учёта возникает обязательство (по умолчанию из B5, исключения — ниже).', 'fill': 'Auto', 'num_fmt': 'General', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Настройки!A12 style after reopen {}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Настройки!C19 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF(A19=\"\",\"\",IF(ISNUMBER(A19),DATE(YEAR(A19),MONTH(A19),1),LET(t,TRIM(A19),mm,VALUE(LEFT(t,2)),yy,VALUE(RIGHT(t,4)),IF(AND(LEN(t)=7,MID(t,3,1)=\".\",mm>=1,mm<=12),DATE(yy,mm,1),\"ошибка\"))))', 'value': '', 'text': '', 'fill': 15592941, 'num_fmt': 'mm.yyyy', 'bold': False} after={'formula': '=IF(A19=\"\",\"\",IF(ISNUMBER(A19),DATE(YEAR(A19),MONTH(A19),1),LET(t,TRIM(A19),mm,VALUE(LEFT(t,2)),yy,VALUE(RIGHT(t,4)),IF(AND(LEN(t)=7,MID(t,3,1)=\".\",mm>=1,mm<=12),DATE(yy,mm,1),\"ошибка\"))))', 'value': '', 'text': '', 'fill': 15592941, 'num_fmt': 'mm.yyyy', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Настройки!C19 style after reopen {'fill': 15592941, 'num_fmt': 'mm.yyyy'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "L0 after reopen: summary B5:B10 (months, obligation, A, B, remaining, overpayment) (Учёт!B5:B10)",
+   "status": "PASS",
+   "detail": "[[2.0], [2200.0], [1300.0], [870.0], [30.0], [0.0]]"
+  },
+  {
+   "group": "reopen",
+   "check": "L0 after reopen: E4:E6 (expected from B, late payments, error rows) (Учёт!E4:E6)",
+   "status": "PASS",
+   "detail": "[[900.0], [50.0], [0.0]]"
+  },
+  {
+   "group": "reopen",
+   "check": "L0 after reopen: «Проверка» column E14:E21 (Учёт!E14:E21)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"], [\"\"], [\"\"], [\"Не учтено: дата позже даты расчёта\"], [\"\"], [\"\"]]"
+  },
+  {
+   "group": "reopen",
+   "check": "L0 after reopen: as-of error message C4 is blank (Учёт!C4)",
+   "status": "PASS",
+   "detail": "[[\"\"]]"
+  },
+  {
+   "group": "reopen",
+   "check": "L0 after reopen: months text C5 (Учёт!C5)",
+   "status": "PASS",
+   "detail": "[[\"с 09.2026 по 10.2026\"]]"
+  }
+ ],
+ "summary": {
+  "total": 116,
+  "passed": 116,
+  "failed": 0,
+  "verdict": "PASS"
+ }
+}

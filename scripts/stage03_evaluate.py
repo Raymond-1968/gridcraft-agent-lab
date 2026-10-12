@@ -11,6 +11,8 @@ Writes runs/STAGE_03/evaluation.json. Does not touch the workbook.
 """
 
 import json
+import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -18,6 +20,26 @@ LAB = Path(__file__).resolve().parents[1]
 RUN = LAB / "runs" / "STAGE_03"
 SES = RUN / "sessions"
 REOPEN_CHECK = "C0"   # check id whose expectations are re-read after reopen
+
+
+def resolve_persisted(text, name):
+    """Claude Code moves tool output over its size limit to a file and gives the session only
+    a preview ("<persisted-output> ... saved to: PATH"). The full GridCraft reply is in that file:
+    copy it next to the transcript as evidence and return the parsed reply (None if not persisted)."""
+    m = re.search(r"Full output saved to: (\S+\.(?:json|txt))", text)
+    if not text.lstrip().startswith("<persisted-output>") or not m:
+        return None
+    src = Path(m.group(1))
+    if not src.exists():
+        return {"persisted_output_missing": str(src)}
+    dst = SES / "persisted" / name / src.name
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copyfile(src, dst)
+    data = json.loads(src.read_text(encoding="utf-8"))
+    if isinstance(data, list):
+        data = json.loads("".join(x.get("text", "") for x in data))
+    data["_persisted_copy"] = str(dst.relative_to(LAB))
+    return data
 
 
 def load_calls(name):
@@ -34,10 +56,12 @@ def load_calls(name):
                     u = pending.pop(c["tool_use_id"])
                     cc = c["content"]
                     text = cc if isinstance(cc, str) else "".join(x.get("text", "") for x in cc)
-                    try:
-                        res = json.loads(text)
-                    except json.JSONDecodeError:
-                        res = text
+                    res = resolve_persisted(text, name)
+                    if res is None:
+                        try:
+                            res = json.loads(text)
+                        except json.JSONDecodeError:
+                            res = text
                     calls.append({"tool": u["name"].split("__")[-1], "arguments": u["input"],
                                   "is_error": bool(c.get("is_error")), "result": res})
     with open(SES / f"{name}_mcp_calls.jsonl", "w", encoding="utf-8") as f:

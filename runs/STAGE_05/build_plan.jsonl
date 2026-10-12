@@ -1,0 +1,69 @@
+{"step": 1, "command": "file.open", "params": {"path": "C:\\repos\\gridcraft-agent-lab\\workbooks\\shared_obligation_tracker.xlsx"}}
+{"step": 2, "command": "file.saveAs", "params": {"path": "C:\\repos\\gridcraft-agent-lab\\workbooks\\shared_obligation_balance.xlsx"}}
+{"step": 3, "command": "home.deleteSheet", "params": {"sheet": "Поступления"}}
+{"step": 4, "command": "home.deleteSheet", "params": {"sheet": "Сводка"}}
+{"step": 5, "command": "home.insertSheet", "params": {"name": "Учёт", "before": 0}}
+{"step": 6, "command": "sheet.activate", "params": {"sheet": "Настройки"}}
+{"step": 7, "command": "range.setValues", "params": {"range": "C8", "values": [["платит, сумма не фиксирована"], ["доплачивает остаток общего обязательства"]]}}
+{"step": 8, "command": "range.setValues", "params": {"range": "A12", "values": [["1. За каждый месяц с начала учёта возникает обязательство (по умолчанию из B5, исключения — ниже)."], ["2. Месяц входит в накопленное обязательство, когда «Расчёт на дату» позже этого месяца (оплата за прошлый месяц)."], ["3. Все поступления A и B с датой от начала учёта до «Расчёт на дату» вычитаются из накопленного обязательства."], ["4. Месяц оплаты не указывается; переплата уменьшает общий остаток."], ["5. Ожидается от B = накопленное обязательство − поступления A."]]}}
+{"step": 9, "command": "selection.set", "params": {"range": "B4"}}
+{"step": 10, "command": "sheet.activate", "params": {"sheet": "Учёт"}}
+{"step": 11, "command": "home.numberFormat", "params": {"range": "B4", "format": "Text"}}
+{"step": 12, "command": "home.numberFormat", "params": {"range": "A14:A513", "format": "Text"}}
+{"step": 13, "command": "range.setValues", "params": {"range": "A1", "values": [["Учёт поступлений: общий баланс"], ["Вымышленные данные, EUR. Жёлтое — ввод. Правила и сумма обязательства — на листе «Настройки»."]]}}
+{"step": 14, "command": "range.setValues", "params": {"range": "A4", "values": [["Расчёт на дату (дд.мм.гггг)", "15.11.2026", "=IF(ISNUMBER(H4),\"\",\"Ошибка: введите дату как дд.мм.гггг\")"], ["Месяцев к оплате", "=IF(AND(ISNUMBER(H5),ISNUMBER(H6)),MAX(0,(YEAR(H5)-YEAR(H6))*12+MONTH(H5)-MONTH(H6)+1),0)", "=IF(B5>0,\"с \"&TEXT(H6,\"mm.yyyy\")&\" по \"&TEXT(H5,\"mm.yyyy\"),\"нет месяцев к оплате\")"], ["Накопленное обязательство", "=IF(B5=0,0,B5*H7+SUMIFS('Настройки'!$B$19:$B$42,'Настройки'!$C$19:$C$42,\">=\"&H6,'Настройки'!$C$19:$C$42,\"<=\"&H5,'Настройки'!$B$19:$B$42,\"<>\")-H7*COUNTIFS('Настройки'!$C$19:$C$42,\">=\"&H6,'Настройки'!$C$19:$C$42,\"<=\"&H5,'Настройки'!$B$19:$B$42,\"<>\"))", null], ["Получено от A", "=SUMIFS($C$14:$C$513,$B$14:$B$513,'Настройки'!$A$8,$I$14:$I$513,\"учтено\")", null], ["Получено от B", "=SUMIFS($C$14:$C$513,$B$14:$B$513,'Настройки'!$A$9,$I$14:$I$513,\"учтено\")", null], ["Остаток к получению", "=MAX(0,B6-B7-B8)", null], ["Переплата", "=MAX(0,B7+B8-B6)", null]]}}
+{"step": 15, "command": "range.setValues", "params": {"range": "D4", "values": [["Ожидается от B всего (обязательство − A)", "=MAX(0,B6-B7)"], ["Не учтено: дата позже даты расчёта, EUR", "=SUMIFS($C$14:$C$513,$I$14:$I$513,\"Не учтено: дата позже*\")"], ["Строк с ошибками", "=COUNTIF($I$14:$I$513,\"Ошибка*\")"], ["=IF(E6>0,\"Есть ошибки — см. колонку «Проверка»\",\"\")", null]]}}
+{"step": 16, "command": "range.setValues", "params": {"range": "A11", "values": [["Новая запись — в первую пустую строку: дата (Ctrl+; — сегодня, или дд.мм.гггг), плательщик A/B, сумма, примечание по желанию."]]}}
+{"step": 17, "command": "range.setValues", "params": {"range": "A13", "values": [["Дата получения", "Плательщик", "Сумма, EUR", "Примечание", "Проверка"]]}}
+{"step": 18, "command": "range.setValues", "params": {"range": "A14", "values": [["05.10.2026", "A", 600, null], ["12.10.2026", "B", 300, "частичный платёж"], ["20.10.2026", "B", 150, null], ["03.11.2026", "A", 700, null], ["10.11.2026", "B", 420, null], ["16.11.2026", "B", 50, "контрольный пример: позже даты расчёта"]]}}
+{"step": 19, "command": "range.setValues", "params": {"range": "H3", "values": [["служебные"], ["=IF(B4=\"\",\"\",IFERROR(IF(ISNUMBER(B4),B4,LET(t,TRIM(B4),sl,ISNUMBER(FIND(\"/\",t)),iso,MID(t,5,1)=\"-\",pa,IFERROR(FIND(\"/\",t),0),pb,IFERROR(FIND(\"/\",t,pa+1),0),dd,IF(sl,IFERROR(VALUE(MID(t,pa+1,pb-pa-1)),0),IF(iso,IFERROR(VALUE(MID(t,9,2)),0),IFERROR(VALUE(LEFT(t,2)),0))),mm,IF(sl,IFERROR(VALUE(LEFT(t,pa-1)),0),IF(iso,IFERROR(VALUE(MID(t,6,2)),0),IFERROR(VALUE(MID(t,4,2)),0))),yy,IF(sl,IFERROR(VALUE(MID(t,pb+1,4)),0),IF(iso,IFERROR(VALUE(LEFT(t,4)),0),IFERROR(VALUE(MID(t,7,4)),0))),ok,IF(sl,AND(pb>0,LEN(t)-pb=4),AND(LEN(t)=10,OR(iso,AND(MID(t,3,1)=\".\",MID(t,6,1)=\".\")))),dt,IFERROR(DATE(yy,mm,dd),0),IF(AND(ok,dd>=1,mm>=1,mm<=12,DAY(dt)=dd,MONTH(dt)=mm),dt,\"ошибка\"))),\"ошибка\"))"], ["=IF(ISNUMBER(H4),EDATE(DATE(YEAR(H4),MONTH(H4),1),-1),\"\")"], ["='Настройки'!C4"], ["='Настройки'!B5"]]}}
+{"step": 20, "command": "selection.set", "params": {"range": "H14:H513", "active": "H14"}}
+{"step": 21, "command": "range.fill", "params": {"range": "H14:H513", "input": "=IF(A14=\"\",\"\",IFERROR(IF(ISNUMBER(A14),A14,LET(t,TRIM(A14),sl,ISNUMBER(FIND(\"/\",t)),iso,MID(t,5,1)=\"-\",pa,IFERROR(FIND(\"/\",t),0),pb,IFERROR(FIND(\"/\",t,pa+1),0),dd,IF(sl,IFERROR(VALUE(MID(t,pa+1,pb-pa-1)),0),IF(iso,IFERROR(VALUE(MID(t,9,2)),0),IFERROR(VALUE(LEFT(t,2)),0))),mm,IF(sl,IFERROR(VALUE(LEFT(t,pa-1)),0),IF(iso,IFERROR(VALUE(MID(t,6,2)),0),IFERROR(VALUE(MID(t,4,2)),0))),yy,IF(sl,IFERROR(VALUE(MID(t,pb+1,4)),0),IF(iso,IFERROR(VALUE(LEFT(t,4)),0),IFERROR(VALUE(MID(t,7,4)),0))),ok,IF(sl,AND(pb>0,LEN(t)-pb=4),AND(LEN(t)=10,OR(iso,AND(MID(t,3,1)=\".\",MID(t,6,1)=\".\")))),dt,IFERROR(DATE(yy,mm,dd),0),IF(AND(ok,dd>=1,mm>=1,mm<=12,DAY(dt)=dd,MONTH(dt)=mm),dt,\"ошибка\"))),\"ошибка\"))"}}
+{"step": 22, "command": "selection.set", "params": {"range": "I14:I513", "active": "I14"}}
+{"step": 23, "command": "range.fill", "params": {"range": "I14:I513", "input": "=IF(AND(A14=\"\",B14=\"\",C14=\"\"),\"\",IF(NOT(ISNUMBER(H14)),\"Ошибка: дата не распознана — дд.мм.гггг или Ctrl+;\",IF(COUNTIF('Настройки'!$A$8:$A$9,B14)=0,\"Ошибка: выберите плательщика A или B\",IF(NOT(ISNUMBER(C14)),\"Ошибка: сумма должна быть числом\",IF(C14<=0,\"Ошибка: сумма должна быть больше 0\",IF(H14>$H$4,\"Не учтено: дата позже даты расчёта\",IF(H14<$H$6,\"Не учтено: дата раньше начала учёта\",\"учтено\")))))))"}}
+{"step": 24, "command": "selection.set", "params": {"range": "E14:E513", "active": "E14"}}
+{"step": 25, "command": "range.fill", "params": {"range": "E14:E513", "input": "=IF(OR(I14=\"\",I14=\"учтено\"),\"\",I14)"}}
+{"step": 26, "command": "home.bold", "params": {"range": "A1", "on": true}}
+{"step": 27, "command": "home.fontSize", "params": {"range": "A1", "size": 14}}
+{"step": 28, "command": "home.bold", "params": {"range": "A4:A10", "on": true}}
+{"step": 29, "command": "home.bold", "params": {"range": "B9:B10", "on": true}}
+{"step": 30, "command": "home.bold", "params": {"range": "D4:D6", "on": true}}
+{"step": 31, "command": "home.fillColor", "params": {"range": "B4", "color": "#FFF2CC"}}
+{"step": 32, "command": "home.borders", "params": {"range": "B4", "preset": "thickOutside"}}
+{"step": 33, "command": "home.fillColor", "params": {"range": "B5:B10", "color": "#EDEDED"}}
+{"step": 34, "command": "home.fillColor", "params": {"range": "E4:E6", "color": "#EDEDED"}}
+{"step": 35, "command": "home.borders", "params": {"range": "A4:B10", "preset": "all", "style": "thin"}}
+{"step": 36, "command": "home.borders", "params": {"range": "D4:E6", "preset": "all", "style": "thin"}}
+{"step": 37, "command": "home.numberFormat", "params": {"range": "B6:B10", "code": "#,##0.00"}}
+{"step": 38, "command": "home.numberFormat", "params": {"range": "E4:E5", "code": "#,##0.00"}}
+{"step": 39, "command": "home.fontColor", "params": {"range": "C4", "color": "#C00000"}}
+{"step": 40, "command": "home.fontColor", "params": {"range": "D7", "color": "#C00000"}}
+{"step": 41, "command": "home.bold", "params": {"range": "D7", "on": true}}
+{"step": 42, "command": "home.italic", "params": {"range": "A11", "on": true}}
+{"step": 43, "command": "home.bold", "params": {"range": "A13:E13", "on": true}}
+{"step": 44, "command": "home.fillColor", "params": {"range": "A13:E13", "color": "#DDEBF7"}}
+{"step": 45, "command": "home.borders", "params": {"range": "A13:E13", "preset": "all", "style": "thin"}}
+{"step": 46, "command": "home.rowHeight", "params": {"rows": "13:13", "height": 20}}
+{"step": 47, "command": "home.fillColor", "params": {"range": "A14:D513", "color": "#FFF2CC"}}
+{"step": 48, "command": "home.borders", "params": {"range": "A14:E513", "preset": "all", "style": "thin"}}
+{"step": 49, "command": "home.numberFormat", "params": {"range": "C14:C513", "code": "#,##0.00"}}
+{"step": 50, "command": "home.numberFormat", "params": {"range": "H4:H6", "code": "dd.mm.yyyy"}}
+{"step": 51, "command": "home.numberFormat", "params": {"range": "H14:H513", "code": "dd.mm.yyyy"}}
+{"step": 52, "command": "home.alignRight", "params": {"range": "A14:A513"}}
+{"step": 53, "command": "home.alignCenter", "params": {"range": "B14:B513"}}
+{"step": 54, "command": "home.fontColor", "params": {"range": "E14:E513", "color": "#C00000"}}
+{"step": 55, "command": "home.conditionalFormat", "params": {"range": "E14:E513", "rule": {"type": "beginsWith", "text": "Ошибка", "preset": "lightRedFillDarkRedText"}}}
+{"step": 56, "command": "home.conditionalFormat", "params": {"range": "B9", "rule": {"type": "expression", "formula": "=B9>0", "preset": "lightRedFillDarkRedText"}}}
+{"step": 57, "command": "home.conditionalFormat", "params": {"range": "B10", "rule": {"type": "expression", "formula": "=B10>0", "preset": "greenFill"}}}
+{"step": 58, "command": "home.columnWidth", "params": {"cols": "A:A", "chars": 28}}
+{"step": 59, "command": "home.columnWidth", "params": {"cols": "B:B", "chars": 14}}
+{"step": 60, "command": "home.columnWidth", "params": {"cols": "C:C", "chars": 14}}
+{"step": 61, "command": "home.columnWidth", "params": {"cols": "D:D", "chars": 42}}
+{"step": 62, "command": "home.columnWidth", "params": {"cols": "E:E", "chars": 50}}
+{"step": 63, "command": "data.validation", "params": {"range": "B4", "type": "custom", "formula1": "=OR(B4=\"\",ISNUMBER(B4),AND(LEN(B4)=10,MID(B4,3,1)=\".\",MID(B4,6,1)=\".\"),AND(LEN(B4)=10,MID(B4,5,1)=\"-\",MID(B4,8,1)=\"-\"))", "errorStyle": "stop", "errorTitle": "Расчёт на дату", "errorMessage": "Дата в виде дд.мм.гггг, например 15.11.2026."}}
+{"step": 64, "command": "data.validation", "params": {"range": "A14:A513", "type": "custom", "formula1": "=OR(A14=\"\",ISNUMBER(A14),AND(LEN(A14)=10,MID(A14,3,1)=\".\",MID(A14,6,1)=\".\"),AND(LEN(A14)=10,MID(A14,5,1)=\"-\",MID(A14,8,1)=\"-\"))", "errorStyle": "stop", "errorTitle": "Дата получения", "errorMessage": "Дата: дд.мм.гггг (например 15.10.2026) или Ctrl+; — сегодняшняя дата."}}
+{"step": 65, "command": "data.validation", "params": {"range": "B14:B513", "type": "list", "formula1": "='Настройки'!$A$8:$A$9", "dropdown": true, "errorStyle": "stop", "errorTitle": "Плательщик", "errorMessage": "Выберите плательщика из списка (A или B)."}}
+{"step": 66, "command": "data.validation", "params": {"range": "C14:C513", "type": "decimal", "operator": "greater", "formula1": "0", "errorStyle": "stop", "errorTitle": "Сумма", "errorMessage": "Сумма — положительное число."}}
+{"step": 67, "command": "home.hideColumns", "params": {"cols": "H:I"}}
+{"step": 68, "command": "view.freezePanes", "params": {"cell": "A14"}}
+{"step": 69, "command": "selection.set", "params": {"range": "A20"}}

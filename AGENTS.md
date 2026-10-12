@@ -40,6 +40,9 @@ global GridCraft settings, user environment variables or global agent/MCP config
   ids you need (e.g. `cell.set`, `home.bold`, `file.save`) and use the returned params verbatim.
   Locally, use `python scripts/catalog.py search <term>`.
 - Raising output limits (`MAX_MCP_OUTPUT_TOKENS` etc.) is not a substitute for selective discovery.
+- The same applies to reads: keep every MCP `read_range` small enough to come back in full
+  (split large scans into ranges of a few hundred cells). A reply replaced by a
+  `<persisted-output>` preview has not been seen: never report a result from a preview (Stage 05).
 
 ## Data policy (public repository)
 
