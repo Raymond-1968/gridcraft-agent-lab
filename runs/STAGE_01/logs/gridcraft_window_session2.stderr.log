@@ -1,0 +1,5 @@
+2026-10-12T20:07:19.992Z INFO  [main] gridcraft::graphics: graphics: DirectX 12 adapter "NVIDIA GeForce RTX 4060 Ti" (DiscreteGpu, driver "32.0.16.1742"), limits ok: true
+2026-10-12T20:07:19.992Z INFO  [main] gridcraft::graphics: graphics: DirectX 12 adapter "NVIDIA GeForce RTX 4060 Ti" (DiscreteGpu, driver "32.0.16.1742"), limits ok: true
+2026-10-12T20:07:19.992Z INFO  [main] gridcraft::graphics: graphics: DirectX 12 adapter "Microsoft Basic Render Driver" (Cpu, driver "10.0.26100.9549"), limits ok: true
+2026-10-12T20:07:20.011Z INFO  [main] gridcraft::graphics: graphics: 3 DirectX 12 adapter(s) [Dx12Adapter { device_type: DiscreteGpu, meets_limits: true }, Dx12Adapter { device_type: DiscreteGpu, meets_limits: true }, Dx12Adapter { device_type: Cpu, meets_limits: true }], backends Backends(DX12)
+2026-10-12T20:07:20.250Z INFO  [main] gridcraft::control_server: control channel listening on 127.0.0.1:7991

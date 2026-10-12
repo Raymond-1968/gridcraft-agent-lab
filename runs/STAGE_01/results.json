@@ -1,0 +1,205 @@
+{
+ "verdict": "PASS",
+ "port": 7991,
+ "finished": "2026-10-12T23:07:20.656",
+ "checks": [
+  {
+   "stage": "0-preconditions",
+   "check": "control port free before launch",
+   "status": "PASS",
+   "detail": "127.0.0.1:7991"
+  },
+  {
+   "stage": "1-launch-window",
+   "check": "window started, control channel listening",
+   "status": "PASS",
+   "detail": "pid=26204"
+  },
+  {
+   "stage": "1-launch-window",
+   "check": "control channel document.inspect",
+   "status": "PASS",
+   "detail": "{\"activeCell\": \"A1\", \"activeSheet\": 0, \"calcMode\": \"Automatic\", \"dirty\": false, \"mode\": \"Ready\", \"names\": [], \"path\": null, \"redo\": [], \"selection\": \"A1\", \"sheets\": [{\"autofilter\": null, \"cells\": 0, \"charts\": [], \"comments\": 0, \"conditionalFormats\": 0, \"freeze\": null, \"images\": 0, \"merges\": [], \"nam"
+  },
+  {
+   "stage": "1-launch-window",
+   "check": "control channel engine.commands",
+   "status": "PASS",
+   "detail": "352 commands from live window"
+  },
+  {
+   "stage": "2-mcp-connect",
+   "check": "initialize",
+   "status": "PASS",
+   "detail": "{\"name\": \"gridcraft\", \"title\": \"GridCraft\", \"version\": \"0.6.1\"}"
+  },
+  {
+   "stage": "2-mcp-connect",
+   "check": "tools/list",
+   "status": "PASS",
+   "detail": "execute_command, list_commands, inspect_workbook, read_range, write_range, set_cell, get_cell, evaluate_formula, select, format_range, insert_chart, create_table, sort_range, filter, open_workbook, save_workbook, new_workbook, undo, redo, screenshot, list_functions"
+  },
+  {
+   "stage": "2-mcp-connect",
+   "check": "inspect_workbook on start-up book",
+   "status": "PASS",
+   "detail": "{\"activeCell\": \"A1\", \"activeSheet\": 0, \"calcMode\": \"Automatic\", \"dirty\": false, \"mode\": \"Ready\", \"names\": [], \"path\": null, \"redo\": [], \"selection\": \"A1\", \"sheets\": [{\"autofilter\": null, \"cells\": 0, \"charts\": [], \"comments\": 0, \"conditionalFormats\": 0, \"freeze\": null, \"images\": 0, \"merges\": [], \"nam"
+  },
+  {
+   "stage": "2-mcp-connect",
+   "check": "start-up book is empty",
+   "status": "PASS",
+   "detail": "{\"range\": null, \"values\": []}"
+  },
+  {
+   "stage": "3-write-and-calc",
+   "check": "A3 formula stored",
+   "status": "PASS",
+   "detail": "{\"cell\": \"A3\", \"comment\": null, \"formula\": \"=SUM(A1:A2)\", \"hyperlink\": null, \"input\": \"=SUM(A1:A2)\", \"merge\": null, \"picture\": null, \"spill\": null, \"spilledFrom\": null, \"style\": {\"align\": {\"h\": \"General\", \"indent\": 0, \"rotation\": 0, \"shrink\": false, \"v\": \"Bottom\", \"wrap\": false}, \"borders\": {\"bottom"
+  },
+  {
+   "stage": "3-write-and-calc",
+   "check": "A3 computed by GridCraft = 42.5",
+   "status": "PASS",
+   "detail": "value=42.5"
+  },
+  {
+   "stage": "3-write-and-calc",
+   "check": "read_range A1:A3",
+   "status": "PASS",
+   "detail": "{\"range\": \"A1:A3\", \"sheet\": \"Sheet1\", \"values\": [[12.5], [30.0], [42.5]]}"
+  },
+  {
+   "stage": "4-format",
+   "check": "A3 bold",
+   "status": "PASS",
+   "detail": "{\"cell\": \"A3\", \"comment\": null, \"formula\": \"=SUM(A1:A2)\", \"hyperlink\": null, \"input\": \"=SUM(A1:A2)\", \"merge\": null, \"picture\": null, \"spill\": null, \"spilledFrom\": null, \"style\": {\"align\": {\"h\": \"General\", \"indent\": 0, \"rotation\": 0, \"shrink\": false, \"v\": \"Bottom\", \"wrap\": false}, \"borders\": {\"bottom\": {\"color\": \"Auto\", \"style\": \"None\"}, \"diag_down\": {\"color\": \"Auto\", \"style\": \"None\"}, \"diag_up\": {"
+  },
+  {
+   "stage": "4-format",
+   "check": "A3 displayed as 42.50",
+   "status": "PASS",
+   "detail": "text='42.50' (format 0.00)"
+  },
+  {
+   "stage": "4-format",
+   "check": "A3 fill #FFF2CC",
+   "status": "PASS",
+   "detail": "fill.fg.Rgb=16773836"
+  },
+  {
+   "stage": "5-undo-redo",
+   "check": "edit A2=100 -> A3=112.5",
+   "status": "PASS",
+   "detail": "A3=112.5"
+  },
+  {
+   "stage": "5-undo-redo",
+   "check": "undo -> A3=42.5",
+   "status": "PASS",
+   "detail": "A3=42.5"
+  },
+  {
+   "stage": "5-undo-redo",
+   "check": "redo -> A3=112.5",
+   "status": "PASS",
+   "detail": "A3=112.5"
+  },
+  {
+   "stage": "5-undo-redo",
+   "check": "undo again -> A3=42.5",
+   "status": "PASS",
+   "detail": "A3=42.5"
+  },
+  {
+   "stage": "5-undo-redo",
+   "check": "italic applied",
+   "status": "PASS",
+   "detail": "home.italic"
+  },
+  {
+   "stage": "5-undo-redo",
+   "check": "undo removes italic",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "stage": "5-undo-redo",
+   "check": "redo restores italic",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "stage": "6-save",
+   "check": "save_workbook",
+   "status": "PASS",
+   "detail": "workbooks\\stage01_smoke_test.xlsx size=4134 reply={\"bytes\": 4134, \"path\": \"C:\\\\repos\\\\gridcraft-agent-lab\\\\workbooks\\\\stage01_smoke_test.xlsx\"}"
+  },
+  {
+   "stage": "6-save",
+   "check": "screenshot after save",
+   "status": "PASS",
+   "detail": "runs\\STAGE_01\\screenshots\\stage01_session1_after_save.png"
+  },
+  {
+   "stage": "6-save",
+   "check": "engine.journal captured",
+   "status": "PASS",
+   "detail": "logs/engine_journal_session1.json"
+  },
+  {
+   "stage": "6-save",
+   "check": "window quit via app.quit",
+   "status": "PASS",
+   "detail": "reply={'id': 1004, 'ok': True, 'result': None} exit=0"
+  },
+  {
+   "stage": "7-reopen",
+   "check": "open_workbook in fresh process",
+   "status": "PASS",
+   "detail": "{\"index\": 0, \"sheets\": [\"Sheet1\"], \"title\": \"stage01_smoke_test.xlsx\", \"warnings\": []}"
+  },
+  {
+   "stage": "7-reopen",
+   "check": "reopened A3 formula",
+   "status": "PASS",
+   "detail": "{\"cell\": \"A3\", \"comment\": null, \"formula\": \"=SUM(A1:A2)\", \"hyperlink\": null, \"input\": \"=SUM(A1:A2)\", \"merge\": null, \"picture\": null, \"spill\": null, \"spilledFrom\": null, \"style\": {\"align\": {\"h\": \"General\", \"indent\": 0, \"rotation\": 0, \"shrink\": false, \"v\": \"Bottom\", \"wrap\": false}, \"borders\": {\"bottom\": {\"color\": \"Auto\", \"style\": \"None\"}, \"diag_down\": {\"color\": \"Auto\", \"style\": \"None\"}, \"diag_up\": {"
+  },
+  {
+   "stage": "7-reopen",
+   "check": "reopened A3 value = 42.5",
+   "status": "PASS",
+   "detail": "value=42.5"
+  },
+  {
+   "stage": "7-reopen",
+   "check": "reopened A3 bold + italic",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "stage": "7-reopen",
+   "check": "reopened A3 displayed 42.50",
+   "status": "PASS",
+   "detail": "text='42.50'"
+  },
+  {
+   "stage": "7-reopen",
+   "check": "reopened A3 fill #FFF2CC",
+   "status": "PASS",
+   "detail": "fill.fg.Rgb=16773836"
+  },
+  {
+   "stage": "7-reopen",
+   "check": "reopened values A1:A3",
+   "status": "PASS",
+   "detail": "{\"range\": \"A1:A3\", \"sheet\": \"Sheet1\", \"values\": [[12.5], [30.0], [42.5]]}"
+  },
+  {
+   "stage": "7-reopen",
+   "check": "screenshot of reopened result",
+   "status": "PASS",
+   "detail": "runs\\STAGE_01\\screenshots\\stage01_result_reopened.png"
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+# Public repository: never commit workbooks, incoming data or local settings.
+
+# Workbooks (any spreadsheet file, anywhere)
+*.xlsx
+*.xlsm
+*.xlsb
+*.xls
+*.xltx
+*.ods
+*.csv
+*.tsv
+
+# Working books, incoming data ("поступления"), private material
+workbooks/
+inbox/
+incoming/
+private/
+
+# Scratch / runtime
+tmp/
+
+# Local agent and editor settings
+.claude/settings.local.json
+.mcp.local.json
+.env
+.env.*
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store

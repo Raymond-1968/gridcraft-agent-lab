@@ -1,0 +1,3080 @@
+[
+  {
+    "category": "MathTrig",
+    "description": "Absolute value of a number.",
+    "name": "ABS",
+    "signature": "ABS(number)"
+  },
+  {
+    "category": "Financial",
+    "description": "Accrued interest of a security paying periodic interest.",
+    "name": "ACCRINT",
+    "signature": "ACCRINT(issue, first_interest, settlement, rate, par, frequency, [basis], [calc_method])"
+  },
+  {
+    "category": "Financial",
+    "description": "Accrued interest of a security paying interest at maturity.",
+    "name": "ACCRINTM",
+    "signature": "ACCRINTM(issue, settlement, rate, [par], [basis])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Arccosine in radians.",
+    "name": "ACOS",
+    "signature": "ACOS(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Inverse hyperbolic cosine.",
+    "name": "ACOSH",
+    "signature": "ACOSH(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Arccotangent in radians (0 to pi).",
+    "name": "ACOT",
+    "signature": "ACOT(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Inverse hyperbolic cotangent.",
+    "name": "ACOTH",
+    "signature": "ACOTH(number)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Builds a cell address as text from row and column numbers.",
+    "name": "ADDRESS",
+    "signature": "ADDRESS(row_num, column_num, [abs_num], [a1], [sheet_text])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "An aggregate that can skip hidden rows and errors.",
+    "name": "AGGREGATE",
+    "signature": "AGGREGATE(function_num, options, ref1, ...)"
+  },
+  {
+    "category": "Financial",
+    "description": "French degressive depreciation with a life-based coefficient.",
+    "name": "AMORDEGRC",
+    "signature": "AMORDEGRC(cost, date_purchased, first_period, salvage, period, rate, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "French linear depreciation prorated for the first period.",
+    "name": "AMORLINC",
+    "signature": "AMORLINC(cost, date_purchased, first_period, salvage, period, rate, [basis])"
+  },
+  {
+    "category": "Logical",
+    "description": "TRUE when every argument is TRUE.",
+    "name": "AND",
+    "signature": "AND(logical1, [logical2], ...)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Converts Roman numerals to a number.",
+    "name": "ARABIC",
+    "signature": "ARABIC(text)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Number of areas in a reference.",
+    "name": "AREAS",
+    "signature": "AREAS(reference)"
+  },
+  {
+    "category": "Text",
+    "description": "Converts an array to text, either as a comma list or as a strict array constant.",
+    "name": "ARRAYTOTEXT",
+    "signature": "ARRAYTOTEXT(array, [format])"
+  },
+  {
+    "category": "Text",
+    "description": "Converts full-width characters to half-width (no change for single-byte text).",
+    "name": "ASC",
+    "signature": "ASC(text)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Arcsine in radians.",
+    "name": "ASIN",
+    "signature": "ASIN(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Inverse hyperbolic sine.",
+    "name": "ASINH",
+    "signature": "ASINH(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Arctangent in radians.",
+    "name": "ATAN",
+    "signature": "ATAN(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Angle of the point (x, y) from the x-axis in radians.",
+    "name": "ATAN2",
+    "signature": "ATAN2(x_num, y_num)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Inverse hyperbolic tangent.",
+    "name": "ATANH",
+    "signature": "ATANH(number)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Average absolute deviation from the mean.",
+    "name": "AVEDEV",
+    "signature": "AVEDEV(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Arithmetic mean of the numbers.",
+    "name": "AVERAGE",
+    "signature": "AVERAGE(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Mean counting text as 0 and logical values as 1 or 0.",
+    "name": "AVERAGEA",
+    "signature": "AVERAGEA(value1, [value2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Average of the cells that meet a condition.",
+    "name": "AVERAGEIF",
+    "signature": "AVERAGEIF(range, criteria, [average_range])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Average of the cells that meet every condition.",
+    "name": "AVERAGEIFS",
+    "signature": "AVERAGEIFS(average_range, criteria_range1, criteria1, ...)"
+  },
+  {
+    "category": "Text",
+    "description": "Spells out a number in Thai words with Baht.",
+    "name": "BAHTTEXT",
+    "signature": "BAHTTEXT(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Writes a number in another base, padded with zeros.",
+    "name": "BASE",
+    "signature": "BASE(number, radix, [min_length])"
+  },
+  {
+    "category": "Engineering",
+    "description": "Modified Bessel function of the first kind, I_n(x).",
+    "name": "BESSELI",
+    "signature": "BESSELI(x, n)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Bessel function of the first kind, J_n(x).",
+    "name": "BESSELJ",
+    "signature": "BESSELJ(x, n)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Modified Bessel function of the second kind, K_n(x).",
+    "name": "BESSELK",
+    "signature": "BESSELK(x, n)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Bessel function of the second kind, Y_n(x).",
+    "name": "BESSELY",
+    "signature": "BESSELY(x, n)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Beta distribution density or probability.",
+    "name": "BETA.DIST",
+    "signature": "BETA.DIST(x, alpha, beta, cumulative, [A], [B])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Inverse of the cumulative beta distribution.",
+    "name": "BETA.INV",
+    "signature": "BETA.INV(probability, alpha, beta, [A], [B])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Cumulative beta probability.",
+    "name": "BETADIST",
+    "signature": "BETADIST(x, alpha, beta, [A], [B])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Inverse of the cumulative beta distribution.",
+    "name": "BETAINV",
+    "signature": "BETAINV(probability, alpha, beta, [A], [B])"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts a binary number to decimal.",
+    "name": "BIN2DEC",
+    "signature": "BIN2DEC(number)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts a binary number to hexadecimal.",
+    "name": "BIN2HEX",
+    "signature": "BIN2HEX(number, [places])"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts a binary number to octal.",
+    "name": "BIN2OCT",
+    "signature": "BIN2OCT(number, [places])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Binomial probability.",
+    "name": "BINOM.DIST",
+    "signature": "BINOM.DIST(number_s, trials, probability_s, cumulative)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Probability of a number of successes falling in a range.",
+    "name": "BINOM.DIST.RANGE",
+    "signature": "BINOM.DIST.RANGE(trials, probability_s, number_s, [number_s2])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Smallest success count whose cumulative binomial probability reaches alpha.",
+    "name": "BINOM.INV",
+    "signature": "BINOM.INV(trials, probability_s, alpha)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Binomial probability.",
+    "name": "BINOMDIST",
+    "signature": "BINOMDIST(number_s, trials, probability_s, cumulative)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Bitwise AND of two non-negative integers.",
+    "name": "BITAND",
+    "signature": "BITAND(number1, number2)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Shifts the bits of a number left (right for negative shifts).",
+    "name": "BITLSHIFT",
+    "signature": "BITLSHIFT(number, shift_amount)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Bitwise OR of two non-negative integers.",
+    "name": "BITOR",
+    "signature": "BITOR(number1, number2)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Shifts the bits of a number right (left for negative shifts).",
+    "name": "BITRSHIFT",
+    "signature": "BITRSHIFT(number, shift_amount)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Bitwise exclusive OR of two non-negative integers.",
+    "name": "BITXOR",
+    "signature": "BITXOR(number1, number2)"
+  },
+  {
+    "category": "Logical",
+    "description": "Applies a LAMBDA to each column.",
+    "name": "BYCOL",
+    "signature": "BYCOL(array, lambda)"
+  },
+  {
+    "category": "Logical",
+    "description": "Applies a LAMBDA to each row.",
+    "name": "BYROW",
+    "signature": "BYROW(array, lambda)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Rounds a number up to a multiple of significance.",
+    "name": "CEILING",
+    "signature": "CEILING(number, significance)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Rounds a number up to the nearest integer or multiple.",
+    "name": "CEILING.MATH",
+    "signature": "CEILING.MATH(number, [significance], [mode])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Rounds a number toward positive infinity to a multiple.",
+    "name": "CEILING.PRECISE",
+    "signature": "CEILING.PRECISE(number, [significance])"
+  },
+  {
+    "category": "Information",
+    "description": "Information about a cell.",
+    "name": "CELL",
+    "signature": "CELL(info_type, [reference])"
+  },
+  {
+    "category": "Text",
+    "description": "Returns the character for a code from the Windows-1252 character set.",
+    "name": "CHAR",
+    "signature": "CHAR(number)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Right-tailed chi-squared probability.",
+    "name": "CHIDIST",
+    "signature": "CHIDIST(x, deg_freedom)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Inverse of the right-tailed chi-squared distribution.",
+    "name": "CHIINV",
+    "signature": "CHIINV(probability, deg_freedom)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Chi-squared density or left-tailed probability.",
+    "name": "CHISQ.DIST",
+    "signature": "CHISQ.DIST(x, deg_freedom, cumulative)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Right-tailed chi-squared probability.",
+    "name": "CHISQ.DIST.RT",
+    "signature": "CHISQ.DIST.RT(x, deg_freedom)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Inverse of the left-tailed chi-squared distribution.",
+    "name": "CHISQ.INV",
+    "signature": "CHISQ.INV(probability, deg_freedom)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Inverse of the right-tailed chi-squared distribution.",
+    "name": "CHISQ.INV.RT",
+    "signature": "CHISQ.INV.RT(probability, deg_freedom)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Chi-squared test of independence.",
+    "name": "CHISQ.TEST",
+    "signature": "CHISQ.TEST(actual_range, expected_range)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Chi-squared test of independence.",
+    "name": "CHITEST",
+    "signature": "CHITEST(actual_range, expected_range)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Picks a value from the list by its position.",
+    "name": "CHOOSE",
+    "signature": "CHOOSE(index_num, value1, [value2], ...)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Picks columns of an array by position (negative counts from the end).",
+    "name": "CHOOSECOLS",
+    "signature": "CHOOSECOLS(array, col_num1, [col_num2], ...)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Picks rows of an array by position (negative counts from the end).",
+    "name": "CHOOSEROWS",
+    "signature": "CHOOSEROWS(array, row_num1, [row_num2], ...)"
+  },
+  {
+    "category": "Text",
+    "description": "Removes non-printable control characters from text.",
+    "name": "CLEAN",
+    "signature": "CLEAN(text)"
+  },
+  {
+    "category": "Text",
+    "description": "Returns the Windows-1252 code of the first character of a text.",
+    "name": "CODE",
+    "signature": "CODE(text)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Column number of a reference.",
+    "name": "COLUMN",
+    "signature": "COLUMN([reference])"
+  },
+  {
+    "category": "Lookup",
+    "description": "Counts the columns in an array or range.",
+    "name": "COLUMNS",
+    "signature": "COLUMNS(array)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Number of combinations without repetition.",
+    "name": "COMBIN",
+    "signature": "COMBIN(number, number_chosen)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Number of combinations with repetition.",
+    "name": "COMBINA",
+    "signature": "COMBINA(number, number_chosen)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Builds a complex number as text from real and imaginary parts.",
+    "name": "COMPLEX",
+    "signature": "COMPLEX(real_num, i_num, [suffix])"
+  },
+  {
+    "category": "Text",
+    "description": "Joins text from values and every cell of ranges, without a separator.",
+    "name": "CONCAT",
+    "signature": "CONCAT(text1, [text2], ...)"
+  },
+  {
+    "category": "Text",
+    "description": "Joins several text values into one.",
+    "name": "CONCATENATE",
+    "signature": "CONCATENATE(text1, [text2], ...)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Confidence interval half-width using the normal distribution.",
+    "name": "CONFIDENCE",
+    "signature": "CONFIDENCE(alpha, standard_dev, size)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Confidence interval half-width using the normal distribution.",
+    "name": "CONFIDENCE.NORM",
+    "signature": "CONFIDENCE.NORM(alpha, standard_dev, size)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Confidence interval half-width using Student's t distribution.",
+    "name": "CONFIDENCE.T",
+    "signature": "CONFIDENCE.T(alpha, standard_dev, size)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts a measurement from one unit to another.",
+    "name": "CONVERT",
+    "signature": "CONVERT(number, from_unit, to_unit)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Correlation coefficient of two data sets.",
+    "name": "CORREL",
+    "signature": "CORREL(array1, array2)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Cosine of an angle in radians.",
+    "name": "COS",
+    "signature": "COS(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Hyperbolic cosine.",
+    "name": "COSH",
+    "signature": "COSH(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Cotangent of an angle in radians.",
+    "name": "COT",
+    "signature": "COT(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Hyperbolic cotangent.",
+    "name": "COTH",
+    "signature": "COTH(number)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Counts the numbers.",
+    "name": "COUNT",
+    "signature": "COUNT(value1, [value2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Counts the non-empty values.",
+    "name": "COUNTA",
+    "signature": "COUNTA(value1, [value2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Counts empty cells and empty text in a range.",
+    "name": "COUNTBLANK",
+    "signature": "COUNTBLANK(range)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Counts the cells that meet a condition.",
+    "name": "COUNTIF",
+    "signature": "COUNTIF(range, criteria)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Counts the cells that meet every condition.",
+    "name": "COUNTIFS",
+    "signature": "COUNTIFS(criteria_range1, criteria1, ...)"
+  },
+  {
+    "category": "Financial",
+    "description": "Days from the start of the coupon period to settlement.",
+    "name": "COUPDAYBS",
+    "signature": "COUPDAYBS(settlement, maturity, frequency, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Days in the coupon period that contains settlement.",
+    "name": "COUPDAYS",
+    "signature": "COUPDAYS(settlement, maturity, frequency, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Days from settlement to the next coupon date.",
+    "name": "COUPDAYSNC",
+    "signature": "COUPDAYSNC(settlement, maturity, frequency, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Next coupon date after settlement.",
+    "name": "COUPNCD",
+    "signature": "COUPNCD(settlement, maturity, frequency, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Number of coupons payable between settlement and maturity.",
+    "name": "COUPNUM",
+    "signature": "COUPNUM(settlement, maturity, frequency, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Previous coupon date on or before settlement.",
+    "name": "COUPPCD",
+    "signature": "COUPPCD(settlement, maturity, frequency, [basis])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Population covariance of paired values.",
+    "name": "COVAR",
+    "signature": "COVAR(array1, array2)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Population covariance of paired values.",
+    "name": "COVARIANCE.P",
+    "signature": "COVARIANCE.P(array1, array2)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Sample covariance of paired values.",
+    "name": "COVARIANCE.S",
+    "signature": "COVARIANCE.S(array1, array2)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Smallest success count whose cumulative binomial probability reaches alpha.",
+    "name": "CRITBINOM",
+    "signature": "CRITBINOM(trials, probability_s, alpha)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Cosecant of an angle in radians.",
+    "name": "CSC",
+    "signature": "CSC(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Hyperbolic cosecant.",
+    "name": "CSCH",
+    "signature": "CSCH(number)"
+  },
+  {
+    "category": "Cube",
+    "description": "Returns a key performance indicator property from a cube (no cube connections; #N/A).",
+    "name": "CUBEKPIMEMBER",
+    "signature": "CUBEKPIMEMBER(connection, kpi_name, kpi_property, [caption])"
+  },
+  {
+    "category": "Cube",
+    "description": "Returns a member or tuple from a cube (no cube connections; #N/A).",
+    "name": "CUBEMEMBER",
+    "signature": "CUBEMEMBER(connection, member_expression, [caption])"
+  },
+  {
+    "category": "Cube",
+    "description": "Returns a property of a cube member (no cube connections; #N/A).",
+    "name": "CUBEMEMBERPROPERTY",
+    "signature": "CUBEMEMBERPROPERTY(connection, member_expression, property)"
+  },
+  {
+    "category": "Cube",
+    "description": "Returns the nth member of a cube set (no cube connections; #N/A).",
+    "name": "CUBERANKEDMEMBER",
+    "signature": "CUBERANKEDMEMBER(connection, set_expression, rank, [caption])"
+  },
+  {
+    "category": "Cube",
+    "description": "Defines a set of cube members (no cube connections; #N/A).",
+    "name": "CUBESET",
+    "signature": "CUBESET(connection, set_expression, [caption], [sort_order], [sort_by])"
+  },
+  {
+    "category": "Cube",
+    "description": "Counts the items in a cube set (no cube connections; #N/A).",
+    "name": "CUBESETCOUNT",
+    "signature": "CUBESETCOUNT(set)"
+  },
+  {
+    "category": "Cube",
+    "description": "Returns an aggregated value from a cube (no cube connections; #N/A).",
+    "name": "CUBEVALUE",
+    "signature": "CUBEVALUE(connection, [member_expression1], ...)"
+  },
+  {
+    "category": "Financial",
+    "description": "Total interest paid between two periods.",
+    "name": "CUMIPMT",
+    "signature": "CUMIPMT(rate, nper, pv, start_period, end_period, type)"
+  },
+  {
+    "category": "Financial",
+    "description": "Total principal repaid between two periods.",
+    "name": "CUMPRINC",
+    "signature": "CUMPRINC(rate, nper, pv, start_period, end_period, type)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Builds a date serial number from a year, month and day.",
+    "name": "DATE",
+    "signature": "DATE(year, month, day)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Counts whole years, months or days between two dates. unit: Y, M, D, MD, YM or YD.",
+    "name": "DATEDIF",
+    "signature": "DATEDIF(start_date, end_date, unit)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Converts a date written as text into a date serial number.",
+    "name": "DATEVALUE",
+    "signature": "DATEVALUE(date_text)"
+  },
+  {
+    "category": "Database",
+    "description": "Averages the numbers in a field of the records that meet the criteria.",
+    "name": "DAVERAGE",
+    "signature": "DAVERAGE(database, field, criteria)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the day of the month of a date.",
+    "name": "DAY",
+    "signature": "DAY(serial_number)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the number of days between two dates.",
+    "name": "DAYS",
+    "signature": "DAYS(end_date, start_date)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Counts days between two dates on a 360-day year (US or European method).",
+    "name": "DAYS360",
+    "signature": "DAYS360(start_date, end_date, [method])"
+  },
+  {
+    "category": "Financial",
+    "description": "Fixed-declining-balance depreciation for a period.",
+    "name": "DB",
+    "signature": "DB(cost, salvage, life, period, [month])"
+  },
+  {
+    "category": "Text",
+    "description": "Converts half-width characters to full-width (no change in this locale).",
+    "name": "DBCS",
+    "signature": "DBCS(text)"
+  },
+  {
+    "category": "Database",
+    "description": "Counts numeric cells in a field of the matching records (or the matching records).",
+    "name": "DCOUNT",
+    "signature": "DCOUNT(database, [field], criteria)"
+  },
+  {
+    "category": "Database",
+    "description": "Counts non-blank cells in a field of the matching records (or the matching records).",
+    "name": "DCOUNTA",
+    "signature": "DCOUNTA(database, [field], criteria)"
+  },
+  {
+    "category": "Financial",
+    "description": "Double-declining-balance (or other factor) depreciation for a period.",
+    "name": "DDB",
+    "signature": "DDB(cost, salvage, life, period, [factor])"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts a decimal number to binary.",
+    "name": "DEC2BIN",
+    "signature": "DEC2BIN(number, [places])"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts a decimal number to hexadecimal.",
+    "name": "DEC2HEX",
+    "signature": "DEC2HEX(number, [places])"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts a decimal number to octal.",
+    "name": "DEC2OCT",
+    "signature": "DEC2OCT(number, [places])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Reads text in a given base as a number.",
+    "name": "DECIMAL",
+    "signature": "DECIMAL(text, radix)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Converts radians to degrees.",
+    "name": "DEGREES",
+    "signature": "DEGREES(angle)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Returns 1 when two numbers are equal, otherwise 0.",
+    "name": "DELTA",
+    "signature": "DELTA(number1, [number2])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Sum of squared deviations from the mean.",
+    "name": "DEVSQ",
+    "signature": "DEVSQ(number1, [number2], ...)"
+  },
+  {
+    "category": "Database",
+    "description": "Returns the field value of the single record that meets the criteria.",
+    "name": "DGET",
+    "signature": "DGET(database, field, criteria)"
+  },
+  {
+    "category": "Financial",
+    "description": "Discount rate of a security.",
+    "name": "DISC",
+    "signature": "DISC(settlement, maturity, pr, redemption, [basis])"
+  },
+  {
+    "category": "Database",
+    "description": "Largest number in a field of the matching records.",
+    "name": "DMAX",
+    "signature": "DMAX(database, field, criteria)"
+  },
+  {
+    "category": "Database",
+    "description": "Smallest number in a field of the matching records.",
+    "name": "DMIN",
+    "signature": "DMIN(database, field, criteria)"
+  },
+  {
+    "category": "Text",
+    "description": "Formats a number as currency text.",
+    "name": "DOLLAR",
+    "signature": "DOLLAR(number, [decimals])"
+  },
+  {
+    "category": "Financial",
+    "description": "Converts a fractional price notation to a decimal number.",
+    "name": "DOLLARDE",
+    "signature": "DOLLARDE(fractional_dollar, fraction)"
+  },
+  {
+    "category": "Financial",
+    "description": "Converts a decimal price to fractional notation.",
+    "name": "DOLLARFR",
+    "signature": "DOLLARFR(decimal_dollar, fraction)"
+  },
+  {
+    "category": "Database",
+    "description": "Multiplies the numbers in a field of the matching records.",
+    "name": "DPRODUCT",
+    "signature": "DPRODUCT(database, field, criteria)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Removes rows or columns from the start (or end) of an array.",
+    "name": "DROP",
+    "signature": "DROP(array, rows, [columns])"
+  },
+  {
+    "category": "Database",
+    "description": "Sample standard deviation of a field over the matching records.",
+    "name": "DSTDEV",
+    "signature": "DSTDEV(database, field, criteria)"
+  },
+  {
+    "category": "Database",
+    "description": "Population standard deviation of a field over the matching records.",
+    "name": "DSTDEVP",
+    "signature": "DSTDEVP(database, field, criteria)"
+  },
+  {
+    "category": "Database",
+    "description": "Adds the numbers in a field of the records that meet the criteria.",
+    "name": "DSUM",
+    "signature": "DSUM(database, field, criteria)"
+  },
+  {
+    "category": "Financial",
+    "description": "Macaulay duration of a security with periodic interest.",
+    "name": "DURATION",
+    "signature": "DURATION(settlement, maturity, coupon, yld, frequency, [basis])"
+  },
+  {
+    "category": "Database",
+    "description": "Sample variance of a field over the matching records.",
+    "name": "DVAR",
+    "signature": "DVAR(database, field, criteria)"
+  },
+  {
+    "category": "Database",
+    "description": "Population variance of a field over the matching records.",
+    "name": "DVARP",
+    "signature": "DVARP(database, field, criteria)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the date a number of months before or after a date.",
+    "name": "EDATE",
+    "signature": "EDATE(start_date, months)"
+  },
+  {
+    "category": "Financial",
+    "description": "Effective annual rate from a nominal rate and compounding periods.",
+    "name": "EFFECT",
+    "signature": "EFFECT(nominal_rate, npery)"
+  },
+  {
+    "category": "Web",
+    "description": "Percent-encodes text for use in a URL.",
+    "name": "ENCODEURL",
+    "signature": "ENCODEURL(text)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the last day of the month a number of months away.",
+    "name": "EOMONTH",
+    "signature": "EOMONTH(start_date, months)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Error function integrated from 0 to a limit, or between two limits.",
+    "name": "ERF",
+    "signature": "ERF(lower_limit, [upper_limit])"
+  },
+  {
+    "category": "Engineering",
+    "description": "Error function integrated from 0 to x.",
+    "name": "ERF.PRECISE",
+    "signature": "ERF.PRECISE(x)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Complementary error function, 1 - ERF(x).",
+    "name": "ERFC",
+    "signature": "ERFC(x)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Complementary error function, 1 - ERF(x).",
+    "name": "ERFC.PRECISE",
+    "signature": "ERFC.PRECISE(x)"
+  },
+  {
+    "category": "Information",
+    "description": "Returns the number identifying an error value, or #N/A if it is not an error.",
+    "name": "ERROR.TYPE",
+    "signature": "ERROR.TYPE(error_val)"
+  },
+  {
+    "category": "AddIn",
+    "description": "Converts between the euro and the former euro member currencies at the fixed rates.",
+    "name": "EUROCONVERT",
+    "signature": "EUROCONVERT(number, source, target, [full_precision], [triangulation_precision])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Rounds away from zero to the nearest even integer.",
+    "name": "EVEN",
+    "signature": "EVEN(number)"
+  },
+  {
+    "category": "Text",
+    "description": "TRUE when two texts are identical, including case.",
+    "name": "EXACT",
+    "signature": "EXACT(text1, text2)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "e raised to the given power.",
+    "name": "EXP",
+    "signature": "EXP(number)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Grows an array to the given size, filling new cells with a pad value.",
+    "name": "EXPAND",
+    "signature": "EXPAND(array, rows, [columns], [pad_with])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Exponential distribution density or probability.",
+    "name": "EXPON.DIST",
+    "signature": "EXPON.DIST(x, lambda, cumulative)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Exponential distribution density or probability.",
+    "name": "EXPONDIST",
+    "signature": "EXPONDIST(x, lambda, cumulative)"
+  },
+  {
+    "category": "Statistical",
+    "description": "F distribution density or left-tailed probability.",
+    "name": "F.DIST",
+    "signature": "F.DIST(x, deg_freedom1, deg_freedom2, cumulative)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Right-tailed F probability.",
+    "name": "F.DIST.RT",
+    "signature": "F.DIST.RT(x, deg_freedom1, deg_freedom2)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Inverse of the left-tailed F distribution.",
+    "name": "F.INV",
+    "signature": "F.INV(probability, deg_freedom1, deg_freedom2)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Inverse of the right-tailed F distribution.",
+    "name": "F.INV.RT",
+    "signature": "F.INV.RT(probability, deg_freedom1, deg_freedom2)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Two-tailed probability that two variances do not differ.",
+    "name": "F.TEST",
+    "signature": "F.TEST(array1, array2)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Factorial of a number.",
+    "name": "FACT",
+    "signature": "FACT(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Double factorial of a number.",
+    "name": "FACTDOUBLE",
+    "signature": "FACTDOUBLE(number)"
+  },
+  {
+    "category": "Logical",
+    "description": "Returns the logical value FALSE.",
+    "name": "FALSE",
+    "signature": "FALSE()"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Right-tailed F probability.",
+    "name": "FDIST",
+    "signature": "FDIST(x, deg_freedom1, deg_freedom2)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Keeps the rows or columns of an array whose include flag is TRUE.",
+    "name": "FILTER",
+    "signature": "FILTER(array, include, [if_empty])"
+  },
+  {
+    "category": "Web",
+    "description": "Extracts data from XML with an XPath (not available; returns #VALUE!).",
+    "name": "FILTERXML",
+    "signature": "FILTERXML(xml, xpath)"
+  },
+  {
+    "category": "Text",
+    "description": "Finds the position of one text in another (case-sensitive).",
+    "name": "FIND",
+    "signature": "FIND(find_text, within_text, [start_num])"
+  },
+  {
+    "category": "Text",
+    "description": "Byte version of FIND.",
+    "name": "FINDB",
+    "signature": "FINDB(find_text, within_text, [start_num])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Inverse of the right-tailed F distribution.",
+    "name": "FINV",
+    "signature": "FINV(probability, deg_freedom1, deg_freedom2)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Fisher transformation.",
+    "name": "FISHER",
+    "signature": "FISHER(x)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Inverse of the Fisher transformation.",
+    "name": "FISHERINV",
+    "signature": "FISHERINV(y)"
+  },
+  {
+    "category": "Text",
+    "description": "Rounds a number and formats it as text with fixed decimals and optional thousands separators.",
+    "name": "FIXED",
+    "signature": "FIXED(number, [decimals], [no_commas])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Rounds a number down to a multiple of significance.",
+    "name": "FLOOR",
+    "signature": "FLOOR(number, significance)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Rounds a number down to the nearest integer or multiple.",
+    "name": "FLOOR.MATH",
+    "signature": "FLOOR.MATH(number, [significance], [mode])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Rounds a number toward negative infinity to a multiple.",
+    "name": "FLOOR.PRECISE",
+    "signature": "FLOOR.PRECISE(number, [significance])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Predicts a value along a linear trend.",
+    "name": "FORECAST",
+    "signature": "FORECAST(x, known_ys, known_xs)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Forecasts a value by additive (AAA) exponential smoothing.",
+    "name": "FORECAST.ETS",
+    "signature": "FORECAST.ETS(target_date, values, timeline, [seasonality], [data_completion], [aggregation])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Half-width of the confidence interval around a FORECAST.ETS value.",
+    "name": "FORECAST.ETS.CONFINT",
+    "signature": "FORECAST.ETS.CONFINT(target_date, values, timeline, [confidence_level], [seasonality], [data_completion], [aggregation])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Length of the repeating pattern detected in a time series.",
+    "name": "FORECAST.ETS.SEASONALITY",
+    "signature": "FORECAST.ETS.SEASONALITY(values, timeline, [data_completion], [aggregation])"
+  },
+  {
+    "category": "Statistical",
+    "description": "A statistic of the FORECAST.ETS model: 1 alpha, 2 beta, 3 gamma, 4 MASE, 5 SMAPE, 6 MAE, 7 RMSE, 8 step size.",
+    "name": "FORECAST.ETS.STAT",
+    "signature": "FORECAST.ETS.STAT(values, timeline, statistic_type, [seasonality], [data_completion], [aggregation])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Predicts a value along a linear trend.",
+    "name": "FORECAST.LINEAR",
+    "signature": "FORECAST.LINEAR(x, known_ys, known_xs)"
+  },
+  {
+    "category": "Lookup",
+    "description": "The formula of a cell as text.",
+    "name": "FORMULATEXT",
+    "signature": "FORMULATEXT(reference)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Counts how many values fall into each bin, as a vertical array.",
+    "name": "FREQUENCY",
+    "signature": "FREQUENCY(data_array, bins_array)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Two-tailed probability that two variances do not differ.",
+    "name": "FTEST",
+    "signature": "FTEST(array1, array2)"
+  },
+  {
+    "category": "Financial",
+    "description": "Future value of an investment with constant payments and rate.",
+    "name": "FV",
+    "signature": "FV(rate, nper, pmt, [pv], [type])"
+  },
+  {
+    "category": "Financial",
+    "description": "Future value of a principal after a series of compound rates.",
+    "name": "FVSCHEDULE",
+    "signature": "FVSCHEDULE(principal, schedule)"
+  },
+  {
+    "category": "Statistical",
+    "description": "The gamma function.",
+    "name": "GAMMA",
+    "signature": "GAMMA(number)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Gamma distribution density or probability.",
+    "name": "GAMMA.DIST",
+    "signature": "GAMMA.DIST(x, alpha, beta, cumulative)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Inverse of the gamma cumulative distribution.",
+    "name": "GAMMA.INV",
+    "signature": "GAMMA.INV(probability, alpha, beta)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Gamma distribution density or probability.",
+    "name": "GAMMADIST",
+    "signature": "GAMMADIST(x, alpha, beta, cumulative)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Inverse of the gamma cumulative distribution.",
+    "name": "GAMMAINV",
+    "signature": "GAMMAINV(probability, alpha, beta)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Natural log of the gamma function.",
+    "name": "GAMMALN",
+    "signature": "GAMMALN(x)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Natural log of the gamma function.",
+    "name": "GAMMALN.PRECISE",
+    "signature": "GAMMALN.PRECISE(x)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Probability that a standard normal value falls between the mean and z.",
+    "name": "GAUSS",
+    "signature": "GAUSS(z)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Greatest common divisor of integers.",
+    "name": "GCD",
+    "signature": "GCD(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Geometric mean of positive numbers.",
+    "name": "GEOMEAN",
+    "signature": "GEOMEAN(number1, [number2], ...)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Returns 1 when a number is at least the step, otherwise 0.",
+    "name": "GESTEP",
+    "signature": "GESTEP(number, [step])"
+  },
+  {
+    "category": "Lookup",
+    "description": "Groups rows by key fields and aggregates the values of each group.",
+    "name": "GROUPBY",
+    "signature": "GROUPBY(row_fields, values, function, [field_headers], [total_depth], [sort_order], [filter_array], [field_relationship])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Values along a fitted exponential growth curve.",
+    "name": "GROWTH",
+    "signature": "GROWTH(known_ys, [known_xs], [new_xs], [const])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Harmonic mean of positive numbers.",
+    "name": "HARMEAN",
+    "signature": "HARMEAN(number1, [number2], ...)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts a hexadecimal number to binary.",
+    "name": "HEX2BIN",
+    "signature": "HEX2BIN(number, [places])"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts a hexadecimal number to decimal.",
+    "name": "HEX2DEC",
+    "signature": "HEX2DEC(number)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts a hexadecimal number to octal.",
+    "name": "HEX2OCT",
+    "signature": "HEX2OCT(number, [places])"
+  },
+  {
+    "category": "Lookup",
+    "description": "Finds a value in the first row of a table and returns the value in the same column of another row.",
+    "name": "HLOOKUP",
+    "signature": "HLOOKUP(lookup_value, table_array, row_index_num, [range_lookup])"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the hour (0-23) of a time.",
+    "name": "HOUR",
+    "signature": "HOUR(serial_number)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Places arrays side by side.",
+    "name": "HSTACK",
+    "signature": "HSTACK(array1, [array2], ...)"
+  },
+  {
+    "category": "Information",
+    "description": "Creates a link; the cell shows the friendly name, or the link itself.",
+    "name": "HYPERLINK",
+    "signature": "HYPERLINK(link_location, [friendly_name])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Hypergeometric probability.",
+    "name": "HYPGEOM.DIST",
+    "signature": "HYPGEOM.DIST(sample_s, number_sample, population_s, number_pop, cumulative)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Hypergeometric probability of an exact count.",
+    "name": "HYPGEOMDIST",
+    "signature": "HYPGEOMDIST(sample_s, number_sample, population_s, number_pop)"
+  },
+  {
+    "category": "Logical",
+    "description": "Returns one value when a condition is TRUE and another when it is FALSE.",
+    "name": "IF",
+    "signature": "IF(logical_test, [value_if_true], [value_if_false])"
+  },
+  {
+    "category": "Logical",
+    "description": "Returns a fallback when the value is an error, otherwise the value.",
+    "name": "IFERROR",
+    "signature": "IFERROR(value, value_if_error)"
+  },
+  {
+    "category": "Logical",
+    "description": "Returns a fallback when the value is #N/A, otherwise the value.",
+    "name": "IFNA",
+    "signature": "IFNA(value, value_if_na)"
+  },
+  {
+    "category": "Logical",
+    "description": "Returns the value paired with the first condition that is TRUE.",
+    "name": "IFS",
+    "signature": "IFS(logical_test1, value_if_true1, ...)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Absolute value (modulus) of a complex number.",
+    "name": "IMABS",
+    "signature": "IMABS(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Imaginary coefficient of a complex number.",
+    "name": "IMAGINARY",
+    "signature": "IMAGINARY(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Angle of a complex number in radians.",
+    "name": "IMARGUMENT",
+    "signature": "IMARGUMENT(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Complex conjugate of a complex number.",
+    "name": "IMCONJUGATE",
+    "signature": "IMCONJUGATE(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Cosine of a complex number.",
+    "name": "IMCOS",
+    "signature": "IMCOS(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Hyperbolic cosine of a complex number.",
+    "name": "IMCOSH",
+    "signature": "IMCOSH(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Cotangent of a complex number.",
+    "name": "IMCOT",
+    "signature": "IMCOT(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Cosecant of a complex number.",
+    "name": "IMCSC",
+    "signature": "IMCSC(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Hyperbolic cosecant of a complex number.",
+    "name": "IMCSCH",
+    "signature": "IMCSCH(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Quotient of two complex numbers.",
+    "name": "IMDIV",
+    "signature": "IMDIV(inumber1, inumber2)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Exponential of a complex number.",
+    "name": "IMEXP",
+    "signature": "IMEXP(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Natural logarithm of a complex number.",
+    "name": "IMLN",
+    "signature": "IMLN(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Base-10 logarithm of a complex number.",
+    "name": "IMLOG10",
+    "signature": "IMLOG10(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Base-2 logarithm of a complex number.",
+    "name": "IMLOG2",
+    "signature": "IMLOG2(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Raises a complex number to a power.",
+    "name": "IMPOWER",
+    "signature": "IMPOWER(inumber, number)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Product of complex numbers.",
+    "name": "IMPRODUCT",
+    "signature": "IMPRODUCT(inumber1, [inumber2], ...)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Real coefficient of a complex number.",
+    "name": "IMREAL",
+    "signature": "IMREAL(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Secant of a complex number.",
+    "name": "IMSEC",
+    "signature": "IMSEC(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Hyperbolic secant of a complex number.",
+    "name": "IMSECH",
+    "signature": "IMSECH(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Sine of a complex number.",
+    "name": "IMSIN",
+    "signature": "IMSIN(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Hyperbolic sine of a complex number.",
+    "name": "IMSINH",
+    "signature": "IMSINH(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Square root of a complex number.",
+    "name": "IMSQRT",
+    "signature": "IMSQRT(inumber)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Difference of two complex numbers.",
+    "name": "IMSUB",
+    "signature": "IMSUB(inumber1, inumber2)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Sum of complex numbers.",
+    "name": "IMSUM",
+    "signature": "IMSUM(inumber1, [inumber2], ...)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Tangent of a complex number.",
+    "name": "IMTAN",
+    "signature": "IMTAN(inumber)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Returns the element, row or column of an array at the given position.",
+    "name": "INDEX",
+    "signature": "INDEX(array, row_num, [column_num], [area_num])"
+  },
+  {
+    "category": "Lookup",
+    "description": "The reference named by a text string.",
+    "name": "INDIRECT",
+    "signature": "INDIRECT(ref_text, [a1])"
+  },
+  {
+    "category": "Information",
+    "description": "Returns information about the operating environment.",
+    "name": "INFO",
+    "signature": "INFO(type_text)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Rounds a number down to the nearest integer.",
+    "name": "INT",
+    "signature": "INT(number)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Y-intercept of the least-squares regression line.",
+    "name": "INTERCEPT",
+    "signature": "INTERCEPT(known_ys, known_xs)"
+  },
+  {
+    "category": "Financial",
+    "description": "Interest rate of a fully invested security.",
+    "name": "INTRATE",
+    "signature": "INTRATE(settlement, maturity, investment, redemption, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Interest part of a given period's payment.",
+    "name": "IPMT",
+    "signature": "IPMT(rate, per, nper, pv, [fv], [type])"
+  },
+  {
+    "category": "Financial",
+    "description": "Internal rate of return of periodic cash flows.",
+    "name": "IRR",
+    "signature": "IRR(values, [guess])"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE when the value refers to an empty cell.",
+    "name": "ISBLANK",
+    "signature": "ISBLANK(value)"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE when the value is any error other than #N/A.",
+    "name": "ISERR",
+    "signature": "ISERR(value)"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE when the value is any error.",
+    "name": "ISERROR",
+    "signature": "ISERROR(value)"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE when the integer part of a number is even.",
+    "name": "ISEVEN",
+    "signature": "ISEVEN(number)"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE when the cell has a formula.",
+    "name": "ISFORMULA",
+    "signature": "ISFORMULA(reference)"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE when the value is TRUE or FALSE.",
+    "name": "ISLOGICAL",
+    "signature": "ISLOGICAL(value)"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE when the value is the #N/A error.",
+    "name": "ISNA",
+    "signature": "ISNA(value)"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE when the value is anything other than text.",
+    "name": "ISNONTEXT",
+    "signature": "ISNONTEXT(value)"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE when the value is a number.",
+    "name": "ISNUMBER",
+    "signature": "ISNUMBER(value)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Rounds a number toward positive infinity to a multiple.",
+    "name": "ISO.CEILING",
+    "signature": "ISO.CEILING(number, [significance])"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE when the integer part of a number is odd.",
+    "name": "ISODD",
+    "signature": "ISODD(number)"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE when a LAMBDA argument was left out.",
+    "name": "ISOMITTED",
+    "signature": "ISOMITTED(argument)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the ISO 8601 week number of a date.",
+    "name": "ISOWEEKNUM",
+    "signature": "ISOWEEKNUM(date)"
+  },
+  {
+    "category": "Financial",
+    "description": "Interest paid in a period of a loan with even principal payments.",
+    "name": "ISPMT",
+    "signature": "ISPMT(rate, per, nper, pv)"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE for references.",
+    "name": "ISREF",
+    "signature": "ISREF(value)"
+  },
+  {
+    "category": "Information",
+    "description": "TRUE when the value is text.",
+    "name": "ISTEXT",
+    "signature": "ISTEXT(value)"
+  },
+  {
+    "category": "Text",
+    "description": "Converts half-width characters to full-width (no change in this locale).",
+    "name": "JIS",
+    "signature": "JIS(text)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Excess kurtosis of a sample.",
+    "name": "KURT",
+    "signature": "KURT(number1, [number2], ...)"
+  },
+  {
+    "category": "Logical",
+    "description": "Creates a reusable custom function.",
+    "name": "LAMBDA",
+    "signature": "LAMBDA([parameter1, ...], calculation)"
+  },
+  {
+    "category": "Statistical",
+    "description": "The k-th largest number in a data set.",
+    "name": "LARGE",
+    "signature": "LARGE(array, k)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Least common multiple of integers.",
+    "name": "LCM",
+    "signature": "LCM(number1, [number2], ...)"
+  },
+  {
+    "category": "Text",
+    "description": "Returns the first characters of a text.",
+    "name": "LEFT",
+    "signature": "LEFT(text, [num_chars])"
+  },
+  {
+    "category": "Text",
+    "description": "Byte version of LEFT (same as LEFT for single-byte text).",
+    "name": "LEFTB",
+    "signature": "LEFTB(text, [num_bytes])"
+  },
+  {
+    "category": "Text",
+    "description": "Counts the characters in a text.",
+    "name": "LEN",
+    "signature": "LEN(text)"
+  },
+  {
+    "category": "Text",
+    "description": "Byte version of LEN (same as LEN for single-byte text).",
+    "name": "LENB",
+    "signature": "LENB(text)"
+  },
+  {
+    "category": "Logical",
+    "description": "Names intermediate results.",
+    "name": "LET",
+    "signature": "LET(name1, value1, ..., calculation)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Least-squares line coefficients and optional regression statistics.",
+    "name": "LINEST",
+    "signature": "LINEST(known_ys, [known_xs], [const], [stats])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Natural logarithm.",
+    "name": "LN",
+    "signature": "LN(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Logarithm to the given base (10 by default).",
+    "name": "LOG",
+    "signature": "LOG(number, [base])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Base-10 logarithm.",
+    "name": "LOG10",
+    "signature": "LOG10(number)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Exponential curve coefficients and optional regression statistics.",
+    "name": "LOGEST",
+    "signature": "LOGEST(known_ys, [known_xs], [const], [stats])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Inverse of the cumulative lognormal distribution.",
+    "name": "LOGINV",
+    "signature": "LOGINV(probability, mean, standard_dev)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Lognormal density or probability.",
+    "name": "LOGNORM.DIST",
+    "signature": "LOGNORM.DIST(x, mean, standard_dev, cumulative)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Inverse of the cumulative lognormal distribution.",
+    "name": "LOGNORM.INV",
+    "signature": "LOGNORM.INV(probability, mean, standard_dev)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Cumulative lognormal probability.",
+    "name": "LOGNORMDIST",
+    "signature": "LOGNORMDIST(x, mean, standard_dev)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Approximate lookup in a sorted vector or the first row/column of an array.",
+    "name": "LOOKUP",
+    "signature": "LOOKUP(lookup_value, lookup_vector, [result_vector])"
+  },
+  {
+    "category": "Text",
+    "description": "Converts text to lower case.",
+    "name": "LOWER",
+    "signature": "LOWER(text)"
+  },
+  {
+    "category": "Logical",
+    "description": "Builds an array from a LAMBDA.",
+    "name": "MAKEARRAY",
+    "signature": "MAKEARRAY(rows, cols, lambda)"
+  },
+  {
+    "category": "Logical",
+    "description": "Applies a LAMBDA to each value.",
+    "name": "MAP",
+    "signature": "MAP(array1, ..., lambda)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Returns the 1-based position of a value in a row or column.",
+    "name": "MATCH",
+    "signature": "MATCH(lookup_value, lookup_array, [match_type])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Largest number (0 when there are none).",
+    "name": "MAX",
+    "signature": "MAX(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Largest value counting text as 0 and logicals as 1/0.",
+    "name": "MAXA",
+    "signature": "MAXA(value1, [value2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Largest value among cells that meet every condition.",
+    "name": "MAXIFS",
+    "signature": "MAXIFS(max_range, criteria_range1, criteria1, ...)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Determinant of a square matrix.",
+    "name": "MDETERM",
+    "signature": "MDETERM(array)"
+  },
+  {
+    "category": "Financial",
+    "description": "Modified duration of a security with periodic interest.",
+    "name": "MDURATION",
+    "signature": "MDURATION(settlement, maturity, coupon, yld, frequency, [basis])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Middle value of the numbers.",
+    "name": "MEDIAN",
+    "signature": "MEDIAN(number1, [number2], ...)"
+  },
+  {
+    "category": "Text",
+    "description": "Returns characters from the middle of a text.",
+    "name": "MID",
+    "signature": "MID(text, start_num, num_chars)"
+  },
+  {
+    "category": "Text",
+    "description": "Byte version of MID (same as MID for single-byte text).",
+    "name": "MIDB",
+    "signature": "MIDB(text, start_num, num_bytes)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Smallest number (0 when there are none).",
+    "name": "MIN",
+    "signature": "MIN(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Smallest value counting text as 0 and logicals as 1/0.",
+    "name": "MINA",
+    "signature": "MINA(value1, [value2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Smallest value among cells that meet every condition.",
+    "name": "MINIFS",
+    "signature": "MINIFS(min_range, criteria_range1, criteria1, ...)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the minute (0-59) of a time.",
+    "name": "MINUTE",
+    "signature": "MINUTE(serial_number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Inverse of a square matrix.",
+    "name": "MINVERSE",
+    "signature": "MINVERSE(array)"
+  },
+  {
+    "category": "Financial",
+    "description": "Modified internal rate of return using separate borrow and reinvest rates.",
+    "name": "MIRR",
+    "signature": "MIRR(values, finance_rate, reinvest_rate)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Matrix product of two arrays.",
+    "name": "MMULT",
+    "signature": "MMULT(array1, array2)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Remainder of a division, with the sign of the divisor.",
+    "name": "MOD",
+    "signature": "MOD(number, divisor)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Most frequently occurring number.",
+    "name": "MODE",
+    "signature": "MODE(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Vertical array of all the most frequent numbers.",
+    "name": "MODE.MULT",
+    "signature": "MODE.MULT(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Most frequently occurring number.",
+    "name": "MODE.SNGL",
+    "signature": "MODE.SNGL(number1, [number2], ...)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the month (1-12) of a date.",
+    "name": "MONTH",
+    "signature": "MONTH(serial_number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Rounds a number to the nearest multiple.",
+    "name": "MROUND",
+    "signature": "MROUND(number, multiple)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Ratio of the factorial of a sum to the product of factorials.",
+    "name": "MULTINOMIAL",
+    "signature": "MULTINOMIAL(number1, [number2], ...)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Identity matrix of the given size.",
+    "name": "MUNIT",
+    "signature": "MUNIT(dimension)"
+  },
+  {
+    "category": "Information",
+    "description": "Converts a value to a number: numbers stay, TRUE is 1, everything else is 0.",
+    "name": "N",
+    "signature": "N(value)"
+  },
+  {
+    "category": "Information",
+    "description": "Returns the #N/A error value.",
+    "name": "NA",
+    "signature": "NA()"
+  },
+  {
+    "category": "Statistical",
+    "description": "Negative binomial probability.",
+    "name": "NEGBINOM.DIST",
+    "signature": "NEGBINOM.DIST(number_f, number_s, probability_s, cumulative)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Negative binomial probability.",
+    "name": "NEGBINOMDIST",
+    "signature": "NEGBINOMDIST(number_f, number_s, probability_s)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Counts working days (Monday to Friday) between two dates, excluding holidays.",
+    "name": "NETWORKDAYS",
+    "signature": "NETWORKDAYS(start_date, end_date, [holidays])"
+  },
+  {
+    "category": "DateTime",
+    "description": "Counts working days between two dates with a custom weekend, excluding holidays.",
+    "name": "NETWORKDAYS.INTL",
+    "signature": "NETWORKDAYS.INTL(start_date, end_date, [weekend], [holidays])"
+  },
+  {
+    "category": "Financial",
+    "description": "Nominal annual rate from an effective rate and compounding periods.",
+    "name": "NOMINAL",
+    "signature": "NOMINAL(effect_rate, npery)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Normal distribution density or cumulative probability.",
+    "name": "NORM.DIST",
+    "signature": "NORM.DIST(x, mean, standard_dev, cumulative)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Inverse of the normal cumulative distribution.",
+    "name": "NORM.INV",
+    "signature": "NORM.INV(probability, mean, standard_dev)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Standard normal density or cumulative probability.",
+    "name": "NORM.S.DIST",
+    "signature": "NORM.S.DIST(z, cumulative)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Inverse of the standard normal cumulative distribution.",
+    "name": "NORM.S.INV",
+    "signature": "NORM.S.INV(probability)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Normal distribution density or cumulative probability.",
+    "name": "NORMDIST",
+    "signature": "NORMDIST(x, mean, standard_dev, cumulative)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Inverse of the normal cumulative distribution.",
+    "name": "NORMINV",
+    "signature": "NORMINV(probability, mean, standard_dev)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Standard normal cumulative probability.",
+    "name": "NORMSDIST",
+    "signature": "NORMSDIST(z)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Inverse of the standard normal cumulative distribution.",
+    "name": "NORMSINV",
+    "signature": "NORMSINV(probability)"
+  },
+  {
+    "category": "Logical",
+    "description": "Reverses a logical value.",
+    "name": "NOT",
+    "signature": "NOT(logical)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the current date and time.",
+    "name": "NOW",
+    "signature": "NOW()"
+  },
+  {
+    "category": "Financial",
+    "description": "Number of periods needed to pay off or accumulate an amount.",
+    "name": "NPER",
+    "signature": "NPER(rate, pmt, pv, [fv], [type])"
+  },
+  {
+    "category": "Financial",
+    "description": "Net present value of periodic cash flows at a discount rate.",
+    "name": "NPV",
+    "signature": "NPV(rate, value1, [value2], ...)"
+  },
+  {
+    "category": "Text",
+    "description": "Converts text to a number using the given decimal and group separators.",
+    "name": "NUMBERVALUE",
+    "signature": "NUMBERVALUE(text, [decimal_separator], [group_separator])"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts an octal number to binary.",
+    "name": "OCT2BIN",
+    "signature": "OCT2BIN(number, [places])"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts an octal number to decimal.",
+    "name": "OCT2DEC",
+    "signature": "OCT2DEC(number)"
+  },
+  {
+    "category": "Engineering",
+    "description": "Converts an octal number to hexadecimal.",
+    "name": "OCT2HEX",
+    "signature": "OCT2HEX(number, [places])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Rounds away from zero to the nearest odd integer.",
+    "name": "ODD",
+    "signature": "ODD(number)"
+  },
+  {
+    "category": "Financial",
+    "description": "Price per 100 face value of a security with an odd first period.",
+    "name": "ODDFPRICE",
+    "signature": "ODDFPRICE(settlement, maturity, issue, first_coupon, rate, yld, redemption, frequency, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Yield of a security with an odd first period.",
+    "name": "ODDFYIELD",
+    "signature": "ODDFYIELD(settlement, maturity, issue, first_coupon, rate, pr, redemption, frequency, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Price per 100 face value of a security with an odd last period.",
+    "name": "ODDLPRICE",
+    "signature": "ODDLPRICE(settlement, maturity, last_interest, rate, yld, redemption, frequency, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Yield of a security with an odd last period.",
+    "name": "ODDLYIELD",
+    "signature": "ODDLYIELD(settlement, maturity, last_interest, rate, pr, redemption, frequency, [basis])"
+  },
+  {
+    "category": "Lookup",
+    "description": "A reference shifted from a starting point.",
+    "name": "OFFSET",
+    "signature": "OFFSET(reference, rows, cols, [height], [width])"
+  },
+  {
+    "category": "Logical",
+    "description": "TRUE when at least one argument is TRUE.",
+    "name": "OR",
+    "signature": "OR(logical1, [logical2], ...)"
+  },
+  {
+    "category": "Financial",
+    "description": "Periods needed for an investment to grow to a target value.",
+    "name": "PDURATION",
+    "signature": "PDURATION(rate, pv, fv)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Pearson product-moment correlation coefficient.",
+    "name": "PEARSON",
+    "signature": "PEARSON(array1, array2)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "k-th percentile, k from 0 to 1 inclusive.",
+    "name": "PERCENTILE",
+    "signature": "PERCENTILE(array, k)"
+  },
+  {
+    "category": "Statistical",
+    "description": "k-th percentile, k strictly between 0 and 1.",
+    "name": "PERCENTILE.EXC",
+    "signature": "PERCENTILE.EXC(array, k)"
+  },
+  {
+    "category": "Statistical",
+    "description": "k-th percentile, k from 0 to 1 inclusive.",
+    "name": "PERCENTILE.INC",
+    "signature": "PERCENTILE.INC(array, k)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "The sum of a subset as a fraction of the sum of all the values.",
+    "name": "PERCENTOF",
+    "signature": "PERCENTOF(data_subset, data_all)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Relative standing of a value as a fraction of the data set.",
+    "name": "PERCENTRANK",
+    "signature": "PERCENTRANK(array, x, [significance])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Relative standing of a value strictly between 0 and 1.",
+    "name": "PERCENTRANK.EXC",
+    "signature": "PERCENTRANK.EXC(array, x, [significance])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Relative standing of a value from 0 to 1 inclusive.",
+    "name": "PERCENTRANK.INC",
+    "signature": "PERCENTRANK.INC(array, x, [significance])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Number of ordered selections without repetition.",
+    "name": "PERMUT",
+    "signature": "PERMUT(number, number_chosen)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Number of ordered selections with repetition.",
+    "name": "PERMUTATIONA",
+    "signature": "PERMUTATIONA(number, number_chosen)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Standard normal density.",
+    "name": "PHI",
+    "signature": "PHI(x)"
+  },
+  {
+    "category": "Text",
+    "description": "Returns the phonetic (furigana) text; here the text itself.",
+    "name": "PHONETIC",
+    "signature": "PHONETIC(reference)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "The constant pi to 15 digits.",
+    "name": "PI",
+    "signature": "PI()"
+  },
+  {
+    "category": "Lookup",
+    "description": "Builds a summary table grouping values by row and column fields.",
+    "name": "PIVOTBY",
+    "signature": "PIVOTBY(row_fields, col_fields, values, function, [field_headers], [row_total_depth], [row_sort_order], [col_total_depth], [col_sort_order], [filter_array], [relative_to])"
+  },
+  {
+    "category": "Financial",
+    "description": "Periodic payment for a loan or annuity with constant payments and rate.",
+    "name": "PMT",
+    "signature": "PMT(rate, nper, pv, [fv], [type])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Poisson probability.",
+    "name": "POISSON",
+    "signature": "POISSON(x, mean, cumulative)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Poisson probability.",
+    "name": "POISSON.DIST",
+    "signature": "POISSON.DIST(x, mean, cumulative)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Raises a number to a power.",
+    "name": "POWER",
+    "signature": "POWER(number, power)"
+  },
+  {
+    "category": "Financial",
+    "description": "Principal part of a given period's payment.",
+    "name": "PPMT",
+    "signature": "PPMT(rate, per, nper, pv, [fv], [type])"
+  },
+  {
+    "category": "Financial",
+    "description": "Price per 100 face value of a security paying periodic interest.",
+    "name": "PRICE",
+    "signature": "PRICE(settlement, maturity, rate, yld, redemption, frequency, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Price per 100 face value of a discounted security.",
+    "name": "PRICEDISC",
+    "signature": "PRICEDISC(settlement, maturity, discount, redemption, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Price per 100 face value of a security paying interest at maturity.",
+    "name": "PRICEMAT",
+    "signature": "PRICEMAT(settlement, maturity, issue, rate, yld, [basis])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Probability that values fall between two limits.",
+    "name": "PROB",
+    "signature": "PROB(x_range, prob_range, lower_limit, [upper_limit])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Multiplies all the numbers in the arguments.",
+    "name": "PRODUCT",
+    "signature": "PRODUCT(number1, [number2], ...)"
+  },
+  {
+    "category": "Text",
+    "description": "Capitalises the first letter of each word and lower-cases the rest.",
+    "name": "PROPER",
+    "signature": "PROPER(text)"
+  },
+  {
+    "category": "Financial",
+    "description": "Present value of a series of equal future payments.",
+    "name": "PV",
+    "signature": "PV(rate, nper, pmt, [fv], [type])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Quartile (0–4) of a data set.",
+    "name": "QUARTILE",
+    "signature": "QUARTILE(array, quart)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Quartile (1–3) of a data set, exclusive method.",
+    "name": "QUARTILE.EXC",
+    "signature": "QUARTILE.EXC(array, quart)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Quartile (0–4) of a data set, inclusive method.",
+    "name": "QUARTILE.INC",
+    "signature": "QUARTILE.INC(array, quart)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Integer part of a division.",
+    "name": "QUOTIENT",
+    "signature": "QUOTIENT(numerator, denominator)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Converts degrees to radians.",
+    "name": "RADIANS",
+    "signature": "RADIANS(angle)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "A random number between 0 and 1, recalculated every time.",
+    "name": "RAND",
+    "signature": "RAND()"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Builds an array of random numbers in a range.",
+    "name": "RANDARRAY",
+    "signature": "RANDARRAY([rows], [columns], [min], [max], [whole_number])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "A random integer between two bounds, inclusive.",
+    "name": "RANDBETWEEN",
+    "signature": "RANDBETWEEN(bottom, top)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Rank of a number within a list.",
+    "name": "RANK",
+    "signature": "RANK(number, ref, [order])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Rank of a number within a list; ties get the average rank.",
+    "name": "RANK.AVG",
+    "signature": "RANK.AVG(number, ref, [order])"
+  },
+  {
+    "category": "Statistical",
+    "description": "Rank of a number within a list; ties share the top rank.",
+    "name": "RANK.EQ",
+    "signature": "RANK.EQ(number, ref, [order])"
+  },
+  {
+    "category": "Financial",
+    "description": "Interest rate per period of an annuity, found iteratively.",
+    "name": "RATE",
+    "signature": "RATE(nper, pmt, pv, [fv], [type], [guess])"
+  },
+  {
+    "category": "Financial",
+    "description": "Amount received at maturity for a fully invested security.",
+    "name": "RECEIVED",
+    "signature": "RECEIVED(settlement, maturity, investment, discount, [basis])"
+  },
+  {
+    "category": "Logical",
+    "description": "Accumulates an array into one value.",
+    "name": "REDUCE",
+    "signature": "REDUCE(initial_value, array, lambda)"
+  },
+  {
+    "category": "Text",
+    "description": "Extracts the first match, all matches or the capture groups of a regular expression.",
+    "name": "REGEXEXTRACT",
+    "signature": "REGEXEXTRACT(text, pattern, [return_mode], [case_sensitivity])"
+  },
+  {
+    "category": "Text",
+    "description": "Replaces matches of a regular expression, all of them or a chosen occurrence.",
+    "name": "REGEXREPLACE",
+    "signature": "REGEXREPLACE(text, pattern, replacement, [occurrence], [case_sensitivity])"
+  },
+  {
+    "category": "Text",
+    "description": "TRUE when a regular expression matches somewhere in the text.",
+    "name": "REGEXTEST",
+    "signature": "REGEXTEST(text, pattern, [case_sensitivity])"
+  },
+  {
+    "category": "Text",
+    "description": "Replaces part of a text by position.",
+    "name": "REPLACE",
+    "signature": "REPLACE(old_text, start_num, num_chars, new_text)"
+  },
+  {
+    "category": "Text",
+    "description": "Byte version of REPLACE.",
+    "name": "REPLACEB",
+    "signature": "REPLACEB(old_text, start_num, num_bytes, new_text)"
+  },
+  {
+    "category": "Text",
+    "description": "Repeats a text a given number of times.",
+    "name": "REPT",
+    "signature": "REPT(text, number_times)"
+  },
+  {
+    "category": "Text",
+    "description": "Returns the last characters of a text.",
+    "name": "RIGHT",
+    "signature": "RIGHT(text, [num_chars])"
+  },
+  {
+    "category": "Text",
+    "description": "Byte version of RIGHT (same as RIGHT for single-byte text).",
+    "name": "RIGHTB",
+    "signature": "RIGHTB(text, [num_bytes])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Converts a number to Roman numerals in one of five styles.",
+    "name": "ROMAN",
+    "signature": "ROMAN(number, [form])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Rounds a number to a given number of digits, halves away from zero.",
+    "name": "ROUND",
+    "signature": "ROUND(number, num_digits)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Rounds a number toward zero to a given number of digits.",
+    "name": "ROUNDDOWN",
+    "signature": "ROUNDDOWN(number, num_digits)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Rounds a number away from zero to a given number of digits.",
+    "name": "ROUNDUP",
+    "signature": "ROUNDUP(number, num_digits)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Row number of a reference.",
+    "name": "ROW",
+    "signature": "ROW([reference])"
+  },
+  {
+    "category": "Lookup",
+    "description": "Counts the rows in an array or range.",
+    "name": "ROWS",
+    "signature": "ROWS(array)"
+  },
+  {
+    "category": "Financial",
+    "description": "Equivalent interest rate for the growth of an investment.",
+    "name": "RRI",
+    "signature": "RRI(nper, pv, fv)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Square of the correlation coefficient.",
+    "name": "RSQ",
+    "signature": "RSQ(known_ys, known_xs)"
+  },
+  {
+    "category": "Logical",
+    "description": "Running accumulation of an array.",
+    "name": "SCAN",
+    "signature": "SCAN(initial_value, array, lambda)"
+  },
+  {
+    "category": "Text",
+    "description": "Finds the position of one text in another, ignoring case and allowing wildcards.",
+    "name": "SEARCH",
+    "signature": "SEARCH(find_text, within_text, [start_num])"
+  },
+  {
+    "category": "Text",
+    "description": "Byte version of SEARCH.",
+    "name": "SEARCHB",
+    "signature": "SEARCHB(find_text, within_text, [start_num])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Secant of an angle in radians.",
+    "name": "SEC",
+    "signature": "SEC(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Hyperbolic secant.",
+    "name": "SECH",
+    "signature": "SECH(number)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the second (0-59) of a time.",
+    "name": "SECOND",
+    "signature": "SECOND(serial_number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Builds an array of evenly stepped numbers.",
+    "name": "SEQUENCE",
+    "signature": "SEQUENCE(rows, [columns], [start], [step])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Sum of a power series.",
+    "name": "SERIESSUM",
+    "signature": "SERIESSUM(x, n, m, coefficients)"
+  },
+  {
+    "category": "Information",
+    "description": "Sheet number.",
+    "name": "SHEET",
+    "signature": "SHEET([value])"
+  },
+  {
+    "category": "Information",
+    "description": "Number of sheets.",
+    "name": "SHEETS",
+    "signature": "SHEETS([reference])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "1 for positive, -1 for negative and 0 for zero.",
+    "name": "SIGN",
+    "signature": "SIGN(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Sine of an angle in radians.",
+    "name": "SIN",
+    "signature": "SIN(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Hyperbolic sine.",
+    "name": "SINH",
+    "signature": "SINH(number)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Sample skewness.",
+    "name": "SKEW",
+    "signature": "SKEW(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Population skewness.",
+    "name": "SKEW.P",
+    "signature": "SKEW.P(number1, [number2], ...)"
+  },
+  {
+    "category": "Financial",
+    "description": "Straight-line depreciation for one period.",
+    "name": "SLN",
+    "signature": "SLN(cost, salvage, life)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Slope of the least-squares regression line.",
+    "name": "SLOPE",
+    "signature": "SLOPE(known_ys, known_xs)"
+  },
+  {
+    "category": "Statistical",
+    "description": "The k-th smallest number in a data set.",
+    "name": "SMALL",
+    "signature": "SMALL(array, k)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Sorts the rows (or columns) of an array by one or more of its columns.",
+    "name": "SORT",
+    "signature": "SORT(array, [sort_index], [sort_order], [by_col])"
+  },
+  {
+    "category": "Lookup",
+    "description": "Sorts an array by the values of other arrays of matching size.",
+    "name": "SORTBY",
+    "signature": "SORTBY(array, by_array1, [sort_order1], ...)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Positive square root.",
+    "name": "SQRT",
+    "signature": "SQRT(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Square root of the number times pi.",
+    "name": "SQRTPI",
+    "signature": "SQRTPI(number)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Z-score of a value.",
+    "name": "STANDARDIZE",
+    "signature": "STANDARDIZE(x, mean, standard_dev)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Sample standard deviation.",
+    "name": "STDEV",
+    "signature": "STDEV(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Population standard deviation.",
+    "name": "STDEV.P",
+    "signature": "STDEV.P(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Sample standard deviation.",
+    "name": "STDEV.S",
+    "signature": "STDEV.S(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Sample standard deviation counting text as 0 and logicals as 1/0.",
+    "name": "STDEVA",
+    "signature": "STDEVA(value1, [value2], ...)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Population standard deviation.",
+    "name": "STDEVP",
+    "signature": "STDEVP(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Population standard deviation counting text as 0 and logicals as 1/0.",
+    "name": "STDEVPA",
+    "signature": "STDEVPA(value1, [value2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Standard error of predicted y values in a regression.",
+    "name": "STEYX",
+    "signature": "STEYX(known_ys, known_xs)"
+  },
+  {
+    "category": "Text",
+    "description": "Replaces occurrences of one text with another, optionally only a given occurrence.",
+    "name": "SUBSTITUTE",
+    "signature": "SUBSTITUTE(text, old_text, new_text, [instance_num])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "A subtotal that can skip hidden rows.",
+    "name": "SUBTOTAL",
+    "signature": "SUBTOTAL(function_num, ref1, ...)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Adds all the numbers in the arguments.",
+    "name": "SUM",
+    "signature": "SUM(number1, [number2], ...)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Adds the cells that meet a condition.",
+    "name": "SUMIF",
+    "signature": "SUMIF(range, criteria, [sum_range])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Adds the cells that meet every condition.",
+    "name": "SUMIFS",
+    "signature": "SUMIFS(sum_range, criteria_range1, criteria1, ...)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Multiplies matching elements of equally sized arrays and adds the products.",
+    "name": "SUMPRODUCT",
+    "signature": "SUMPRODUCT(array1, [array2], ...)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Adds the squares of the numbers.",
+    "name": "SUMSQ",
+    "signature": "SUMSQ(number1, [number2], ...)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Sums the differences of squares of matching elements.",
+    "name": "SUMX2MY2",
+    "signature": "SUMX2MY2(array_x, array_y)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Sums the sums of squares of matching elements.",
+    "name": "SUMX2PY2",
+    "signature": "SUMX2PY2(array_x, array_y)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Sums the squared differences of matching elements.",
+    "name": "SUMXMY2",
+    "signature": "SUMXMY2(array_x, array_y)"
+  },
+  {
+    "category": "Logical",
+    "description": "Compares an expression with a list of values and returns the result paired with the first match.",
+    "name": "SWITCH",
+    "signature": "SWITCH(expression, value1, result1, [default_or_value2, result2], ...)"
+  },
+  {
+    "category": "Financial",
+    "description": "Sum-of-years'-digits depreciation for a period.",
+    "name": "SYD",
+    "signature": "SYD(cost, salvage, life, per)"
+  },
+  {
+    "category": "Text",
+    "description": "Returns the value if it is text, otherwise empty text.",
+    "name": "T",
+    "signature": "T(value)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Student's t density or left-tailed probability.",
+    "name": "T.DIST",
+    "signature": "T.DIST(x, deg_freedom, cumulative)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Two-tailed Student's t probability.",
+    "name": "T.DIST.2T",
+    "signature": "T.DIST.2T(x, deg_freedom)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Right-tailed Student's t probability.",
+    "name": "T.DIST.RT",
+    "signature": "T.DIST.RT(x, deg_freedom)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Left-tailed inverse of Student's t distribution.",
+    "name": "T.INV",
+    "signature": "T.INV(probability, deg_freedom)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Two-tailed inverse of Student's t distribution.",
+    "name": "T.INV.2T",
+    "signature": "T.INV.2T(probability, deg_freedom)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Probability from Student's t-test.",
+    "name": "T.TEST",
+    "signature": "T.TEST(array1, array2, tails, type)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Keeps rows or columns from the start (or end) of an array.",
+    "name": "TAKE",
+    "signature": "TAKE(array, rows, [columns])"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Tangent of an angle in radians.",
+    "name": "TAN",
+    "signature": "TAN(number)"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Hyperbolic tangent.",
+    "name": "TANH",
+    "signature": "TANH(number)"
+  },
+  {
+    "category": "Financial",
+    "description": "Bond-equivalent yield of a Treasury bill.",
+    "name": "TBILLEQ",
+    "signature": "TBILLEQ(settlement, maturity, discount)"
+  },
+  {
+    "category": "Financial",
+    "description": "Price per 100 face value of a Treasury bill.",
+    "name": "TBILLPRICE",
+    "signature": "TBILLPRICE(settlement, maturity, discount)"
+  },
+  {
+    "category": "Financial",
+    "description": "Yield of a Treasury bill.",
+    "name": "TBILLYIELD",
+    "signature": "TBILLYIELD(settlement, maturity, pr)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "One- or two-tailed Student's t probability.",
+    "name": "TDIST",
+    "signature": "TDIST(x, deg_freedom, tails)"
+  },
+  {
+    "category": "Text",
+    "description": "Formats a number as text.",
+    "name": "TEXT",
+    "signature": "TEXT(value, format_text)"
+  },
+  {
+    "category": "Text",
+    "description": "Returns the text that comes after a delimiter.",
+    "name": "TEXTAFTER",
+    "signature": "TEXTAFTER(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_found])"
+  },
+  {
+    "category": "Text",
+    "description": "Returns the text that comes before a delimiter.",
+    "name": "TEXTBEFORE",
+    "signature": "TEXTBEFORE(text, delimiter, [instance_num], [match_mode], [match_end], [if_not_found])"
+  },
+  {
+    "category": "Text",
+    "description": "Joins text from values and ranges with a delimiter, optionally skipping empty items.",
+    "name": "TEXTJOIN",
+    "signature": "TEXTJOIN(delimiter, ignore_empty, text1, [text2], ...)"
+  },
+  {
+    "category": "Text",
+    "description": "Splits text into a grid of columns and rows at the given delimiters.",
+    "name": "TEXTSPLIT",
+    "signature": "TEXTSPLIT(text, col_delimiter, [row_delimiter], [ignore_empty], [match_mode], [pad_with])"
+  },
+  {
+    "category": "DateTime",
+    "description": "Builds a time (a fraction of a day) from hours, minutes and seconds.",
+    "name": "TIME",
+    "signature": "TIME(hour, minute, second)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Converts a time written as text into a fraction of a day.",
+    "name": "TIMEVALUE",
+    "signature": "TIMEVALUE(time_text)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Two-tailed inverse of Student's t distribution.",
+    "name": "TINV",
+    "signature": "TINV(probability, deg_freedom)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Flattens an array into a single column, optionally skipping blanks or errors.",
+    "name": "TOCOL",
+    "signature": "TOCOL(array, [ignore], [scan_by_column])"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the current date.",
+    "name": "TODAY",
+    "signature": "TODAY()"
+  },
+  {
+    "category": "Lookup",
+    "description": "Flattens an array into a single row, optionally skipping blanks or errors.",
+    "name": "TOROW",
+    "signature": "TOROW(array, [ignore], [scan_by_column])"
+  },
+  {
+    "category": "Lookup",
+    "description": "Swaps the rows and columns of an array.",
+    "name": "TRANSPOSE",
+    "signature": "TRANSPOSE(array)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Values along a least-squares linear fit.",
+    "name": "TREND",
+    "signature": "TREND(known_ys, [known_xs], [new_xs], [const])"
+  },
+  {
+    "category": "Text",
+    "description": "Removes leading and trailing spaces and collapses runs of spaces to one.",
+    "name": "TRIM",
+    "signature": "TRIM(text)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Mean after trimming a fraction of points from both ends.",
+    "name": "TRIMMEAN",
+    "signature": "TRIMMEAN(array, percent)"
+  },
+  {
+    "category": "Lookup",
+    "description": "A range or array without its blank outer rows and columns.",
+    "name": "TRIMRANGE",
+    "signature": "TRIMRANGE(range, [trim_rows], [trim_cols])"
+  },
+  {
+    "category": "Logical",
+    "description": "Returns the logical value TRUE.",
+    "name": "TRUE",
+    "signature": "TRUE()"
+  },
+  {
+    "category": "MathTrig",
+    "description": "Cuts off the fractional part of a number at the given digits.",
+    "name": "TRUNC",
+    "signature": "TRUNC(number, [num_digits])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Probability from Student's t-test.",
+    "name": "TTEST",
+    "signature": "TTEST(array1, array2, tails, type)"
+  },
+  {
+    "category": "Information",
+    "description": "Returns a code for the kind of value: 1 number, 2 text, 4 logical, 16 error, 64 array.",
+    "name": "TYPE",
+    "signature": "TYPE(value)"
+  },
+  {
+    "category": "Text",
+    "description": "Returns the character for a Unicode code point.",
+    "name": "UNICHAR",
+    "signature": "UNICHAR(number)"
+  },
+  {
+    "category": "Text",
+    "description": "Returns the Unicode code point of the first character of a text.",
+    "name": "UNICODE",
+    "signature": "UNICODE(text)"
+  },
+  {
+    "category": "Lookup",
+    "description": "Returns the distinct rows or columns of an array.",
+    "name": "UNIQUE",
+    "signature": "UNIQUE(array, [by_col], [exactly_once])"
+  },
+  {
+    "category": "Text",
+    "description": "Converts text to upper case.",
+    "name": "UPPER",
+    "signature": "UPPER(text)"
+  },
+  {
+    "category": "Text",
+    "description": "Converts text that looks like a number, date or time into a number.",
+    "name": "VALUE",
+    "signature": "VALUE(text)"
+  },
+  {
+    "category": "Text",
+    "description": "Converts any value to text, optionally in strict (quoted) form.",
+    "name": "VALUETOTEXT",
+    "signature": "VALUETOTEXT(value, [format])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Sample variance.",
+    "name": "VAR",
+    "signature": "VAR(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Population variance.",
+    "name": "VAR.P",
+    "signature": "VAR.P(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Sample variance.",
+    "name": "VAR.S",
+    "signature": "VAR.S(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Sample variance counting text as 0 and logicals as 1/0.",
+    "name": "VARA",
+    "signature": "VARA(value1, [value2], ...)"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Population variance.",
+    "name": "VARP",
+    "signature": "VARP(number1, [number2], ...)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Population variance counting text as 0 and logicals as 1/0.",
+    "name": "VARPA",
+    "signature": "VARPA(value1, [value2], ...)"
+  },
+  {
+    "category": "Financial",
+    "description": "Declining-balance depreciation over any span of periods, switching to straight line.",
+    "name": "VDB",
+    "signature": "VDB(cost, salvage, life, start_period, end_period, [factor], [no_switch])"
+  },
+  {
+    "category": "Lookup",
+    "description": "Finds a value in the first column of a table and returns the value in the same row of another column.",
+    "name": "VLOOKUP",
+    "signature": "VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])"
+  },
+  {
+    "category": "Lookup",
+    "description": "Stacks arrays on top of each other.",
+    "name": "VSTACK",
+    "signature": "VSTACK(array1, [array2], ...)"
+  },
+  {
+    "category": "Web",
+    "description": "Fetches data from a web service (not available; returns #VALUE!).",
+    "name": "WEBSERVICE",
+    "signature": "WEBSERVICE(url)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the day of the week of a date as a number.",
+    "name": "WEEKDAY",
+    "signature": "WEEKDAY(serial_number, [return_type])"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the week number of a date within its year.",
+    "name": "WEEKNUM",
+    "signature": "WEEKNUM(serial_number, [return_type])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "Weibull density or probability.",
+    "name": "WEIBULL",
+    "signature": "WEIBULL(x, alpha, beta, cumulative)"
+  },
+  {
+    "category": "Statistical",
+    "description": "Weibull density or probability.",
+    "name": "WEIBULL.DIST",
+    "signature": "WEIBULL.DIST(x, alpha, beta, cumulative)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the date a number of working days before or after a date.",
+    "name": "WORKDAY",
+    "signature": "WORKDAY(start_date, days, [holidays])"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the date a number of working days away with a custom weekend.",
+    "name": "WORKDAY.INTL",
+    "signature": "WORKDAY.INTL(start_date, days, [weekend], [holidays])"
+  },
+  {
+    "category": "Lookup",
+    "description": "Breaks a row or column into columns of the given length.",
+    "name": "WRAPCOLS",
+    "signature": "WRAPCOLS(vector, wrap_count, [pad_with])"
+  },
+  {
+    "category": "Lookup",
+    "description": "Breaks a row or column into rows of the given length.",
+    "name": "WRAPROWS",
+    "signature": "WRAPROWS(vector, wrap_count, [pad_with])"
+  },
+  {
+    "category": "Financial",
+    "description": "Internal rate of return of cash flows on specific dates.",
+    "name": "XIRR",
+    "signature": "XIRR(values, dates, [guess])"
+  },
+  {
+    "category": "Lookup",
+    "description": "Searches a row or column and returns the matching item, row or column from another array.",
+    "name": "XLOOKUP",
+    "signature": "XLOOKUP(lookup_value, lookup_array, return_array, [if_not_found], [match_mode], [search_mode])"
+  },
+  {
+    "category": "Lookup",
+    "description": "Returns the position of a value in a row or column with flexible match and search modes.",
+    "name": "XMATCH",
+    "signature": "XMATCH(lookup_value, lookup_array, [match_mode], [search_mode])"
+  },
+  {
+    "category": "Financial",
+    "description": "Net present value of cash flows on specific dates.",
+    "name": "XNPV",
+    "signature": "XNPV(rate, values, dates)"
+  },
+  {
+    "category": "Logical",
+    "description": "TRUE when an odd number of arguments are TRUE.",
+    "name": "XOR",
+    "signature": "XOR(logical1, [logical2], ...)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the year of a date.",
+    "name": "YEAR",
+    "signature": "YEAR(serial_number)"
+  },
+  {
+    "category": "DateTime",
+    "description": "Returns the fraction of a year between two dates under a day-count basis.",
+    "name": "YEARFRAC",
+    "signature": "YEARFRAC(start_date, end_date, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Yield of a security paying periodic interest.",
+    "name": "YIELD",
+    "signature": "YIELD(settlement, maturity, rate, pr, redemption, frequency, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Annual yield of a discounted security.",
+    "name": "YIELDDISC",
+    "signature": "YIELDDISC(settlement, maturity, pr, redemption, [basis])"
+  },
+  {
+    "category": "Financial",
+    "description": "Annual yield of a security paying interest at maturity.",
+    "name": "YIELDMAT",
+    "signature": "YIELDMAT(settlement, maturity, issue, rate, pr, [basis])"
+  },
+  {
+    "category": "Statistical",
+    "description": "One-tailed probability of a z-test.",
+    "name": "Z.TEST",
+    "signature": "Z.TEST(array, x, [sigma])"
+  },
+  {
+    "category": "Compatibility",
+    "description": "One-tailed probability of a z-test.",
+    "name": "ZTEST",
+    "signature": "ZTEST(array, x, [sigma])"
+  }
+]

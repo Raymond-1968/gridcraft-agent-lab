@@ -1,0 +1,83 @@
+[
+ {
+  "command": "cell.set",
+  "params": {
+   "cell": "A1",
+   "input": "12.5"
+  }
+ },
+ {
+  "command": "cell.set",
+  "params": {
+   "cell": "A2",
+   "input": "30"
+  }
+ },
+ {
+  "command": "cell.set",
+  "params": {
+   "cell": "A3",
+   "input": "=SUM(A1:A2)"
+  }
+ },
+ {
+  "command": "home.bold",
+  "params": {
+   "on": true,
+   "range": "A3"
+  }
+ },
+ {
+  "command": "home.fillColor",
+  "params": {
+   "color": "#FFF2CC",
+   "range": "A3"
+  }
+ },
+ {
+  "command": "home.numberFormat",
+  "params": {
+   "format": "0.00",
+   "range": "A3"
+  }
+ },
+ {
+  "command": "cell.set",
+  "params": {
+   "cell": "A2",
+   "input": "100"
+  }
+ },
+ {
+  "command": "edit.undo",
+  "params": {}
+ },
+ {
+  "command": "edit.redo",
+  "params": {}
+ },
+ {
+  "command": "edit.undo",
+  "params": {}
+ },
+ {
+  "command": "home.italic",
+  "params": {
+   "range": "A3"
+  }
+ },
+ {
+  "command": "edit.undo",
+  "params": {}
+ },
+ {
+  "command": "edit.redo",
+  "params": {}
+ },
+ {
+  "command": "file.save",
+  "params": {
+   "path": "C:\\repos\\gridcraft-agent-lab\\workbooks\\stage01_smoke_test.xlsx"
+  }
+ }
+]

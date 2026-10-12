@@ -1,0 +1,46 @@
+> powershell -File scripts/start_lab_window.ps1
+launcher exit=0
+GridCraft lab window PID=40544 control=127.0.0.1:7991
+MCP bridge: "C:\Program Files\GridCraft\gridcraft-cli.exe" mcp --connect 7991
+port 7991 listening after 0.0 s
+> gridcraft-cli send 7991 document.inspect
+{
+  "activeCell": "A1",
+  "activeSheet": 0,
+  "calcMode": "Automatic",
+  "dirty": false,
+  "mode": "Ready",
+  "names": [],
+  "path": null,
+  "redo": [],
+  "selection": "A1",
+  "sheets": [
+    {
+      "autofilter": null,
+      "cells": 0,
+      "charts": [],
+      "comments": 0,
+      "conditionalFormats": 0,
+      "freeze": null,
+      "images": 0,
+      "merges": [],
+      "name": "Sheet1",
+      "protected": false,
+      "shapes": 0,
+      "tabColor": null,
+      "tables": [],
+      "usedRange": null,
+      "validations": 0,
+      "visibility": "Visible",
+      "zoom": 100
+    }
+  ],
+  "theme": "Craft",
+  "title": "Book1",
+  "undo": []
+}
+exit=0
+> gridcraft-cli send 7991 app.quit
+null
+exit=0
+gridcraft processes after quit: 0

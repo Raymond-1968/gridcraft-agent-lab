@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gridcraft-lab": {
+      "command": "C:\\Program Files\\GridCraft\\gridcraft-cli.exe",
+      "args": ["mcp", "--connect", "7991"]
+    }
+  }
+}
