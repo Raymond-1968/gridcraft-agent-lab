@@ -1,0 +1,166 @@
+[
+ {
+  "sheet": "Сводка",
+  "cell": "B4",
+  "style": {
+   "fill": 16773836,
+   "num_fmt": "dd.mm.yyyy"
+  }
+ },
+ {
+  "sheet": "Сводка",
+  "cell": "B5",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "dd.mm.yyyy"
+  }
+ },
+ {
+  "sheet": "Сводка",
+  "cell": "B8",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Сводка",
+  "cell": "B10",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Сводка",
+  "cell": "A12",
+  "style": {
+   "fill": 14543863,
+   "bold": true
+  }
+ },
+ {
+  "sheet": "Сводка",
+  "cell": "A13",
+  "style": {
+   "fill": 15592941
+  }
+ },
+ {
+  "sheet": "Сводка",
+  "cell": "D13",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Сводка",
+  "cell": "E13",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Сводка",
+  "cell": "F13",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Сводка",
+  "cell": "G14",
+  "style": {
+   "fill": 15592941,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Сводка",
+  "cell": "H13",
+  "style": {
+   "fill": 15592941
+  }
+ },
+ {
+  "sheet": "Сводка",
+  "cell": "F33",
+  "style": {
+   "bold": true,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Источники",
+  "cell": "B4",
+  "style": {
+   "fill": 16773836,
+   "num_fmt": "mm.yyyy"
+  }
+ },
+ {
+  "sheet": "Источники",
+  "cell": "A7",
+  "style": {
+   "fill": 14543863,
+   "bold": true
+  }
+ },
+ {
+  "sheet": "Источники",
+  "cell": "C8",
+  "style": {
+   "fill": 16773836,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Источники",
+  "cell": "D8",
+  "style": {
+   "fill": 16773836,
+   "num_fmt": "mm.yyyy"
+  }
+ },
+ {
+  "sheet": "Поступления",
+  "cell": "A5",
+  "style": {
+   "fill": 14543863,
+   "bold": true
+  }
+ },
+ {
+  "sheet": "Поступления",
+  "cell": "A6",
+  "style": {
+   "fill": 16773836,
+   "num_fmt": "dd.mm.yyyy"
+  }
+ },
+ {
+  "sheet": "Поступления",
+  "cell": "C6",
+  "style": {
+   "fill": 16773836,
+   "num_fmt": "#,##0.00"
+  }
+ },
+ {
+  "sheet": "Поступления",
+  "cell": "F6",
+  "style": {
+   "fill": 15592941
+  }
+ },
+ {
+  "sheet": "Поступления",
+  "cell": "F505",
+  "style": {
+   "fill": 15592941
+  }
+ }
+]

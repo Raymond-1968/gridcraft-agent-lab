@@ -1,0 +1,5 @@
+  "dirty": false,
+  "path": "C:\\repos\\gridcraft-agent-lab\\workbooks\\income_tracker_prototype.xlsx",
+null
+quit exit=0
+gridcraft processes: 0

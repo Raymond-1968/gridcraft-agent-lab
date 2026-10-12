@@ -16,6 +16,10 @@ Stage 02 correction 01 (selective command discovery) verdict: **PASS** — narro
 `list_commands` searches fit in the session; `cell.set`, `home.bold`, `file.save` executed and
 verified. See [runs/STAGE_02_CORRECTION_01/REPORT.md](runs/STAGE_02_CORRECTION_01/REPORT.md).
 
+Stage 03 (income tracker prototype, built and checked by GridCraft via MCP) verdict: **PASS**
+(96/96 independent checks), with recorded limitations and usability defects awaiting user review.
+See [runs/STAGE_03/REPORT.md](runs/STAGE_03/REPORT.md). The workbook itself is git-ignored.
+
 ## Layout
 
 | Path | Contents |

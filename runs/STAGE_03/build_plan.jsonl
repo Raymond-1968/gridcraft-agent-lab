@@ -1,0 +1,114 @@
+{"step": 1, "command": "sheet.rename", "params": {"sheet": 0, "name": "Сводка"}}
+{"step": 2, "command": "home.insertSheet", "params": {"name": "Источники"}}
+{"step": 3, "command": "home.insertSheet", "params": {"name": "Поступления"}}
+{"step": 4, "command": "sheet.activate", "params": {"sheet": "Источники"}}
+{"step": 5, "command": "range.setValues", "params": {"range": "A1", "values": [["Источники доходов и ежемесячные обязательства"], ["Жёлтые ячейки — ввод, серые — формулы. Месяц вводите датой первого дня в виде ГГГГ-ММ-ДД, например 2026-09-01."]]}}
+{"step": 6, "command": "range.setValues", "params": {"range": "A4", "values": [["Начало учёта (месяц)", "2026-09-01", null, "Правило прототипа: начисление за месяц возникает целиком 1-го числа месяца."], [null, null, null, "Начальный долг — долг за период до начала учёта; он не начисляется повторно."], [null, null, null, "Просрочка не рассчитывается: сроки оплаты не заданы. Месяцы до начала учёта не начисляются."]]}}
+{"step": 7, "command": "range.setValues", "params": {"range": "A7", "values": [["ID", "Название", "Сумма в месяц, EUR", "Первый месяц начисления", "Последний месяц начисления (пусто = продолжается)", "Начальный долг на начало учёта, EUR", "Примечание"]]}}
+{"step": 8, "command": "range.setValues", "params": {"range": "A8", "values": [["A", "Источник A (вымышленный)", 300, "2026-09-01", null, 100, "контрольный пример"], ["B", "Источник B (вымышленный)", 200, "2026-10-01", null, 0, "контрольный пример"]]}}
+{"step": 9, "command": "home.bold", "params": {"range": "A1", "on": true}}
+{"step": 10, "command": "home.fontSize", "params": {"range": "A1", "size": 14}}
+{"step": 11, "command": "home.bold", "params": {"range": "A7:G7", "on": true}}
+{"step": 12, "command": "home.fillColor", "params": {"range": "A7:G7", "color": "#DDEBF7"}}
+{"step": 13, "command": "home.wrapText", "params": {"range": "A7:G7", "on": true}}
+{"step": 14, "command": "home.alignMiddle", "params": {"range": "A7:G7"}}
+{"step": 15, "command": "home.borders", "params": {"range": "A7:G7", "preset": "all", "style": "thin"}}
+{"step": 16, "command": "home.bold", "params": {"range": "A4", "on": true}}
+{"step": 17, "command": "home.fillColor", "params": {"range": "B4", "color": "#FFF2CC"}}
+{"step": 18, "command": "home.borders", "params": {"range": "B4", "preset": "outside", "style": "thin"}}
+{"step": 19, "command": "home.numberFormat", "params": {"range": "B4", "code": "mm.yyyy"}}
+{"step": 20, "command": "home.fillColor", "params": {"range": "A8:G27", "color": "#FFF2CC"}}
+{"step": 21, "command": "home.borders", "params": {"range": "A8:G27", "preset": "all", "style": "thin"}}
+{"step": 22, "command": "home.numberFormat", "params": {"range": "C8:C27", "code": "#,##0.00"}}
+{"step": 23, "command": "home.numberFormat", "params": {"range": "F8:F27", "code": "#,##0.00"}}
+{"step": 24, "command": "home.numberFormat", "params": {"range": "D8:E27", "code": "mm.yyyy"}}
+{"step": 25, "command": "home.columnWidth", "params": {"cols": "A:A", "chars": 8}}
+{"step": 26, "command": "home.columnWidth", "params": {"cols": "B:B", "chars": 28}}
+{"step": 27, "command": "home.columnWidth", "params": {"cols": "C:C", "chars": 14}}
+{"step": 28, "command": "home.columnWidth", "params": {"cols": "D:E", "chars": 18}}
+{"step": 29, "command": "home.columnWidth", "params": {"cols": "F:F", "chars": 18}}
+{"step": 30, "command": "home.columnWidth", "params": {"cols": "G:G", "chars": 30}}
+{"step": 31, "command": "data.validation", "params": {"range": "B4", "type": "date", "operator": "between", "formula1": "=DATE(2000,1,1)", "formula2": "=DATE(2100,12,31)", "errorStyle": "stop", "errorTitle": "Дата", "errorMessage": "Введите дату в виде ГГГГ-ММ-ДД, например 2026-09-01."}}
+{"step": 32, "command": "data.validation", "params": {"range": "C8:C27", "type": "decimal", "operator": "greaterOrEqual", "formula1": "0", "errorStyle": "stop", "errorTitle": "Сумма", "errorMessage": "Сумма в месяц — число не меньше 0."}}
+{"step": 33, "command": "data.validation", "params": {"range": "D8:E27", "type": "date", "operator": "between", "formula1": "=DATE(2000,1,1)", "formula2": "=DATE(2100,12,31)", "errorStyle": "stop", "errorTitle": "Месяц", "errorMessage": "Введите дату первого дня месяца в виде ГГГГ-ММ-ДД."}}
+{"step": 34, "command": "data.validation", "params": {"range": "F8:F27", "type": "decimal", "operator": "greaterOrEqual", "formula1": "0", "errorStyle": "stop", "errorTitle": "Начальный долг", "errorMessage": "Начальный долг — число не меньше 0."}}
+{"step": 35, "command": "view.freezePanes", "params": {"cell": "A8"}}
+{"step": 36, "command": "sheet.activate", "params": {"sheet": "Поступления"}}
+{"step": 37, "command": "range.setValues", "params": {"range": "A1", "values": [["Поступления: одна выплата — одна строка"], ["Вместимость: 500 строк (6–505). Дата — в виде ГГГГ-ММ-ДД, например 2026-10-15. ID — из списка (лист «Источники»)."], ["В итог входят выплаты с датой от начала учёта до «Расчёт на дату» (лист «Сводка»). «За какой период» — справочно, на расчёт не влияет."]]}}
+{"step": 38, "command": "range.setValues", "params": {"range": "A5", "values": [["Дата поступления", "ID источника", "Сумма, EUR", "За какой период (справочно)", "Примечание", "Статус строки"]]}}
+{"step": 39, "command": "range.setValues", "params": {"range": "A6", "values": [["2026-09-15", "A", 150, "сентябрь 2026", "контрольный пример"], ["2026-10-10", "A", 200, "октябрь 2026", "контрольный пример"], ["2026-10-20", "B", 250, "октябрь 2026", "контрольный пример"], ["2026-11-05", "A", 100, "октябрь 2026", "после даты расчёта — исключается"]]}}
+{"step": 40, "command": "selection.set", "params": {"range": "F6:F505", "active": "F6"}}
+{"step": 41, "command": "range.fill", "params": {"range": "F6:F505", "input": "=IF(AND(A6=\"\",B6=\"\",C6=\"\"),\"\",IF(NOT(ISNUMBER(A6)),\"ошибка: дата\",IF(COUNTIF('Источники'!$A$8:$A$27,B6)=0,\"ошибка: ID\",IF(NOT(ISNUMBER(C6)),\"ошибка: сумма\",IF(A6<'Источники'!$B$4,\"до начала учёта\",IF(A6>'Сводка'!$B$4,\"после даты расчёта\",\"учтено\"))))))"}}
+{"step": 42, "command": "home.bold", "params": {"range": "A1", "on": true}}
+{"step": 43, "command": "home.fontSize", "params": {"range": "A1", "size": 14}}
+{"step": 44, "command": "home.bold", "params": {"range": "A5:F5", "on": true}}
+{"step": 45, "command": "home.fillColor", "params": {"range": "A5:F5", "color": "#DDEBF7"}}
+{"step": 46, "command": "home.wrapText", "params": {"range": "A5:F5", "on": true}}
+{"step": 47, "command": "home.alignMiddle", "params": {"range": "A5:F5"}}
+{"step": 48, "command": "home.borders", "params": {"range": "A5:F5", "preset": "all", "style": "thin"}}
+{"step": 49, "command": "home.fillColor", "params": {"range": "A6:E505", "color": "#FFF2CC"}}
+{"step": 50, "command": "home.fillColor", "params": {"range": "F6:F505", "color": "#EDEDED"}}
+{"step": 51, "command": "home.borders", "params": {"range": "A6:F505", "preset": "all", "style": "thin"}}
+{"step": 52, "command": "home.numberFormat", "params": {"range": "A6:A505", "code": "dd.mm.yyyy"}}
+{"step": 53, "command": "home.numberFormat", "params": {"range": "C6:C505", "code": "#,##0.00"}}
+{"step": 54, "command": "home.columnWidth", "params": {"cols": "A:A", "chars": 16}}
+{"step": 55, "command": "home.columnWidth", "params": {"cols": "B:B", "chars": 12}}
+{"step": 56, "command": "home.columnWidth", "params": {"cols": "C:C", "chars": 14}}
+{"step": 57, "command": "home.columnWidth", "params": {"cols": "D:D", "chars": 22}}
+{"step": 58, "command": "home.columnWidth", "params": {"cols": "E:E", "chars": 34}}
+{"step": 59, "command": "home.columnWidth", "params": {"cols": "F:F", "chars": 20}}
+{"step": 60, "command": "data.validation", "params": {"range": "A6:A505", "type": "date", "operator": "between", "formula1": "='Источники'!$B$4", "formula2": "=DATE(2100,12,31)", "errorStyle": "stop", "errorTitle": "Дата", "errorMessage": "Дата в виде ГГГГ-ММ-ДД, не раньше начала учёта (лист «Источники»)."}}
+{"step": 61, "command": "data.validation", "params": {"range": "B6:B505", "type": "list", "formula1": "='Источники'!$A$8:$A$27", "dropdown": true, "errorStyle": "stop", "errorTitle": "ID источника", "errorMessage": "Выберите ID из списка (лист «Источники»)."}}
+{"step": 62, "command": "data.validation", "params": {"range": "C6:C505", "type": "decimal", "operator": "greater", "formula1": "0", "errorStyle": "stop", "errorTitle": "Сумма", "errorMessage": "Сумма — положительное число."}}
+{"step": 63, "command": "home.conditionalFormat", "params": {"range": "F6:F505", "rule": {"type": "beginsWith", "text": "ошибка", "preset": "lightRedFillDarkRedText"}}}
+{"step": 64, "command": "view.freezePanes", "params": {"cell": "A6"}}
+{"step": 65, "command": "sheet.activate", "params": {"sheet": "Сводка"}}
+{"step": 66, "command": "range.setValues", "params": {"range": "A1", "values": [["Учёт регулярных доходов — сводка"], ["Прототип. Вымышленные данные. Валюта — EUR. Жёлтые ячейки — ввод, серые — формулы."]]}}
+{"step": 67, "command": "range.setValues", "params": {"range": "A4", "values": [["Расчёт на дату", "2026-10-31"], ["Начало учёта", "='Источники'!B4"], ["Учтено поступлений, шт.", "=COUNTIF('Поступления'!F6:F505,\"учтено\")"], ["Строк с ошибками, шт.", "=COUNTIF('Поступления'!F6:F505,\"ошибка*\")"], ["Общий долг (должны пользователю)", "=F33"], ["Общий аванс / переплата", "=G33"], ["Чистый баланс (долг − аванс)", "=B8-B9"]]}}
+{"step": 68, "command": "range.setValues", "params": {"range": "A12", "values": [["ID", "Источник", "Начальный долг", "Начислено за период", "Получено", "Остаток долга", "Аванс / переплата", "Месяцев начислено"]]}}
+{"step": 69, "command": "selection.set", "params": {"range": "A13:A32", "active": "A13"}}
+{"step": 70, "command": "range.fill", "params": {"range": "A13:A32", "input": "=IF('Источники'!A8=\"\",\"\",'Источники'!A8)"}}
+{"step": 71, "command": "selection.set", "params": {"range": "B13:B32", "active": "B13"}}
+{"step": 72, "command": "range.fill", "params": {"range": "B13:B32", "input": "=IF($A13=\"\",\"\",'Источники'!B8)"}}
+{"step": 73, "command": "selection.set", "params": {"range": "C13:C32", "active": "C13"}}
+{"step": 74, "command": "range.fill", "params": {"range": "C13:C32", "input": "=IF($A13=\"\",\"\",N('Источники'!F8))"}}
+{"step": 75, "command": "selection.set", "params": {"range": "H13:H32", "active": "H13"}}
+{"step": 76, "command": "range.fill", "params": {"range": "H13:H32", "input": "=IF($A13=\"\",\"\",IF('Источники'!D8=\"\",0,LET(accStart,'Источники'!$B$4,firstM,'Источники'!D8,lastM,'Источники'!E8,asOf,$B$4,fromM,MAX(DATE(YEAR(accStart),MONTH(accStart),1),DATE(YEAR(firstM),MONTH(firstM),1)),toM,IF(lastM=\"\",DATE(YEAR(asOf),MONTH(asOf),1),MIN(DATE(YEAR(asOf),MONTH(asOf),1),DATE(YEAR(lastM),MONTH(lastM),1))),MAX(0,(YEAR(toM)-YEAR(fromM))*12+MONTH(toM)-MONTH(fromM)+1))))"}}
+{"step": 77, "command": "selection.set", "params": {"range": "D13:D32", "active": "D13"}}
+{"step": 78, "command": "range.fill", "params": {"range": "D13:D32", "input": "=IF($A13=\"\",\"\",H13*N('Источники'!C8))"}}
+{"step": 79, "command": "selection.set", "params": {"range": "E13:E32", "active": "E13"}}
+{"step": 80, "command": "range.fill", "params": {"range": "E13:E32", "input": "=IF($A13=\"\",\"\",SUMIFS('Поступления'!$C$6:$C$505,'Поступления'!$B$6:$B$505,$A13,'Поступления'!$A$6:$A$505,\">=\"&$B$5,'Поступления'!$A$6:$A$505,\"<=\"&$B$4))"}}
+{"step": 81, "command": "selection.set", "params": {"range": "F13:F32", "active": "F13"}}
+{"step": 82, "command": "range.fill", "params": {"range": "F13:F32", "input": "=IF($A13=\"\",\"\",MAX(0,C13+D13-E13))"}}
+{"step": 83, "command": "selection.set", "params": {"range": "G13:G32", "active": "G13"}}
+{"step": 84, "command": "range.fill", "params": {"range": "G13:G32", "input": "=IF($A13=\"\",\"\",MAX(0,E13-C13-D13))"}}
+{"step": 85, "command": "range.setValues", "params": {"range": "A33", "values": [["Итого", null, "=SUM(C13:C32)", "=SUM(D13:D32)", "=SUM(E13:E32)", "=SUM(F13:F32)", "=SUM(G13:G32)", null]]}}
+{"step": 86, "command": "range.setValues", "params": {"range": "J4", "values": [["Как пользоваться"], ["1. «Источники»: начало учёта и по строке на источник (ID, сумма в месяц, месяцы, начальный долг)."], ["2. «Поступления»: каждая выплата — отдельная строка (дата ГГГГ-ММ-ДД, ID из списка, сумма)."], ["3. Здесь задайте «Расчёт на дату» — итоги пересчитаются автоматически."], ["Остаток долга > 0 — источник должен пользователю; переплата показана отдельно как аванс."], ["Аванс одного источника не погашает долг другого. Выплаты после даты расчёта не учитываются."], ["Вместимость: 20 источников, 500 строк поступлений. Строки с ошибками отмечены на «Поступлениях»."]]}}
+{"step": 87, "command": "home.bold", "params": {"range": "A1", "on": true}}
+{"step": 88, "command": "home.fontSize", "params": {"range": "A1", "size": 14}}
+{"step": 89, "command": "home.bold", "params": {"range": "J4", "on": true}}
+{"step": 90, "command": "home.bold", "params": {"range": "A4:A10", "on": true}}
+{"step": 91, "command": "home.fillColor", "params": {"range": "B4", "color": "#FFF2CC"}}
+{"step": 92, "command": "home.borders", "params": {"range": "B4", "preset": "thickOutside"}}
+{"step": 93, "command": "home.numberFormat", "params": {"range": "B4:B5", "code": "dd.mm.yyyy"}}
+{"step": 94, "command": "home.fillColor", "params": {"range": "B5:B10", "color": "#EDEDED"}}
+{"step": 95, "command": "home.numberFormat", "params": {"range": "B8:B10", "code": "#,##0.00"}}
+{"step": 96, "command": "home.borders", "params": {"range": "A4:B10", "preset": "all", "style": "thin"}}
+{"step": 97, "command": "home.bold", "params": {"range": "A12:H12", "on": true}}
+{"step": 98, "command": "home.fillColor", "params": {"range": "A12:H12", "color": "#DDEBF7"}}
+{"step": 99, "command": "home.wrapText", "params": {"range": "A12:H12", "on": true}}
+{"step": 100, "command": "home.alignMiddle", "params": {"range": "A12:H12"}}
+{"step": 101, "command": "home.borders", "params": {"range": "A12:H12", "preset": "all", "style": "thin"}}
+{"step": 102, "command": "home.fillColor", "params": {"range": "A13:H33", "color": "#EDEDED"}}
+{"step": 103, "command": "home.borders", "params": {"range": "A13:H33", "preset": "all", "style": "thin"}}
+{"step": 104, "command": "home.numberFormat", "params": {"range": "C13:G33", "code": "#,##0.00"}}
+{"step": 105, "command": "home.bold", "params": {"range": "A33:H33", "on": true}}
+{"step": 106, "command": "home.borders", "params": {"range": "A33:H33", "preset": "topDoubleBottom"}}
+{"step": 107, "command": "home.columnWidth", "params": {"cols": "A:A", "chars": 34}}
+{"step": 108, "command": "home.columnWidth", "params": {"cols": "B:B", "chars": 26}}
+{"step": 109, "command": "home.columnWidth", "params": {"cols": "C:H", "chars": 15}}
+{"step": 110, "command": "home.columnWidth", "params": {"cols": "I:I", "chars": 3}}
+{"step": 111, "command": "home.columnWidth", "params": {"cols": "J:J", "chars": 95}}
+{"step": 112, "command": "data.validation", "params": {"range": "B4", "type": "date", "operator": "between", "formula1": "=DATE(2000,1,1)", "formula2": "=DATE(2100,12,31)", "errorStyle": "stop", "errorTitle": "Расчёт на дату", "errorMessage": "Введите дату в виде ГГГГ-ММ-ДД, например 2026-10-31."}}
+{"step": 113, "command": "view.freezePanes", "params": {"cell": "A13"}}
+{"step": 114, "command": "selection.set", "params": {"range": "B4"}}

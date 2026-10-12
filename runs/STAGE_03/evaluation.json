@@ -1,0 +1,586 @@
+{
+ "checks": [
+  {
+   "group": "build",
+   "check": "all 114 plan steps executed verbatim via execute_command",
+   "status": "PASS",
+   "detail": "missing=[] errors=[]"
+  },
+  {
+   "group": "build",
+   "check": "file.save income_tracker_prototype.xlsx",
+   "status": "PASS",
+   "detail": "{\"bytes\": 33821, \"path\": \"C:\\\\repos\\\\gridcraft-agent-lab\\\\workbooks\\\\income_tracker_prototype.xlsx\"}"
+  },
+  {
+   "group": "C0",
+   "check": "step 1: totals: debt, advance, net (Сводка!B8:B10)",
+   "status": "PASS",
+   "detail": "[[350.0], [50.0], [300.0]]"
+  },
+  {
+   "group": "C0",
+   "check": "step 2: source A: initial, accrued, received, debt, advance, months (Сводка!C13:H13)",
+   "status": "PASS",
+   "detail": "[[100.0, 600.0, 350.0, 350.0, 0.0, 2.0]]"
+  },
+  {
+   "group": "C0",
+   "check": "step 3: source B: initial, accrued, received, debt, advance, months (Сводка!C14:H14)",
+   "status": "PASS",
+   "detail": "[[0.0, 200.0, 250.0, 0.0, 50.0, 1.0]]"
+  },
+  {
+   "group": "C0",
+   "check": "step 4: payment statuses rows 6-9 (Поступления!F6:F9)",
+   "status": "PASS",
+   "detail": "[[\"учтено\"], [\"учтено\"], [\"учтено\"], [\"после даты расчёта\"]]"
+  },
+  {
+   "group": "C1",
+   "check": "step 6: totals: debt, advance, net (Сводка!B8:B10)",
+   "status": "PASS",
+   "detail": "[[330.0], [50.0], [280.0]]"
+  },
+  {
+   "group": "C1",
+   "check": "step 7: source A: initial, accrued, received, debt, advance, months (Сводка!C13:H13)",
+   "status": "PASS",
+   "detail": "[[100.0, 600.0, 370.0, 330.0, 0.0, 2.0]]"
+  },
+  {
+   "group": "C1",
+   "check": "step 8: source B: initial, accrued, received, debt, advance, months (Сводка!C14:H14)",
+   "status": "PASS",
+   "detail": "[[0.0, 200.0, 250.0, 0.0, 50.0, 1.0]]"
+  },
+  {
+   "group": "C2",
+   "check": "step 10: totals: debt, advance, net (Сводка!B8:B10)",
+   "status": "PASS",
+   "detail": "[[350.0], [50.0], [300.0]]"
+  },
+  {
+   "group": "C2",
+   "check": "step 11: source A: initial, accrued, received, debt, advance, months (Сводка!C13:H13)",
+   "status": "PASS",
+   "detail": "[[100.0, 600.0, 350.0, 350.0, 0.0, 2.0]]"
+  },
+  {
+   "group": "C2",
+   "check": "step 12: source B: initial, accrued, received, debt, advance, months (Сводка!C14:H14)",
+   "status": "PASS",
+   "detail": "[[0.0, 200.0, 250.0, 0.0, 50.0, 1.0]]"
+  },
+  {
+   "group": "C3",
+   "check": "step 14: totals: debt, advance, net (Сводка!B8:B10)",
+   "status": "PASS",
+   "detail": "[[700.0], [0.0], [700.0]]"
+  },
+  {
+   "group": "C3",
+   "check": "step 15: source A: initial, accrued, received, debt, advance, months (Сводка!C13:H13)",
+   "status": "PASS",
+   "detail": "[[100.0, 900.0, 450.0, 550.0, 0.0, 3.0]]"
+  },
+  {
+   "group": "C3",
+   "check": "step 16: source B: initial, accrued, received, debt, advance, months (Сводка!C14:H14)",
+   "status": "PASS",
+   "detail": "[[0.0, 400.0, 250.0, 150.0, 0.0, 2.0]]"
+  },
+  {
+   "group": "C4",
+   "check": "step 18: totals: debt, advance, net (Сводка!B8:B10)",
+   "status": "PASS",
+   "detail": "[[350.0], [50.0], [300.0]]"
+  },
+  {
+   "group": "C4",
+   "check": "step 19: source A: initial, accrued, received, debt, advance, months (Сводка!C13:H13)",
+   "status": "PASS",
+   "detail": "[[100.0, 600.0, 350.0, 350.0, 0.0, 2.0]]"
+  },
+  {
+   "group": "C4",
+   "check": "step 20: source B: initial, accrued, received, debt, advance, months (Сводка!C14:H14)",
+   "status": "PASS",
+   "detail": "[[0.0, 200.0, 250.0, 0.0, 50.0, 1.0]]"
+  },
+  {
+   "group": "C5",
+   "check": "step 22: totals: debt, advance, net (Сводка!B8:B10)",
+   "status": "PASS",
+   "detail": "[[450.0], [50.0], [400.0]]"
+  },
+  {
+   "group": "C5",
+   "check": "step 23: source A: initial, accrued, received, debt, advance, months (Сводка!C13:H13)",
+   "status": "PASS",
+   "detail": "[[100.0, 600.0, 350.0, 350.0, 0.0, 2.0]]"
+  },
+  {
+   "group": "C5",
+   "check": "step 24: source B: initial, accrued, received, debt, advance, months (Сводка!C14:H14)",
+   "status": "PASS",
+   "detail": "[[0.0, 200.0, 250.0, 0.0, 50.0, 1.0]]"
+  },
+  {
+   "group": "C5",
+   "check": "step 25: source C: initial, accrued, received, debt, advance, months (Сводка!C15:H15)",
+   "status": "PASS",
+   "detail": "[[0.0, 0.0, 0.0, 0.0, 0.0, 0.0]]"
+  },
+  {
+   "group": "C5",
+   "check": "step 26: source D: initial, accrued, received, debt, advance, months (Сводка!C16:H16)",
+   "status": "PASS",
+   "detail": "[[0.0, 100.0, 0.0, 100.0, 0.0, 1.0]]"
+  },
+  {
+   "group": "C6",
+   "check": "step 28: totals: debt, advance, net (Сводка!B8:B10)",
+   "status": "PASS",
+   "detail": "[[1450.0], [0.0], [1450.0]]"
+  },
+  {
+   "group": "C6",
+   "check": "step 29: source A: initial, accrued, received, debt, advance, months (Сводка!C13:H13)",
+   "status": "PASS",
+   "detail": "[[100.0, 1200.0, 450.0, 850.0, 0.0, 4.0]]"
+  },
+  {
+   "group": "C6",
+   "check": "step 30: source B: initial, accrued, received, debt, advance, months (Сводка!C14:H14)",
+   "status": "PASS",
+   "detail": "[[0.0, 600.0, 250.0, 350.0, 0.0, 3.0]]"
+  },
+  {
+   "group": "C6",
+   "check": "step 31: source C: initial, accrued, received, debt, advance, months (Сводка!C15:H15)",
+   "status": "PASS",
+   "detail": "[[0.0, 150.0, 0.0, 150.0, 0.0, 1.0]]"
+  },
+  {
+   "group": "C6",
+   "check": "step 32: source D: initial, accrued, received, debt, advance, months (Сводка!C16:H16)",
+   "status": "PASS",
+   "detail": "[[0.0, 100.0, 0.0, 100.0, 0.0, 1.0]]"
+  },
+  {
+   "group": "C6r",
+   "check": "step 35: totals: debt, advance, net (Сводка!B8:B10)",
+   "status": "PASS",
+   "detail": "[[350.0], [50.0], [300.0]]"
+  },
+  {
+   "group": "C6r",
+   "check": "step 36: source A: initial, accrued, received, debt, advance, months (Сводка!C13:H13)",
+   "status": "PASS",
+   "detail": "[[100.0, 600.0, 350.0, 350.0, 0.0, 2.0]]"
+  },
+  {
+   "group": "C6r",
+   "check": "step 37: source B: initial, accrued, received, debt, advance, months (Сводка!C14:H14)",
+   "status": "PASS",
+   "detail": "[[0.0, 200.0, 250.0, 0.0, 50.0, 1.0]]"
+  },
+  {
+   "group": "C7",
+   "check": "step 38: error-row counter (Сводка!B7)",
+   "status": "PASS",
+   "detail": "[[0.0]]"
+  },
+  {
+   "group": "C7",
+   "check": "step 39: statuses of empty rows 10-12 are blank (Поступления!F10:F12)",
+   "status": "PASS",
+   "detail": "[[\"\"], [\"\"], [\"\"]]"
+  },
+  {
+   "group": "C7",
+   "check": "step 40: no error values on Сводка A4:H33 and Поступления F6:F505",
+   "status": "PASS",
+   "detail": "errors=[]"
+  },
+  {
+   "group": "C7",
+   "check": "step 41: no error values in status column",
+   "status": "PASS",
+   "detail": "errors=[]"
+  },
+  {
+   "group": "C8",
+   "check": "step 43: totals: debt, advance, net (Сводка!B8:B10)",
+   "status": "PASS",
+   "detail": "[[350.0], [60.0], [290.0]]"
+  },
+  {
+   "group": "C8",
+   "check": "step 44: source A: initial, accrued, received, debt, advance, months (Сводка!C13:H13)",
+   "status": "PASS",
+   "detail": "[[100.0, 600.0, 350.0, 350.0, 0.0, 2.0]]"
+  },
+  {
+   "group": "C8",
+   "check": "step 45: source B: initial, accrued, received, debt, advance, months (Сводка!C14:H14)",
+   "status": "PASS",
+   "detail": "[[0.0, 200.0, 260.0, 0.0, 60.0, 1.0]]"
+  },
+  {
+   "group": "C8",
+   "check": "step 46: row 505 status (Поступления!F505)",
+   "status": "PASS",
+   "detail": "[[\"учтено\"]]"
+  },
+  {
+   "group": "C8",
+   "check": "step 47: counted payments (Сводка!B6)",
+   "status": "PASS",
+   "detail": "[[4.0]]"
+  },
+  {
+   "group": "C8r",
+   "check": "step 49: totals: debt, advance, net (Сводка!B8:B10)",
+   "status": "PASS",
+   "detail": "[[350.0], [50.0], [300.0]]"
+  },
+  {
+   "group": "C8r",
+   "check": "step 50: source A: initial, accrued, received, debt, advance, months (Сводка!C13:H13)",
+   "status": "PASS",
+   "detail": "[[100.0, 600.0, 350.0, 350.0, 0.0, 2.0]]"
+  },
+  {
+   "group": "C8r",
+   "check": "step 51: source B: initial, accrued, received, debt, advance, months (Сводка!C14:H14)",
+   "status": "PASS",
+   "detail": "[[0.0, 200.0, 250.0, 0.0, 50.0, 1.0]]"
+  },
+  {
+   "group": "C8r",
+   "check": "step 52: counted payments (Сводка!B6)",
+   "status": "PASS",
+   "detail": "[[3.0]]"
+  },
+  {
+   "group": "C9",
+   "check": "step 54: data.validate B6='A' expected ok=True",
+   "status": "PASS",
+   "detail": "{\"ok\": true}"
+  },
+  {
+   "group": "C9",
+   "check": "step 55: data.validate B6='ZZ' expected ok=False",
+   "status": "PASS",
+   "detail": "{\"message\": \"Выберите ID из списка (лист «Источники»).\", \"ok\": false, \"style\": \"Stop\", \"title\": \"ID источника\"}"
+  },
+  {
+   "group": "C9",
+   "check": "step 56: data.validate A6='2026-10-15' expected ok=True",
+   "status": "PASS",
+   "detail": "{\"ok\": true}"
+  },
+  {
+   "group": "C9",
+   "check": "step 57: data.validate A6='05.11.2026' expected ok=False",
+   "status": "PASS",
+   "detail": "{\"message\": \"Дата в виде ГГГГ-ММ-ДД, не раньше начала учёта (лист «Источники»).\", \"ok\": false, \"style\": \"Stop\", \"title\": \"Дата\"}"
+  },
+  {
+   "group": "C9",
+   "check": "step 58: data.validate A6='15.09.2026' expected ok=False",
+   "status": "PASS",
+   "detail": "{\"message\": \"Дата в виде ГГГГ-ММ-ДД, не раньше начала учёта (лист «Источники»).\", \"ok\": false, \"style\": \"Stop\", \"title\": \"Дата\"}"
+  },
+  {
+   "group": "C9",
+   "check": "step 59: data.validate C6='-5' expected ok=False",
+   "status": "PASS",
+   "detail": "{\"message\": \"Сумма — положительное число.\", \"ok\": false, \"style\": \"Stop\", \"title\": \"Сумма\"}"
+  },
+  {
+   "group": "reopen",
+   "check": "Сводка!B4 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': 46326.0, 'text': '31.10.2026', 'fill': 16773836, 'num_fmt': 'dd.mm.yyyy', 'bold': False} after={'formula': None, 'value': 46326.0, 'text': '31.10.2026', 'fill': 16773836, 'num_fmt': 'dd.mm.yyyy', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Сводка!B4 style after reopen {'fill': 16773836, 'num_fmt': 'dd.mm.yyyy'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Сводка!B5 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=Источники!B4', 'value': 46266.0, 'text': '01.09.2026', 'fill': 15592941, 'num_fmt': 'dd.mm.yyyy', 'bold': False} after={'formula': '=Источники!B4', 'value': 46266.0, 'text': '01.09.2026', 'fill': 15592941, 'num_fmt': 'dd.mm.yyyy', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Сводка!B5 style after reopen {'fill': 15592941, 'num_fmt': 'dd.mm.yyyy'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Сводка!B8 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=F33', 'value': 350.0, 'text': '350.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': '=F33', 'value': 350.0, 'text': '350.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Сводка!B8 style after reopen {'fill': 15592941, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Сводка!B10 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=B8-B9', 'value': 300.0, 'text': '300.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': '=B8-B9', 'value': 300.0, 'text': '300.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Сводка!B10 style after reopen {'fill': 15592941, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Сводка!A12 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': 'ID', 'text': 'ID', 'fill': 14543863, 'num_fmt': 'General', 'bold': True} after={'formula': None, 'value': 'ID', 'text': 'ID', 'fill': 14543863, 'num_fmt': 'General', 'bold': True}"
+  },
+  {
+   "group": "format",
+   "check": "Сводка!A12 style after reopen {'fill': 14543863, 'bold': True}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Сводка!A13 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF(Источники!A8=\"\",\"\",Источники!A8)', 'value': 'A', 'text': 'A', 'fill': 15592941, 'num_fmt': 'General', 'bold': False} after={'formula': '=IF(Источники!A8=\"\",\"\",Источники!A8)', 'value': 'A', 'text': 'A', 'fill': 15592941, 'num_fmt': 'General', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Сводка!A13 style after reopen {'fill': 15592941}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Сводка!D13 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF($A13=\"\",\"\",H13*N(Источники!C8))', 'value': 600.0, 'text': '600.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': '=IF($A13=\"\",\"\",H13*N(Источники!C8))', 'value': 600.0, 'text': '600.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Сводка!D13 style after reopen {'fill': 15592941, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Сводка!E13 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF($A13=\"\",\"\",SUMIFS(Поступления!$C$6:$C$505,Поступления!$B$6:$B$505,$A13,Поступления!$A$6:$A$505,\">=\"&$B$5,Поступления!$A$6:$A$505,\"<=\"&$B$4))', 'value': 350.0, 'text': '350.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': '=IF($A13=\"\",\"\",SUMIFS(Поступления!$C$6:$C$505,Поступления!$B$6:$B$505,$A13,Поступления!$A$6:$A$505,\">=\"&$B$5,Поступления!$A$6:$A$505,\"<=\"&$B$4))', 'value': 350.0, 'text': '350.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Сводка!E13 style after reopen {'fill': 15592941, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Сводка!F13 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF($A13=\"\",\"\",MAX(0,C13+D13-E13))', 'value': 350.0, 'text': '350.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': '=IF($A13=\"\",\"\",MAX(0,C13+D13-E13))', 'value': 350.0, 'text': '350.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Сводка!F13 style after reopen {'fill': 15592941, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Сводка!G14 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF($A14=\"\",\"\",MAX(0,E14-C14-D14))', 'value': 50.0, 'text': '50.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': '=IF($A14=\"\",\"\",MAX(0,E14-C14-D14))', 'value': 50.0, 'text': '50.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Сводка!G14 style after reopen {'fill': 15592941, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Сводка!H13 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF($A13=\"\",\"\",IF(Источники!D8=\"\",0,LET(accStart,Источники!$B$4,firstM,Источники!D8,lastM,Источники!E8,asOf,$B$4,fromM,MAX(DATE(YEAR(accStart),MONTH(accStart),1),DATE(YEAR(firstM),MONTH(firstM),1)),toM,IF(lastM=\"\",DATE(YEAR(asOf),MONTH(asOf),1),MIN(DATE(YEAR(asOf),MONTH(asOf),1),DATE(YEAR(lastM),MONTH(lastM),1))),MAX(0,(YEAR(toM)-YEAR(fromM))*12+MONTH(toM)-MONTH(fromM)+1))))', 'value': 2.0, 'text': '2', 'fill': 15592941, 'num_fmt': 'General', 'bold': False} after={'formula': '=IF($A13=\"\",\"\",IF(Источники!D8=\"\",0,LET(accStart,Источники!$B$4,firstM,Источники!D8,lastM,Источники!E8,asOf,$B$4,fromM,MAX(DATE(YEAR(accStart),MONTH(accStart),1),DATE(YEAR(firstM),MONTH(firstM),1)),toM,IF(lastM=\"\",DATE(YEAR(asOf),MONTH(asOf),1),MIN(DATE(YEAR(asOf),MONTH(asOf),1),DATE(YEAR(lastM),MONTH(lastM),1))),MAX(0,(YEAR(toM)-YEAR(fromM))*12+MONTH(toM)-MONTH(fromM)+1))))', 'value': 2.0, 'text': '2', 'fill': 15592941, 'num_fmt': 'General', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Сводка!H13 style after reopen {'fill': 15592941}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Сводка!F33 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=SUM(F13:F32)', 'value': 350.0, 'text': '350.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': True} after={'formula': '=SUM(F13:F32)', 'value': 350.0, 'text': '350.00', 'fill': 15592941, 'num_fmt': '#,##0.00', 'bold': True}"
+  },
+  {
+   "group": "format",
+   "check": "Сводка!F33 style after reopen {'bold': True, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Источники!B4 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': 46266.0, 'text': '09.2026', 'fill': 16773836, 'num_fmt': 'mm.yyyy', 'bold': False} after={'formula': None, 'value': 46266.0, 'text': '09.2026', 'fill': 16773836, 'num_fmt': 'mm.yyyy', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Источники!B4 style after reopen {'fill': 16773836, 'num_fmt': 'mm.yyyy'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Источники!A7 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': 'ID', 'text': 'ID', 'fill': 14543863, 'num_fmt': 'General', 'bold': True} after={'formula': None, 'value': 'ID', 'text': 'ID', 'fill': 14543863, 'num_fmt': 'General', 'bold': True}"
+  },
+  {
+   "group": "format",
+   "check": "Источники!A7 style after reopen {'fill': 14543863, 'bold': True}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Источники!C8 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': 300.0, 'text': '300.00', 'fill': 16773836, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': None, 'value': 300.0, 'text': '300.00', 'fill': 16773836, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Источники!C8 style after reopen {'fill': 16773836, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Источники!D8 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': 46266.0, 'text': '09.2026', 'fill': 16773836, 'num_fmt': 'mm.yyyy', 'bold': False} after={'formula': None, 'value': 46266.0, 'text': '09.2026', 'fill': 16773836, 'num_fmt': 'mm.yyyy', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Источники!D8 style after reopen {'fill': 16773836, 'num_fmt': 'mm.yyyy'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Поступления!A5 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': 'Дата поступления', 'text': 'Дата поступления', 'fill': 14543863, 'num_fmt': 'General', 'bold': True} after={'formula': None, 'value': 'Дата поступления', 'text': 'Дата поступления', 'fill': 14543863, 'num_fmt': 'General', 'bold': True}"
+  },
+  {
+   "group": "format",
+   "check": "Поступления!A5 style after reopen {'fill': 14543863, 'bold': True}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Поступления!A6 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': 46280.0, 'text': '15.09.2026', 'fill': 16773836, 'num_fmt': 'dd.mm.yyyy', 'bold': False} after={'formula': None, 'value': 46280.0, 'text': '15.09.2026', 'fill': 16773836, 'num_fmt': 'dd.mm.yyyy', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Поступления!A6 style after reopen {'fill': 16773836, 'num_fmt': 'dd.mm.yyyy'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Поступления!C6 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': None, 'value': 150.0, 'text': '150.00', 'fill': 16773836, 'num_fmt': '#,##0.00', 'bold': False} after={'formula': None, 'value': 150.0, 'text': '150.00', 'fill': 16773836, 'num_fmt': '#,##0.00', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Поступления!C6 style after reopen {'fill': 16773836, 'num_fmt': '#,##0.00'}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Поступления!F6 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF(AND(A6=\"\",B6=\"\",C6=\"\"),\"\",IF(NOT(ISNUMBER(A6)),\"ошибка: дата\",IF(COUNTIF(Источники!$A$8:$A$27,B6)=0,\"ошибка: ID\",IF(NOT(ISNUMBER(C6)),\"ошибка: сумма\",IF(A6<Источники!$B$4,\"до начала учёта\",IF(A6>Сводка!$B$4,\"после даты расчёта\",\"учтено\"))))))', 'value': 'учтено', 'text': 'учтено', 'fill': 15592941, 'num_fmt': 'General', 'bold': False} after={'formula': '=IF(AND(A6=\"\",B6=\"\",C6=\"\"),\"\",IF(NOT(ISNUMBER(A6)),\"ошибка: дата\",IF(COUNTIF(Источники!$A$8:$A$27,B6)=0,\"ошибка: ID\",IF(NOT(ISNUMBER(C6)),\"ошибка: сумма\",IF(A6<Источники!$B$4,\"до начала учёта\",IF(A6>Сводка!$B$4,\"после даты расчёта\",\"учтено\"))))))', 'value': 'учтено', 'text': 'учтено', 'fill': 15592941, 'num_fmt': 'General', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Поступления!F6 style after reopen {'fill': 15592941}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "Поступления!F505 identical before close / after reopen",
+   "status": "PASS",
+   "detail": "before={'formula': '=IF(AND(A505=\"\",B505=\"\",C505=\"\"),\"\",IF(NOT(ISNUMBER(A505)),\"ошибка: дата\",IF(COUNTIF(Источники!$A$8:$A$27,B505)=0,\"ошибка: ID\",IF(NOT(ISNUMBER(C505)),\"ошибка: сумма\",IF(A505<Источники!$B$4,\"до начала учёта\",IF(A505>Сводка!$B$4,\"после даты расчёта\",\"учтено\"))))))', 'value': '', 'text': '', 'fill': 15592941, 'num_fmt': 'General', 'bold': False} after={'formula': '=IF(AND(A505=\"\",B505=\"\",C505=\"\"),\"\",IF(NOT(ISNUMBER(A505)),\"ошибка: дата\",IF(COUNTIF(Источники!$A$8:$A$27,B505)=0,\"ошибка: ID\",IF(NOT(ISNUMBER(C505)),\"ошибка: сумма\",IF(A505<Источники!$B$4,\"до начала учёта\",IF(A505>Сводка!$B$4,\"после даты расчёта\",\"учтено\"))))))', 'value': '', 'text': '', 'fill': 15592941, 'num_fmt': 'General', 'bold': False}"
+  },
+  {
+   "group": "format",
+   "check": "Поступления!F505 style after reopen {'fill': 15592941}",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "group": "reopen",
+   "check": "C0 after reopen: totals: debt, advance, net (Сводка!B8:B10)",
+   "status": "PASS",
+   "detail": "[[350.0], [50.0], [300.0]]"
+  },
+  {
+   "group": "reopen",
+   "check": "C0 after reopen: source A: initial, accrued, received, debt, advance, months (Сводка!C13:H13)",
+   "status": "PASS",
+   "detail": "[[100.0, 600.0, 350.0, 350.0, 0.0, 2.0]]"
+  },
+  {
+   "group": "reopen",
+   "check": "C0 after reopen: source B: initial, accrued, received, debt, advance, months (Сводка!C14:H14)",
+   "status": "PASS",
+   "detail": "[[0.0, 200.0, 250.0, 0.0, 50.0, 1.0]]"
+  },
+  {
+   "group": "reopen",
+   "check": "C0 after reopen: payment statuses rows 6-9 (Поступления!F6:F9)",
+   "status": "PASS",
+   "detail": "[[\"учтено\"], [\"учтено\"], [\"учтено\"], [\"после даты расчёта\"]]"
+  }
+ ],
+ "summary": {
+  "total": 96,
+  "passed": 96,
+  "failed": 0,
+  "verdict": "PASS"
+ }
+}

@@ -1,0 +1,9 @@
+2026-10-12T23:45:11+03:00 > gridcraft-cli send 7991 document.inspect (dirty/path before close)
+  "dirty": false,
+  "path": "C:\\repos\\gridcraft-agent-lab\\workbooks\\income_tracker_prototype.xlsx",
+  "title": "income_tracker_prototype.xlsx",
+> gridcraft-cli send 7991 app.quit
+null
+exit=0
+gridcraft processes after quit: 0
+-rw-r--r-- 1 User 197121 33821 Oct 12 23:43 workbooks/income_tracker_prototype.xlsx
