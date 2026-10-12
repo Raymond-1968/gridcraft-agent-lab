@@ -1,0 +1,4 @@
+  "dirty": false,
+  "path": "C:\\repos\\gridcraft-agent-lab\\workbooks\\shared_obligation_tracker.xlsx",
+null
+gridcraft processes: 0

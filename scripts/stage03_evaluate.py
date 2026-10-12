@@ -17,6 +17,7 @@ from pathlib import Path
 LAB = Path(__file__).resolve().parents[1]
 RUN = LAB / "runs" / "STAGE_03"
 SES = RUN / "sessions"
+REOPEN_CHECK = "C0"   # check id whose expectations are re-read after reopen
 
 
 def load_calls(name):
@@ -58,17 +59,28 @@ def is_err(v):
 
 
 def match_reads(calls, steps):
-    """Pair plan steps with session calls in order (same tool + same arguments)."""
-    out, i = [], 0
+    """Pair plan steps with session calls in order (same tool + same arguments).
+
+    Sessions sometimes send a few independent calls as one batch in a different order, so a
+    read-only step not found forward is also looked up among the last few unused calls.
+    """
+    out, i, used = [], 0, set()
+
+    def same_call(c, st):
+        return c["tool"] == st["tool"] and c["arguments"] == st["arguments"]
+
     for st in steps:
         j = i
-        while j < len(calls) and not (calls[j]["tool"] == st["tool"] and calls[j]["arguments"] == st["arguments"]):
+        while j < len(calls) and (j in used or not same_call(calls[j], st)):
             j += 1
+        if j == len(calls) and st["tool"] == "read_range":
+            j = next((k for k in range(max(0, i - 5), i) if k not in used and same_call(calls[k], st)), len(calls))
         if j == len(calls):
             out.append((st, None))
         else:
             out.append((st, calls[j]))
-            i = j + 1
+            used.add(j)
+            i = max(i, j + 1)
     return out
 
 
@@ -152,13 +164,13 @@ def main():
         if a:
             bad = [f"{k}: {a.get(k)!r} != {v!r}" for k, v in sc["style"].items() if a.get(k) != v]
             rec("format", f"{key} style after reopen {sc['style']}", not bad, "; ".join(bad))
-    c0 = [s for s in checks if s["check"] == "C0"]
+    c0 = [s for s in checks if s["check"] == REOPEN_CHECK]
     for st, c in match_reads(s3, c0):
         vals = c["result"].get("values") if c and isinstance(c["result"], dict) else None
         mism = [f"[{i},{j}] got {(vals[i][j] if vals else None)!r} expected {e!r}"
                 for i, row in enumerate(st["expect"]) for j, e in enumerate(row)
                 if not (vals and same(vals[i][j], e))]
-        rec("reopen", f"C0 after reopen: {st['title']} ({st['arguments']['sheet']}!{st['arguments']['range']})",
+        rec("reopen", f"{REOPEN_CHECK} after reopen: {st['title']} ({st['arguments']['sheet']}!{st['arguments']['range']})",
             not mism, "; ".join(mism) or json.dumps(vals, ensure_ascii=False))
 
     total = len(ev["checks"])

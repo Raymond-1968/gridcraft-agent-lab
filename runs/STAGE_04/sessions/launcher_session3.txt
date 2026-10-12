@@ -1,0 +1,3 @@
+GridCraft lab window PID=33212 control=127.0.0.1:7991
+MCP bridge: "C:\Program Files\GridCraft\gridcraft-cli.exe" mcp --connect 7991
+port 7991 listening

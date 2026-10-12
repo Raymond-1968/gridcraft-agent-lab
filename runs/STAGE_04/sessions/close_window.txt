@@ -1,0 +1,8 @@
+2026-10-13T00:19:26+03:00 > document.inspect before close
+  "dirty": false,
+  "path": "C:\\repos\\gridcraft-agent-lab\\workbooks\\shared_obligation_tracker.xlsx",
+> app.quit
+null
+exit=0
+gridcraft processes after quit: 0
+-rw-r--r-- 1 User 197121 66267 Oct 13 00:19 workbooks/shared_obligation_tracker.xlsx

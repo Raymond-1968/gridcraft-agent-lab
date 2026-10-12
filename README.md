@@ -16,9 +16,14 @@ Stage 02 correction 01 (selective command discovery) verdict: **PASS** — narro
 `list_commands` searches fit in the session; `cell.set`, `home.bold`, `file.save` executed and
 verified. See [runs/STAGE_02_CORRECTION_01/REPORT.md](runs/STAGE_02_CORRECTION_01/REPORT.md).
 
-Stage 03 (income tracker prototype, built and checked by GridCraft via MCP) verdict: **PASS**
+Stage 03 (income tracker prototype, **historical** — independent-sources model superseded by Stage 04) verdict: **PASS**
 (96/96 independent checks), with recorded limitations and usability defects awaiting user review.
 See [runs/STAGE_03/REPORT.md](runs/STAGE_03/REPORT.md). The workbook itself is git-ignored.
+
+Stage 04 (current model: one monthly obligation shared by payers A and B, monthly summary,
+дд.мм.гггг date entry) verdict: **PASS** (161/161 independent checks, 11/11 UI typing checks),
+awaiting user usability review. See [runs/STAGE_04/REPORT.md](runs/STAGE_04/REPORT.md).
+Workbook `workbooks/shared_obligation_tracker.xlsx` is git-ignored.
 
 ## Layout
 

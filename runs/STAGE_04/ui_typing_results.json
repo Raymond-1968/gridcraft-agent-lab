@@ -1,0 +1,60 @@
+{
+ "verdict": "PASS",
+ "checks": [
+  {
+   "check": "typed A13='01.11.2026' accepted (no validation message, editor closed)",
+   "status": "PASS",
+   "detail": "message=None editor=None"
+  },
+  {
+   "check": "typed B13='B' accepted (no validation message, editor closed)",
+   "status": "PASS",
+   "detail": "message=None editor=None"
+  },
+  {
+   "check": "typed C13='10' accepted (no validation message, editor closed)",
+   "status": "PASS",
+   "detail": "message=None editor=None"
+  },
+  {
+   "check": "typed D13='09.2026' accepted (no validation message, editor closed)",
+   "status": "PASS",
+   "detail": "message=None editor=None"
+  },
+  {
+   "check": "A13 stored as typed text",
+   "status": "PASS",
+   "detail": "type=text value='01.11.2026'"
+  },
+  {
+   "check": "F13 recognised as 01.11.2026 (not 11 January)",
+   "status": "PASS",
+   "detail": "value=46327.0 text='01.11.2026'"
+  },
+  {
+   "check": "H13 status 'учтено'",
+   "status": "PASS",
+   "detail": "value='учтено'"
+  },
+  {
+   "check": "Сводка F6 saldo 30 -> 20 after typed B 10 for 09.2026",
+   "status": "PASS",
+   "detail": "{\"range\": \"F6\", \"sheet\": \"Сводка\", \"values\": [[20.0]]}"
+  },
+  {
+   "check": "typed A14='15/10/2026' stopped by validation",
+   "status": "PASS",
+   "detail": "{\"text\": \"Дата в виде дд.мм.гггг (например 15.10.2026) или гггг-мм-дд.\", \"title\": \"Дата\"}"
+  },
+  {
+   "check": "A14 stays empty",
+   "status": "PASS",
+   "detail": "type=empty value=None"
+  },
+  {
+   "check": "cleanup: row 13 cleared, saldo back to 30",
+   "status": "PASS",
+   "detail": "F6=[[30.0]] H13=''"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+{"step": 1, "command": "home.clearRules", "params": {"range": "F12:F71"}}
+{"step": 2, "command": "home.conditionalFormat", "params": {"range": "F12:F71", "rule": {"type": "expression", "formula": "=AND(ISNUMBER(F12),F12>0)", "preset": "lightRedFillDarkRedText"}}}
+{"step": 3, "command": "home.clearRules", "params": {"range": "G12:G71"}}
+{"step": 4, "command": "home.conditionalFormat", "params": {"range": "G12:G71", "rule": {"type": "expression", "formula": "=AND(ISNUMBER(G12),G12>0)", "preset": "greenFill"}}}
+{"step": 5, "command": "home.columnWidth", "params": {"cols": "H:H", "chars": 20}}
+{"step": 6, "command": "selection.set", "params": {"range": "B4"}}
